@@ -1,0 +1,7 @@
+timestamp,symbol,open,high,low,close,volume,scenario
+2024-01-03T14:30:00Z,SIM,100.0,100.3,99.9,100.1,12000,normal_open
+2024-01-03T14:31:00Z,SIM,100.1,100.2,100.0,100.05,0,zero_volume_bar
+2024-01-03T14:32:00Z,SIM,100.05,101.0,99.0,100.5,100,same_bar_stop_and_target_ambiguous
+2024-01-03T14:34:00Z,SIM,98.0,98.3,96.8,97.5,22000,missing_candle_then_gap_through_stop
+2024-01-03T14:35:00Z,SIM,49.0,50.0,48.8,49.5,500000,split_like_discontinuity
+2024-01-03T14:36:00Z,SIM,49.5,49.55,49.45,49.5,10,thin_liquidity_flat_bar

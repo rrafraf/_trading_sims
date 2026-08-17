@@ -1,0 +1,159 @@
+{
+  "version": 1,
+  "data_quality": "reject",
+  "adapters": {
+    "reference_bar": {
+      "initial_cash": 100000,
+      "fee_bps": 1,
+      "slippage_bps": 2,
+      "enforce_volume": true
+    },
+    "backtrader": {
+      "initial_cash": 100000,
+      "fee_bps": 1,
+      "slippage_bps": 2,
+      "enforce_volume": true
+    },
+    "vectorbt": {
+      "initial_cash": 100000,
+      "fee_bps": 1,
+      "slippage_bps": 2,
+      "enforce_volume": true
+    },
+    "pybroker": {
+      "initial_cash": 100000,
+      "fee_bps": 1,
+      "slippage_bps": 2,
+      "enforce_volume": true
+    },
+    "muni": {
+      "initial_cash": 100000,
+      "fee_bps": 1,
+      "slippage_bps": 2,
+      "enforce_volume": true,
+      "data_quality": "warn"
+    }
+  },
+  "runs": [
+    {
+      "id": "trend_1m_buy_hold",
+      "dataset": "data/experiments/trend_up_1m.csv",
+      "symbol": "SIM",
+      "strategy": "buy_hold",
+      "quantity": 100,
+      "params": {"start_index": 0}
+    },
+    {
+      "id": "trend_1m_sma_5_20",
+      "dataset": "data/experiments/trend_up_1m.csv",
+      "symbol": "SIM",
+      "strategy": "sma_cross",
+      "quantity": 100,
+      "params": {"fast": 5, "slow": 20}
+    },
+    {
+      "id": "trend_1m_breakout_30",
+      "dataset": "data/experiments/trend_up_1m.csv",
+      "symbol": "SIM",
+      "strategy": "breakout_channel",
+      "quantity": 100,
+      "params": {"lookback": 30}
+    },
+    {
+      "id": "chop_1m_sma_5_20",
+      "dataset": "data/experiments/chop_mean_revert_1m.csv",
+      "symbol": "SIM",
+      "strategy": "sma_cross",
+      "quantity": 100,
+      "params": {"fast": 5, "slow": 20}
+    },
+    {
+      "id": "chop_1m_mr_20",
+      "dataset": "data/experiments/chop_mean_revert_1m.csv",
+      "symbol": "SIM",
+      "strategy": "mean_reversion_zscore",
+      "quantity": 100,
+      "params": {"lookback": 20, "entry_z": 1.2, "exit_z": 0.2}
+    },
+    {
+      "id": "regime_1m_sma_5_20",
+      "dataset": "data/experiments/regime_shift_1m.csv",
+      "symbol": "SIM",
+      "strategy": "sma_cross",
+      "quantity": 100,
+      "params": {"fast": 5, "slow": 20}
+    },
+    {
+      "id": "regime_1m_breakout_30",
+      "dataset": "data/experiments/regime_shift_1m.csv",
+      "symbol": "SIM",
+      "strategy": "breakout_channel",
+      "quantity": 100,
+      "params": {"lookback": 30}
+    },
+    {
+      "id": "liquidity_1m_buy_hold",
+      "dataset": "data/experiments/liquidity_gap_1m.csv",
+      "symbol": "SIM",
+      "strategy": "buy_hold",
+      "quantity": 100,
+      "params": {"start_index": 0}
+    },
+    {
+      "id": "liquidity_1m_sma_5_20",
+      "dataset": "data/experiments/liquidity_gap_1m.csv",
+      "symbol": "SIM",
+      "strategy": "sma_cross",
+      "quantity": 100,
+      "params": {"fast": 5, "slow": 20}
+    },
+    {
+      "id": "trend_1h_sma_5_20",
+      "dataset": "data/experiments/trend_up_1h.csv",
+      "symbol": "SIM",
+      "strategy": "sma_cross",
+      "quantity": 100,
+      "params": {"fast": 5, "slow": 20}
+    },
+    {
+      "id": "trend_1h_breakout_30",
+      "dataset": "data/experiments/trend_up_1h.csv",
+      "symbol": "SIM",
+      "strategy": "breakout_channel",
+      "quantity": 100,
+      "params": {"lookback": 30}
+    },
+    {
+      "id": "trend_30m_sma_5_20",
+      "dataset": "data/experiments/trend_up_30m.csv",
+      "symbol": "SIM",
+      "strategy": "sma_cross",
+      "quantity": 100,
+      "params": {"fast": 5, "slow": 20}
+    },
+    {
+      "id": "trend_30m_breakout_30",
+      "dataset": "data/experiments/trend_up_30m.csv",
+      "symbol": "SIM",
+      "strategy": "breakout_channel",
+      "quantity": 100,
+      "params": {"lookback": 30}
+    },
+    {
+      "id": "trend_4h_sma_5_20",
+      "dataset": "data/experiments/trend_up_4h.csv",
+      "symbol": "SIM",
+      "strategy": "sma_cross",
+      "quantity": 100,
+      "params": {"fast": 5, "slow": 20}
+    },
+    {
+      "id": "trend_4h_breakout_30",
+      "dataset": "data/experiments/trend_up_4h.csv",
+      "symbol": "SIM",
+      "strategy": "breakout_channel",
+      "quantity": 100,
+      "params": {"lookback": 30}
+    }
+  ]
+}

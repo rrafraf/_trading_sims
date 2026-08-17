@@ -1,0 +1,4 @@
+timestamp,symbol,open,high,low,close,volume,scenario
+2024-01-03T14:30:00Z,SIM,100,101,99,100,1000,first
+2024-01-03T14:30:00Z,SIM,100,102,98,101,1000,duplicate_timestamp
+2024-01-03T14:29:00Z,SIM,99,100,98,99,1000,out_of_order_timestamp

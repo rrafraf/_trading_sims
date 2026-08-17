@@ -1,0 +1,122 @@
+{
+  "version": 1,
+  "currency": "USD",
+  "default_initial_cash": 100000,
+  "default_fee_bps": 1,
+  "default_slippage_bps": 2,
+  "datasets": {
+    "synthetic_daily": "data/synthetic/normal_daily.csv",
+    "synthetic_edge_minute": "data/synthetic/edge_case_minute.csv",
+    "synthetic_bad_timestamps": "data/synthetic/bad_timestamps.csv",
+    "alpaca_crypto_sample": "data/alpaca/crypto_BTCUSD_ETHUSD_1h_sample.csv"
+  },
+  "scenarios": [
+    {
+      "id": "market_buy_hold_daily",
+      "dataset": "synthetic_daily",
+      "symbol": "SIM",
+      "description": "Buy 100 shares at first executable bar, hold to end, apply fees and slippage.",
+      "orders": [
+        {
+          "when": "first_bar",
+          "type": "market",
+          "side": "buy",
+          "quantity": 100
+        }
+      ],
+      "checks": [
+        "final_position_is_100",
+        "cash_reduced_by_execution_plus_costs",
+        "deterministic_repeat"
+      ]
+    },
+    {
+      "id": "zero_volume_market_order",
+      "dataset": "synthetic_edge_minute",
+      "symbol": "SIM",
+      "description": "Submit market order on a zero-volume bar; record whether the engine fills, defers, rejects, or ignores volume.",
+      "orders": [
+        {
+          "when": "2024-01-03T14:31:00Z",
+          "type": "market",
+          "side": "buy",
+          "quantity": 100
+        }
+      ],
+      "checks": [
+        "engine_documents_zero_volume_behavior",
+        "deterministic_repeat"
+      ]
+    },
+    {
+      "id": "same_bar_stop_target_ambiguity",
+      "dataset": "synthetic_edge_minute",
+      "symbol": "SIM",
+      "description": "Enter before a bar whose high hits target and low hits stop. Capture fill ordering policy.",
+      "orders": [
+        {
+          "when": "2024-01-03T14:30:00Z",
+          "type": "market",
+          "side": "buy",
+          "quantity": 100
+        },
+        {
+          "when": "after_entry",
+          "type": "stop",
+          "side": "sell",
+          "quantity": 100,
+          "stop_price": 99.5
+        },
+        {
+          "when": "after_entry",
+          "type": "limit",
+          "side": "sell",
+          "quantity": 100,
+          "limit_price": 100.8
+        }
+      ],
+      "checks": [
+        "records_whether_stop_or_target_wins",
+        "does_not_silently_double_fill",
+        "deterministic_repeat"
+      ]
+    },
+    {
+      "id": "gap_through_stop",
+      "dataset": "synthetic_edge_minute",
+      "symbol": "SIM",
+      "description": "Stop price is skipped by the next available open. Capture whether fill is stop price, open, low, or model-specific.",
+      "orders": [
+        {
+          "when": "2024-01-03T14:32:00Z",
+          "type": "market",
+          "side": "buy",
+          "quantity": 100
+        },
+        {
+          "when": "after_entry",
+          "type": "stop",
+          "side": "sell",
+          "quantity": 100,
+          "stop_price": 99.0
+        }
+      ],
+      "checks": [
+        "records_gap_stop_fill_policy",
+        "deterministic_repeat"
+      ]
+    },
+    {
+      "id": "bad_timestamp_rejection",
+      "dataset": "synthetic_bad_timestamps",
+      "symbol": "SIM",
+      "description": "Load duplicate and out-of-order timestamps. Strong engines should reject, sort explicitly, or report data validation behavior.",
+      "orders": [],
+      "checks": [
+        "documents_duplicate_timestamp_behavior",
+        "documents_out_of_order_timestamp_behavior"
+      ]
+    }
+  ]
+}
+

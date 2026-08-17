@@ -1,0 +1,1572 @@
+[
+  {
+    "run_id": "trend_1m_buy_hold",
+    "adapter": "reference_bar",
+    "strategy": "buy_hold",
+    "dataset": "data\\experiments\\trend_up_1m.csv",
+    "symbol": "SIM",
+    "initial_cash": 100000,
+    "final_cash": 89995.399319968,
+    "final_position": 100.0,
+    "final_price": 104.612567,
+    "final_equity": 100456.656019968,
+    "return_pct": 0.45665601996800476,
+    "fill_count": 1,
+    "signal_count": 1,
+    "notes": [],
+    "fills": [
+      {
+        "timestamp": "2024-01-02T14:31:00+00:00",
+        "symbol": "SIM",
+        "side": "buy",
+        "quantity": 100.0,
+        "price": 100.0360032,
+        "fee": 1.000360032,
+        "source_signal_timestamp": "2024-01-02T14:30:00+00:00"
+      }
+    ]
+  },
+  {
+    "run_id": "trend_1m_buy_hold",
+    "adapter": "muni",
+    "strategy": "buy_hold",
+    "dataset": "data\\experiments\\trend_up_1m.csv",
+    "symbol": "SIM",
+    "initial_cash": 100000.0,
+    "final_cash": 89995.399319968,
+    "final_position": 100.0,
+    "final_price": 104.612567,
+    "final_equity": 100456.656019968,
+    "return_pct": 0.45665601996800476,
+    "fill_count": 1,
+    "signal_count": 1,
+    "notes": [],
+    "fills": [
+      {
+        "timestamp": "2024-01-02T14:31:00+00:00",
+        "symbol": "SIM",
+        "side": "buy",
+        "quantity": 100.0,
+        "price": 100.0360032,
+        "fee": 1.000360032,
+        "source_signal_timestamp": "2024-01-02T14:30:00+00:00"
+      }
+    ]
+  },
+  {
+    "run_id": "trend_1m_sma_5_20",
+    "adapter": "reference_bar",
+    "strategy": "sma_cross",
+    "dataset": "data\\experiments\\trend_up_1m.csv",
+    "symbol": "SIM",
+    "initial_cash": 100000,
+    "final_cash": 89850.90851644278,
+    "final_position": 100.0,
+    "final_price": 104.612567,
+    "final_equity": 100312.16521644278,
+    "return_pct": 0.3121652164427724,
+    "fill_count": 11,
+    "signal_count": 11,
+    "notes": [],
+    "fills": [
+      {
+        "timestamp": "2024-01-02T14:50:00+00:00",
+        "symbol": "SIM",
+        "side": "buy",
+        "quantity": 100.0,
+        "price": 100.95472390740001,
+        "fee": 1.0095472390740001,
+        "source_signal_timestamp": "2024-01-02T14:49:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-02T15:04:00+00:00",
+        "symbol": "SIM",
+        "side": "sell",
+        "quantity": 100.0,
+        "price": 100.8574574734,
+        "fee": 1.008574574734,
+        "source_signal_timestamp": "2024-01-02T15:03:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-02T15:19:00+00:00",
+        "symbol": "SIM",
+        "side": "buy",
+        "quantity": 100.0,
+        "price": 100.96020500339999,
+        "fee": 1.009602050034,
+        "source_signal_timestamp": "2024-01-02T15:18:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-02T15:47:00+00:00",
+        "symbol": "SIM",
+        "side": "sell",
+        "quantity": 100.0,
+        "price": 101.5615356296,
+        "fee": 1.015615356296,
+        "source_signal_timestamp": "2024-01-02T15:46:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-02T16:04:00+00:00",
+        "symbol": "SIM",
+        "side": "buy",
+        "quantity": 100.0,
+        "price": 101.6300579472,
+        "fee": 1.016300579472,
+        "source_signal_timestamp": "2024-01-02T16:03:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-02T16:32:00+00:00",
+        "symbol": "SIM",
+        "side": "sell",
+        "quantity": 100.0,
+        "price": 102.3393860284,
+        "fee": 1.023393860284,
+        "source_signal_timestamp": "2024-01-02T16:31:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-02T16:48:00+00:00",
+        "symbol": "SIM",
+        "side": "buy",
+        "quantity": 100.0,
+        "price": 102.4088206686,
+        "fee": 1.024088206686,
+        "source_signal_timestamp": "2024-01-02T16:47:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-02T17:16:00+00:00",
+        "symbol": "SIM",
+        "side": "sell",
+        "quantity": 100.0,
+        "price": 103.0059656858,
+        "fee": 1.030059656858,
+        "source_signal_timestamp": "2024-01-02T17:15:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-02T17:31:00+00:00",
+        "symbol": "SIM",
+        "side": "buy",
+        "quantity": 100.0,
+        "price": 103.1153129388,
+        "fee": 1.031153129388,
+        "source_signal_timestamp": "2024-01-02T17:30:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-02T17:59:00+00:00",
+        "symbol": "SIM",
+        "side": "sell",
+        "quantity": 100.0,
+        "price": 103.7262186064,
+        "fee": 1.037262186064,
+        "source_signal_timestamp": "2024-01-02T17:58:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-02T18:16:00+00:00",
+        "symbol": "SIM",
+        "side": "buy",
+        "quantity": 100.0,
+        "price": 103.7999218332,
+        "fee": 1.0379992183320002,
+        "source_signal_timestamp": "2024-01-02T18:15:00+00:00"
+      }
+    ]
+  },
+  {
+    "run_id": "trend_1m_sma_5_20",
+    "adapter": "muni",
+    "strategy": "sma_cross",
+    "dataset": "data\\experiments\\trend_up_1m.csv",
+    "symbol": "SIM",
+    "initial_cash": 100000.0,
+    "final_cash": 89850.90851644278,
+    "final_position": 100.0,
+    "final_price": 104.612567,
+    "final_equity": 100312.16521644278,
+    "return_pct": 0.3121652164427724,
+    "fill_count": 11,
+    "signal_count": 11,
+    "notes": [],
+    "fills": [
+      {
+        "timestamp": "2024-01-02T14:50:00+00:00",
+        "symbol": "SIM",
+        "side": "buy",
+        "quantity": 100.0,
+        "price": 100.95472390740001,
+        "fee": 1.0095472390740001,
+        "source_signal_timestamp": "2024-01-02T14:49:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-02T15:04:00+00:00",
+        "symbol": "SIM",
+        "side": "sell",
+        "quantity": 100.0,
+        "price": 100.8574574734,
+        "fee": 1.008574574734,
+        "source_signal_timestamp": "2024-01-02T15:03:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-02T15:19:00+00:00",
+        "symbol": "SIM",
+        "side": "buy",
+        "quantity": 100.0,
+        "price": 100.96020500339999,
+        "fee": 1.009602050034,
+        "source_signal_timestamp": "2024-01-02T15:18:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-02T15:47:00+00:00",
+        "symbol": "SIM",
+        "side": "sell",
+        "quantity": 100.0,
+        "price": 101.5615356296,
+        "fee": 1.015615356296,
+        "source_signal_timestamp": "2024-01-02T15:46:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-02T16:04:00+00:00",
+        "symbol": "SIM",
+        "side": "buy",
+        "quantity": 100.0,
+        "price": 101.6300579472,
+        "fee": 1.016300579472,
+        "source_signal_timestamp": "2024-01-02T16:03:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-02T16:32:00+00:00",
+        "symbol": "SIM",
+        "side": "sell",
+        "quantity": 100.0,
+        "price": 102.3393860284,
+        "fee": 1.023393860284,
+        "source_signal_timestamp": "2024-01-02T16:31:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-02T16:48:00+00:00",
+        "symbol": "SIM",
+        "side": "buy",
+        "quantity": 100.0,
+        "price": 102.4088206686,
+        "fee": 1.024088206686,
+        "source_signal_timestamp": "2024-01-02T16:47:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-02T17:16:00+00:00",
+        "symbol": "SIM",
+        "side": "sell",
+        "quantity": 100.0,
+        "price": 103.0059656858,
+        "fee": 1.030059656858,
+        "source_signal_timestamp": "2024-01-02T17:15:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-02T17:31:00+00:00",
+        "symbol": "SIM",
+        "side": "buy",
+        "quantity": 100.0,
+        "price": 103.1153129388,
+        "fee": 1.031153129388,
+        "source_signal_timestamp": "2024-01-02T17:30:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-02T17:59:00+00:00",
+        "symbol": "SIM",
+        "side": "sell",
+        "quantity": 100.0,
+        "price": 103.7262186064,
+        "fee": 1.037262186064,
+        "source_signal_timestamp": "2024-01-02T17:58:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-02T18:16:00+00:00",
+        "symbol": "SIM",
+        "side": "buy",
+        "quantity": 100.0,
+        "price": 103.7999218332,
+        "fee": 1.0379992183320002,
+        "source_signal_timestamp": "2024-01-02T18:15:00+00:00"
+      }
+    ]
+  },
+  {
+    "run_id": "trend_1m_breakout_30",
+    "adapter": "reference_bar",
+    "strategy": "breakout_channel",
+    "dataset": "data\\experiments\\trend_up_1m.csv",
+    "symbol": "SIM",
+    "initial_cash": 100000,
+    "final_cash": 100000,
+    "final_position": 0.0,
+    "final_price": 104.612567,
+    "final_equity": 100000.0,
+    "return_pct": 0.0,
+    "fill_count": 0,
+    "signal_count": 0,
+    "notes": [],
+    "fills": []
+  },
+  {
+    "run_id": "trend_1m_breakout_30",
+    "adapter": "muni",
+    "strategy": "breakout_channel",
+    "dataset": "data\\experiments\\trend_up_1m.csv",
+    "symbol": "SIM",
+    "initial_cash": 100000.0,
+    "final_cash": 100000.0,
+    "final_position": 0.0,
+    "final_price": 104.612567,
+    "final_equity": 100000.0,
+    "return_pct": 0.0,
+    "fill_count": 0,
+    "signal_count": 0,
+    "notes": [],
+    "fills": []
+  },
+  {
+    "run_id": "chop_1m_sma_5_20",
+    "adapter": "reference_bar",
+    "strategy": "sma_cross",
+    "dataset": "data\\experiments\\chop_mean_revert_1m.csv",
+    "symbol": "SIM",
+    "initial_cash": 100000,
+    "final_cash": 90085.01069096608,
+    "final_position": 100.0,
+    "final_price": 101.570686,
+    "final_equity": 100242.07929096608,
+    "return_pct": 0.2420792909660907,
+    "fill_count": 11,
+    "signal_count": 11,
+    "notes": [],
+    "fills": [
+      {
+        "timestamp": "2024-01-02T14:50:00+00:00",
+        "symbol": "SIM",
+        "side": "buy",
+        "quantity": 100.0,
+        "price": 101.454206784,
+        "fee": 1.01454206784,
+        "source_signal_timestamp": "2024-01-02T14:49:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-02T15:02:00+00:00",
+        "symbol": "SIM",
+        "side": "sell",
+        "quantity": 100.0,
+        "price": 101.035158926,
+        "fee": 1.01035158926,
+        "source_signal_timestamp": "2024-01-02T15:01:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-02T15:22:00+00:00",
+        "symbol": "SIM",
+        "side": "buy",
+        "quantity": 100.0,
+        "price": 100.5246039006,
+        "fee": 1.0052460390059998,
+        "source_signal_timestamp": "2024-01-02T15:21:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-02T15:44:00+00:00",
+        "symbol": "SIM",
+        "side": "sell",
+        "quantity": 100.0,
+        "price": 101.0870215514,
+        "fee": 1.010870215514,
+        "source_signal_timestamp": "2024-01-02T15:43:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-02T16:08:00+00:00",
+        "symbol": "SIM",
+        "side": "buy",
+        "quantity": 100.0,
+        "price": 100.65806658780001,
+        "fee": 1.006580665878,
+        "source_signal_timestamp": "2024-01-02T16:07:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-02T16:28:00+00:00",
+        "symbol": "SIM",
+        "side": "sell",
+        "quantity": 100.0,
+        "price": 101.16291137040001,
+        "fee": 1.011629113704,
+        "source_signal_timestamp": "2024-01-02T16:27:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-02T16:50:00+00:00",
+        "symbol": "SIM",
+        "side": "buy",
+        "quantity": 100.0,
+        "price": 100.6029625692,
+        "fee": 1.006029625692,
+        "source_signal_timestamp": "2024-01-02T16:49:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-02T17:14:00+00:00",
+        "symbol": "SIM",
+        "side": "sell",
+        "quantity": 100.0,
+        "price": 101.0237622058,
+        "fee": 1.010237622058,
+        "source_signal_timestamp": "2024-01-02T17:13:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-02T17:34:00+00:00",
+        "symbol": "SIM",
+        "side": "buy",
+        "quantity": 100.0,
+        "price": 100.5234816762,
+        "fee": 1.005234816762,
+        "source_signal_timestamp": "2024-01-02T17:33:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-02T17:56:00+00:00",
+        "symbol": "SIM",
+        "side": "sell",
+        "quantity": 100.0,
+        "price": 101.07676160380001,
+        "fee": 1.0107676160380001,
+        "source_signal_timestamp": "2024-01-02T17:55:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-02T18:20:00+00:00",
+        "symbol": "SIM",
+        "side": "buy",
+        "quantity": 100.0,
+        "price": 100.66120621559999,
+        "fee": 1.006612062156,
+        "source_signal_timestamp": "2024-01-02T18:19:00+00:00"
+      }
+    ]
+  },
+  {
+    "run_id": "chop_1m_sma_5_20",
+    "adapter": "muni",
+    "strategy": "sma_cross",
+    "dataset": "data\\experiments\\chop_mean_revert_1m.csv",
+    "symbol": "SIM",
+    "initial_cash": 100000.0,
+    "final_cash": 90085.01069096608,
+    "final_position": 100.0,
+    "final_price": 101.570686,
+    "final_equity": 100242.07929096608,
+    "return_pct": 0.2420792909660907,
+    "fill_count": 11,
+    "signal_count": 11,
+    "notes": [],
+    "fills": [
+      {
+        "timestamp": "2024-01-02T14:50:00+00:00",
+        "symbol": "SIM",
+        "side": "buy",
+        "quantity": 100.0,
+        "price": 101.454206784,
+        "fee": 1.01454206784,
+        "source_signal_timestamp": "2024-01-02T14:49:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-02T15:02:00+00:00",
+        "symbol": "SIM",
+        "side": "sell",
+        "quantity": 100.0,
+        "price": 101.035158926,
+        "fee": 1.01035158926,
+        "source_signal_timestamp": "2024-01-02T15:01:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-02T15:22:00+00:00",
+        "symbol": "SIM",
+        "side": "buy",
+        "quantity": 100.0,
+        "price": 100.5246039006,
+        "fee": 1.0052460390059998,
+        "source_signal_timestamp": "2024-01-02T15:21:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-02T15:44:00+00:00",
+        "symbol": "SIM",
+        "side": "sell",
+        "quantity": 100.0,
+        "price": 101.0870215514,
+        "fee": 1.010870215514,
+        "source_signal_timestamp": "2024-01-02T15:43:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-02T16:08:00+00:00",
+        "symbol": "SIM",
+        "side": "buy",
+        "quantity": 100.0,
+        "price": 100.65806658780001,
+        "fee": 1.006580665878,
+        "source_signal_timestamp": "2024-01-02T16:07:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-02T16:28:00+00:00",
+        "symbol": "SIM",
+        "side": "sell",
+        "quantity": 100.0,
+        "price": 101.16291137040001,
+        "fee": 1.011629113704,
+        "source_signal_timestamp": "2024-01-02T16:27:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-02T16:50:00+00:00",
+        "symbol": "SIM",
+        "side": "buy",
+        "quantity": 100.0,
+        "price": 100.6029625692,
+        "fee": 1.006029625692,
+        "source_signal_timestamp": "2024-01-02T16:49:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-02T17:14:00+00:00",
+        "symbol": "SIM",
+        "side": "sell",
+        "quantity": 100.0,
+        "price": 101.0237622058,
+        "fee": 1.010237622058,
+        "source_signal_timestamp": "2024-01-02T17:13:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-02T17:34:00+00:00",
+        "symbol": "SIM",
+        "side": "buy",
+        "quantity": 100.0,
+        "price": 100.5234816762,
+        "fee": 1.005234816762,
+        "source_signal_timestamp": "2024-01-02T17:33:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-02T17:56:00+00:00",
+        "symbol": "SIM",
+        "side": "sell",
+        "quantity": 100.0,
+        "price": 101.07676160380001,
+        "fee": 1.0107676160380001,
+        "source_signal_timestamp": "2024-01-02T17:55:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-02T18:20:00+00:00",
+        "symbol": "SIM",
+        "side": "buy",
+        "quantity": 100.0,
+        "price": 100.66120621559999,
+        "fee": 1.006612062156,
+        "source_signal_timestamp": "2024-01-02T18:19:00+00:00"
+      }
+    ]
+  },
+  {
+    "run_id": "chop_1m_mr_20",
+    "adapter": "reference_bar",
+    "strategy": "mean_reversion_zscore",
+    "dataset": "data\\experiments\\chop_mean_revert_1m.csv",
+    "symbol": "SIM",
+    "initial_cash": 100000,
+    "final_cash": 89697.00340955466,
+    "final_position": 100.0,
+    "final_price": 101.570686,
+    "final_equity": 99854.07200955466,
+    "return_pct": -0.1459279904453381,
+    "fill_count": 9,
+    "signal_count": 9,
+    "notes": [],
+    "fills": [
+      {
+        "timestamp": "2024-01-02T15:02:00+00:00",
+        "symbol": "SIM",
+        "side": "buy",
+        "quantity": 100.0,
+        "price": 101.075581074,
+        "fee": 1.01075581074,
+        "source_signal_timestamp": "2024-01-02T15:01:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-02T15:20:00+00:00",
+        "symbol": "SIM",
+        "side": "sell",
+        "quantity": 100.0,
+        "price": 100.38134471500001,
+        "fee": 1.0038134471500002,
+        "source_signal_timestamp": "2024-01-02T15:19:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-02T15:45:00+00:00",
+        "symbol": "SIM",
+        "side": "buy",
+        "quantity": 100.0,
+        "price": 101.013988758,
+        "fee": 1.01013988758,
+        "source_signal_timestamp": "2024-01-02T15:44:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-02T16:26:00+00:00",
+        "symbol": "SIM",
+        "side": "sell",
+        "quantity": 100.0,
+        "price": 101.2670265432,
+        "fee": 1.0126702654320001,
+        "source_signal_timestamp": "2024-01-02T16:25:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-02T16:29:00+00:00",
+        "symbol": "SIM",
+        "side": "buy",
+        "quantity": 100.0,
+        "price": 101.143544664,
+        "fee": 1.01143544664,
+        "source_signal_timestamp": "2024-01-02T16:28:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-02T16:48:00+00:00",
+        "symbol": "SIM",
+        "side": "sell",
+        "quantity": 100.0,
+        "price": 100.33389920600001,
+        "fee": 1.00333899206,
+        "source_signal_timestamp": "2024-01-02T16:47:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-02T17:14:00+00:00",
+        "symbol": "SIM",
+        "side": "buy",
+        "quantity": 100.0,
+        "price": 101.0641797942,
+        "fee": 1.0106417979420002,
+        "source_signal_timestamp": "2024-01-02T17:13:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-02T17:32:00+00:00",
+        "symbol": "SIM",
+        "side": "sell",
+        "quantity": 100.0,
+        "price": 100.3798210198,
+        "fee": 1.003798210198,
+        "source_signal_timestamp": "2024-01-02T17:31:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-02T17:57:00+00:00",
+        "symbol": "SIM",
+        "side": "buy",
+        "quantity": 100.0,
+        "price": 101.00399676,
+        "fee": 1.0100399676,
+        "source_signal_timestamp": "2024-01-02T17:56:00+00:00"
+      }
+    ]
+  },
+  {
+    "run_id": "chop_1m_mr_20",
+    "adapter": "muni",
+    "strategy": "mean_reversion_zscore",
+    "dataset": "data\\experiments\\chop_mean_revert_1m.csv",
+    "symbol": "SIM",
+    "initial_cash": 100000.0,
+    "final_cash": 89697.00340955466,
+    "final_position": 100.0,
+    "final_price": 101.570686,
+    "final_equity": 99854.07200955466,
+    "return_pct": -0.1459279904453381,
+    "fill_count": 9,
+    "signal_count": 9,
+    "notes": [],
+    "fills": [
+      {
+        "timestamp": "2024-01-02T15:02:00+00:00",
+        "symbol": "SIM",
+        "side": "buy",
+        "quantity": 100.0,
+        "price": 101.075581074,
+        "fee": 1.01075581074,
+        "source_signal_timestamp": "2024-01-02T15:01:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-02T15:20:00+00:00",
+        "symbol": "SIM",
+        "side": "sell",
+        "quantity": 100.0,
+        "price": 100.38134471500001,
+        "fee": 1.0038134471500002,
+        "source_signal_timestamp": "2024-01-02T15:19:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-02T15:45:00+00:00",
+        "symbol": "SIM",
+        "side": "buy",
+        "quantity": 100.0,
+        "price": 101.013988758,
+        "fee": 1.01013988758,
+        "source_signal_timestamp": "2024-01-02T15:44:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-02T16:26:00+00:00",
+        "symbol": "SIM",
+        "side": "sell",
+        "quantity": 100.0,
+        "price": 101.2670265432,
+        "fee": 1.0126702654320001,
+        "source_signal_timestamp": "2024-01-02T16:25:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-02T16:29:00+00:00",
+        "symbol": "SIM",
+        "side": "buy",
+        "quantity": 100.0,
+        "price": 101.143544664,
+        "fee": 1.01143544664,
+        "source_signal_timestamp": "2024-01-02T16:28:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-02T16:48:00+00:00",
+        "symbol": "SIM",
+        "side": "sell",
+        "quantity": 100.0,
+        "price": 100.33389920600001,
+        "fee": 1.00333899206,
+        "source_signal_timestamp": "2024-01-02T16:47:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-02T17:14:00+00:00",
+        "symbol": "SIM",
+        "side": "buy",
+        "quantity": 100.0,
+        "price": 101.0641797942,
+        "fee": 1.0106417979420002,
+        "source_signal_timestamp": "2024-01-02T17:13:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-02T17:32:00+00:00",
+        "symbol": "SIM",
+        "side": "sell",
+        "quantity": 100.0,
+        "price": 100.3798210198,
+        "fee": 1.003798210198,
+        "source_signal_timestamp": "2024-01-02T17:31:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-02T17:57:00+00:00",
+        "symbol": "SIM",
+        "side": "buy",
+        "quantity": 100.0,
+        "price": 101.00399676,
+        "fee": 1.0100399676,
+        "source_signal_timestamp": "2024-01-02T17:56:00+00:00"
+      }
+    ]
+  },
+  {
+    "run_id": "regime_1m_sma_5_20",
+    "adapter": "reference_bar",
+    "strategy": "sma_cross",
+    "dataset": "data\\experiments\\regime_shift_1m.csv",
+    "symbol": "SIM",
+    "initial_cash": 100000,
+    "final_cash": 90734.77100731073,
+    "final_position": 100.0,
+    "final_price": 94.781015,
+    "final_equity": 100212.87250731073,
+    "return_pct": 0.21287250731072405,
+    "fill_count": 11,
+    "signal_count": 11,
+    "notes": [],
+    "fills": [
+      {
+        "timestamp": "2024-01-02T14:50:00+00:00",
+        "symbol": "SIM",
+        "side": "buy",
+        "quantity": 100.0,
+        "price": 100.95032702820001,
+        "fee": 1.0095032702820002,
+        "source_signal_timestamp": "2024-01-02T14:49:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-02T15:03:00+00:00",
+        "symbol": "SIM",
+        "side": "sell",
+        "quantity": 100.0,
+        "price": 100.75722952299999,
+        "fee": 1.00757229523,
+        "source_signal_timestamp": "2024-01-02T15:02:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-02T15:20:00+00:00",
+        "symbol": "SIM",
+        "side": "buy",
+        "quantity": 100.0,
+        "price": 100.68249347220001,
+        "fee": 1.006824934722,
+        "source_signal_timestamp": "2024-01-02T15:19:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-02T15:46:00+00:00",
+        "symbol": "SIM",
+        "side": "sell",
+        "quantity": 100.0,
+        "price": 101.1334802578,
+        "fee": 1.011334802578,
+        "source_signal_timestamp": "2024-01-02T15:45:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-02T16:06:00+00:00",
+        "symbol": "SIM",
+        "side": "buy",
+        "quantity": 100.0,
+        "price": 101.094844926,
+        "fee": 1.0109484492599998,
+        "source_signal_timestamp": "2024-01-02T16:05:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-02T16:30:00+00:00",
+        "symbol": "SIM",
+        "side": "sell",
+        "quantity": 100.0,
+        "price": 101.623826169,
+        "fee": 1.01623826169,
+        "source_signal_timestamp": "2024-01-02T16:29:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-02T16:50:00+00:00",
+        "symbol": "SIM",
+        "side": "buy",
+        "quantity": 100.0,
+        "price": 93.470205303,
+        "fee": 0.93470205303,
+        "source_signal_timestamp": "2024-01-02T16:49:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-02T17:15:00+00:00",
+        "symbol": "SIM",
+        "side": "sell",
+        "quantity": 100.0,
+        "price": 93.7996643144,
+        "fee": 0.937996643144,
+        "source_signal_timestamp": "2024-01-02T17:14:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-02T17:32:00+00:00",
+        "symbol": "SIM",
+        "side": "buy",
+        "quantity": 100.0,
+        "price": 93.73503525839999,
+        "fee": 0.9373503525839999,
+        "source_signal_timestamp": "2024-01-02T17:31:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-02T17:57:00+00:00",
+        "symbol": "SIM",
+        "side": "sell",
+        "quantity": 100.0,
+        "price": 94.1944663382,
+        "fee": 0.941944663382,
+        "source_signal_timestamp": "2024-01-02T17:56:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-02T18:18:00+00:00",
+        "symbol": "SIM",
+        "side": "buy",
+        "quantity": 100.0,
+        "price": 94.1204943348,
+        "fee": 0.9412049433480001,
+        "source_signal_timestamp": "2024-01-02T18:17:00+00:00"
+      }
+    ]
+  },
+  {
+    "run_id": "regime_1m_sma_5_20",
+    "adapter": "muni",
+    "strategy": "sma_cross",
+    "dataset": "data\\experiments\\regime_shift_1m.csv",
+    "symbol": "SIM",
+    "initial_cash": 100000.0,
+    "final_cash": 90734.77100731073,
+    "final_position": 100.0,
+    "final_price": 94.781015,
+    "final_equity": 100212.87250731073,
+    "return_pct": 0.21287250731072405,
+    "fill_count": 11,
+    "signal_count": 11,
+    "notes": [],
+    "fills": [
+      {
+        "timestamp": "2024-01-02T14:50:00+00:00",
+        "symbol": "SIM",
+        "side": "buy",
+        "quantity": 100.0,
+        "price": 100.95032702820001,
+        "fee": 1.0095032702820002,
+        "source_signal_timestamp": "2024-01-02T14:49:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-02T15:03:00+00:00",
+        "symbol": "SIM",
+        "side": "sell",
+        "quantity": 100.0,
+        "price": 100.75722952299999,
+        "fee": 1.00757229523,
+        "source_signal_timestamp": "2024-01-02T15:02:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-02T15:20:00+00:00",
+        "symbol": "SIM",
+        "side": "buy",
+        "quantity": 100.0,
+        "price": 100.68249347220001,
+        "fee": 1.006824934722,
+        "source_signal_timestamp": "2024-01-02T15:19:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-02T15:46:00+00:00",
+        "symbol": "SIM",
+        "side": "sell",
+        "quantity": 100.0,
+        "price": 101.1334802578,
+        "fee": 1.011334802578,
+        "source_signal_timestamp": "2024-01-02T15:45:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-02T16:06:00+00:00",
+        "symbol": "SIM",
+        "side": "buy",
+        "quantity": 100.0,
+        "price": 101.094844926,
+        "fee": 1.0109484492599998,
+        "source_signal_timestamp": "2024-01-02T16:05:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-02T16:30:00+00:00",
+        "symbol": "SIM",
+        "side": "sell",
+        "quantity": 100.0,
+        "price": 101.623826169,
+        "fee": 1.01623826169,
+        "source_signal_timestamp": "2024-01-02T16:29:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-02T16:50:00+00:00",
+        "symbol": "SIM",
+        "side": "buy",
+        "quantity": 100.0,
+        "price": 93.470205303,
+        "fee": 0.93470205303,
+        "source_signal_timestamp": "2024-01-02T16:49:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-02T17:15:00+00:00",
+        "symbol": "SIM",
+        "side": "sell",
+        "quantity": 100.0,
+        "price": 93.7996643144,
+        "fee": 0.937996643144,
+        "source_signal_timestamp": "2024-01-02T17:14:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-02T17:32:00+00:00",
+        "symbol": "SIM",
+        "side": "buy",
+        "quantity": 100.0,
+        "price": 93.73503525839999,
+        "fee": 0.9373503525839999,
+        "source_signal_timestamp": "2024-01-02T17:31:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-02T17:57:00+00:00",
+        "symbol": "SIM",
+        "side": "sell",
+        "quantity": 100.0,
+        "price": 94.1944663382,
+        "fee": 0.941944663382,
+        "source_signal_timestamp": "2024-01-02T17:56:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-02T18:18:00+00:00",
+        "symbol": "SIM",
+        "side": "buy",
+        "quantity": 100.0,
+        "price": 94.1204943348,
+        "fee": 0.9412049433480001,
+        "source_signal_timestamp": "2024-01-02T18:17:00+00:00"
+      }
+    ]
+  },
+  {
+    "run_id": "regime_1m_breakout_30",
+    "adapter": "reference_bar",
+    "strategy": "breakout_channel",
+    "dataset": "data\\experiments\\regime_shift_1m.csv",
+    "symbol": "SIM",
+    "initial_cash": 100000,
+    "final_cash": 100000,
+    "final_position": 0.0,
+    "final_price": 94.781015,
+    "final_equity": 100000.0,
+    "return_pct": 0.0,
+    "fill_count": 0,
+    "signal_count": 0,
+    "notes": [],
+    "fills": []
+  },
+  {
+    "run_id": "regime_1m_breakout_30",
+    "adapter": "muni",
+    "strategy": "breakout_channel",
+    "dataset": "data\\experiments\\regime_shift_1m.csv",
+    "symbol": "SIM",
+    "initial_cash": 100000.0,
+    "final_cash": 100000.0,
+    "final_position": 0.0,
+    "final_price": 94.781015,
+    "final_equity": 100000.0,
+    "return_pct": 0.0,
+    "fill_count": 0,
+    "signal_count": 0,
+    "notes": [],
+    "fills": []
+  },
+  {
+    "run_id": "liquidity_1m_buy_hold",
+    "adapter": "reference_bar",
+    "strategy": "buy_hold",
+    "dataset": "data\\experiments\\liquidity_gap_1m.csv",
+    "symbol": "SIM",
+    "initial_cash": 100000,
+    "final_cash": 89996.199559984,
+    "final_position": 100.0,
+    "final_price": 97.833578,
+    "final_equity": 99779.557359984,
+    "return_pct": -0.22044264001600533,
+    "fill_count": 1,
+    "signal_count": 1,
+    "notes": [
+      "zero-volume bar for SIM at 2024-01-02T15:07:00+00:00",
+      "irregular timestamp gap for SIM before 2024-01-02T15:24:00+00:00: expected 0:01:00, got 0:02:00",
+      "zero-volume bar for SIM at 2024-01-02T15:44:00+00:00",
+      "irregular timestamp gap for SIM before 2024-01-02T16:17:00+00:00: expected 0:01:00, got 0:02:00",
+      "zero-volume bar for SIM at 2024-01-02T16:21:00+00:00",
+      "zero-volume bar for SIM at 2024-01-02T16:58:00+00:00",
+      "irregular timestamp gap for SIM before 2024-01-02T17:10:00+00:00: expected 0:01:00, got 0:02:00",
+      "zero-volume bar for SIM at 2024-01-02T17:35:00+00:00",
+      "irregular timestamp gap for SIM before 2024-01-02T18:03:00+00:00: expected 0:01:00, got 0:02:00",
+      "zero-volume bar for SIM at 2024-01-02T18:12:00+00:00"
+    ],
+    "fills": [
+      {
+        "timestamp": "2024-01-02T14:31:00+00:00",
+        "symbol": "SIM",
+        "side": "buy",
+        "quantity": 100.0,
+        "price": 100.0280016,
+        "fee": 1.0002800159999998,
+        "source_signal_timestamp": "2024-01-02T14:30:00+00:00"
+      }
+    ]
+  },
+  {
+    "run_id": "liquidity_1m_buy_hold",
+    "adapter": "muni",
+    "strategy": "buy_hold",
+    "dataset": "data\\experiments\\liquidity_gap_1m.csv",
+    "symbol": "SIM",
+    "initial_cash": 100000.0,
+    "final_cash": 89996.199559984,
+    "final_position": 100.0,
+    "final_price": 97.833578,
+    "final_equity": 99779.557359984,
+    "return_pct": -0.22044264001600533,
+    "fill_count": 1,
+    "signal_count": 1,
+    "notes": [
+      "zero-volume bar for SIM at 2024-01-02T15:07:00+00:00",
+      "irregular timestamp gap for SIM before 2024-01-02T15:24:00+00:00: expected 0:01:00, got 0:02:00",
+      "zero-volume bar for SIM at 2024-01-02T15:44:00+00:00",
+      "irregular timestamp gap for SIM before 2024-01-02T16:17:00+00:00: expected 0:01:00, got 0:02:00",
+      "zero-volume bar for SIM at 2024-01-02T16:21:00+00:00",
+      "zero-volume bar for SIM at 2024-01-02T16:58:00+00:00",
+      "irregular timestamp gap for SIM before 2024-01-02T17:10:00+00:00: expected 0:01:00, got 0:02:00",
+      "zero-volume bar for SIM at 2024-01-02T17:35:00+00:00",
+      "irregular timestamp gap for SIM before 2024-01-02T18:03:00+00:00: expected 0:01:00, got 0:02:00",
+      "zero-volume bar for SIM at 2024-01-02T18:12:00+00:00"
+    ],
+    "fills": [
+      {
+        "timestamp": "2024-01-02T14:31:00+00:00",
+        "symbol": "SIM",
+        "side": "buy",
+        "quantity": 100.0,
+        "price": 100.0280016,
+        "fee": 1.0002800159999998,
+        "source_signal_timestamp": "2024-01-02T14:30:00+00:00"
+      }
+    ]
+  },
+  {
+    "run_id": "liquidity_1m_sma_5_20",
+    "adapter": "reference_bar",
+    "strategy": "sma_cross",
+    "dataset": "data\\experiments\\liquidity_gap_1m.csv",
+    "symbol": "SIM",
+    "initial_cash": 100000,
+    "final_cash": 90362.33890591556,
+    "final_position": 100.0,
+    "final_price": 97.833578,
+    "final_equity": 100145.69670591556,
+    "return_pct": 0.1456967059155545,
+    "fill_count": 11,
+    "signal_count": 11,
+    "notes": [
+      "zero-volume bar for SIM at 2024-01-02T15:07:00+00:00",
+      "irregular timestamp gap for SIM before 2024-01-02T15:24:00+00:00: expected 0:01:00, got 0:02:00",
+      "zero-volume bar for SIM at 2024-01-02T15:44:00+00:00",
+      "irregular timestamp gap for SIM before 2024-01-02T16:17:00+00:00: expected 0:01:00, got 0:02:00",
+      "zero-volume bar for SIM at 2024-01-02T16:21:00+00:00",
+      "zero-volume bar for SIM at 2024-01-02T16:58:00+00:00",
+      "irregular timestamp gap for SIM before 2024-01-02T17:10:00+00:00: expected 0:01:00, got 0:02:00",
+      "zero-volume bar for SIM at 2024-01-02T17:35:00+00:00",
+      "irregular timestamp gap for SIM before 2024-01-02T18:03:00+00:00: expected 0:01:00, got 0:02:00",
+      "zero-volume bar for SIM at 2024-01-02T18:12:00+00:00"
+    ],
+    "fills": [
+      {
+        "timestamp": "2024-01-02T14:50:00+00:00",
+        "symbol": "SIM",
+        "side": "buy",
+        "quantity": 100.0,
+        "price": 101.1356070768,
+        "fee": 1.011356070768,
+        "source_signal_timestamp": "2024-01-02T14:49:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-02T15:03:00+00:00",
+        "symbol": "SIM",
+        "side": "sell",
+        "quantity": 100.0,
+        "price": 100.85512693960001,
+        "fee": 1.0085512693960001,
+        "source_signal_timestamp": "2024-01-02T15:02:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-02T15:21:00+00:00",
+        "symbol": "SIM",
+        "side": "buy",
+        "quantity": 100.0,
+        "price": 100.7310011718,
+        "fee": 1.007310011718,
+        "source_signal_timestamp": "2024-01-02T15:20:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-02T15:45:00+00:00",
+        "symbol": "SIM",
+        "side": "sell",
+        "quantity": 100.0,
+        "price": 101.1942501014,
+        "fee": 1.011942501014,
+        "source_signal_timestamp": "2024-01-02T15:44:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-02T16:19:00+00:00",
+        "symbol": "SIM",
+        "side": "buy",
+        "quantity": 100.0,
+        "price": 96.7723996098,
+        "fee": 0.9677239960980001,
+        "source_signal_timestamp": "2024-01-02T16:18:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-02T16:29:00+00:00",
+        "symbol": "SIM",
+        "side": "sell",
+        "quantity": 100.0,
+        "price": 96.52888536100001,
+        "fee": 0.9652888536100002,
+        "source_signal_timestamp": "2024-01-02T16:28:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-02T16:50:00+00:00",
+        "symbol": "SIM",
+        "side": "buy",
+        "quantity": 100.0,
+        "price": 96.3850991652,
+        "fee": 0.963850991652,
+        "source_signal_timestamp": "2024-01-02T16:49:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-02T17:15:00+00:00",
+        "symbol": "SIM",
+        "side": "sell",
+        "quantity": 100.0,
+        "price": 96.77230866660001,
+        "fee": 0.9677230866660002,
+        "source_signal_timestamp": "2024-01-02T17:14:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-02T17:33:00+00:00",
+        "symbol": "SIM",
+        "side": "buy",
+        "quantity": 100.0,
+        "price": 96.65979509339999,
+        "fee": 0.9665979509339999,
+        "source_signal_timestamp": "2024-01-02T17:32:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-02T17:57:00+00:00",
+        "symbol": "SIM",
+        "side": "sell",
+        "quantity": 100.0,
+        "price": 97.1498251482,
+        "fee": 0.971498251482,
+        "source_signal_timestamp": "2024-01-02T17:56:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-02T18:19:00+00:00",
+        "symbol": "SIM",
+        "side": "buy",
+        "quantity": 100.0,
+        "price": 97.084978113,
+        "fee": 0.97084978113,
+        "source_signal_timestamp": "2024-01-02T18:18:00+00:00"
+      }
+    ]
+  },
+  {
+    "run_id": "liquidity_1m_sma_5_20",
+    "adapter": "muni",
+    "strategy": "sma_cross",
+    "dataset": "data\\experiments\\liquidity_gap_1m.csv",
+    "symbol": "SIM",
+    "initial_cash": 100000.0,
+    "final_cash": 90362.33890591556,
+    "final_position": 100.0,
+    "final_price": 97.833578,
+    "final_equity": 100145.69670591556,
+    "return_pct": 0.1456967059155545,
+    "fill_count": 11,
+    "signal_count": 11,
+    "notes": [
+      "zero-volume bar for SIM at 2024-01-02T15:07:00+00:00",
+      "irregular timestamp gap for SIM before 2024-01-02T15:24:00+00:00: expected 0:01:00, got 0:02:00",
+      "zero-volume bar for SIM at 2024-01-02T15:44:00+00:00",
+      "irregular timestamp gap for SIM before 2024-01-02T16:17:00+00:00: expected 0:01:00, got 0:02:00",
+      "zero-volume bar for SIM at 2024-01-02T16:21:00+00:00",
+      "zero-volume bar for SIM at 2024-01-02T16:58:00+00:00",
+      "irregular timestamp gap for SIM before 2024-01-02T17:10:00+00:00: expected 0:01:00, got 0:02:00",
+      "zero-volume bar for SIM at 2024-01-02T17:35:00+00:00",
+      "irregular timestamp gap for SIM before 2024-01-02T18:03:00+00:00: expected 0:01:00, got 0:02:00",
+      "zero-volume bar for SIM at 2024-01-02T18:12:00+00:00"
+    ],
+    "fills": [
+      {
+        "timestamp": "2024-01-02T14:50:00+00:00",
+        "symbol": "SIM",
+        "side": "buy",
+        "quantity": 100.0,
+        "price": 101.1356070768,
+        "fee": 1.011356070768,
+        "source_signal_timestamp": "2024-01-02T14:49:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-02T15:03:00+00:00",
+        "symbol": "SIM",
+        "side": "sell",
+        "quantity": 100.0,
+        "price": 100.85512693960001,
+        "fee": 1.0085512693960001,
+        "source_signal_timestamp": "2024-01-02T15:02:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-02T15:21:00+00:00",
+        "symbol": "SIM",
+        "side": "buy",
+        "quantity": 100.0,
+        "price": 100.7310011718,
+        "fee": 1.007310011718,
+        "source_signal_timestamp": "2024-01-02T15:20:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-02T15:45:00+00:00",
+        "symbol": "SIM",
+        "side": "sell",
+        "quantity": 100.0,
+        "price": 101.1942501014,
+        "fee": 1.011942501014,
+        "source_signal_timestamp": "2024-01-02T15:44:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-02T16:19:00+00:00",
+        "symbol": "SIM",
+        "side": "buy",
+        "quantity": 100.0,
+        "price": 96.7723996098,
+        "fee": 0.9677239960980001,
+        "source_signal_timestamp": "2024-01-02T16:18:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-02T16:29:00+00:00",
+        "symbol": "SIM",
+        "side": "sell",
+        "quantity": 100.0,
+        "price": 96.52888536100001,
+        "fee": 0.9652888536100002,
+        "source_signal_timestamp": "2024-01-02T16:28:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-02T16:50:00+00:00",
+        "symbol": "SIM",
+        "side": "buy",
+        "quantity": 100.0,
+        "price": 96.3850991652,
+        "fee": 0.963850991652,
+        "source_signal_timestamp": "2024-01-02T16:49:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-02T17:15:00+00:00",
+        "symbol": "SIM",
+        "side": "sell",
+        "quantity": 100.0,
+        "price": 96.77230866660001,
+        "fee": 0.9677230866660002,
+        "source_signal_timestamp": "2024-01-02T17:14:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-02T17:33:00+00:00",
+        "symbol": "SIM",
+        "side": "buy",
+        "quantity": 100.0,
+        "price": 96.65979509339999,
+        "fee": 0.9665979509339999,
+        "source_signal_timestamp": "2024-01-02T17:32:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-02T17:57:00+00:00",
+        "symbol": "SIM",
+        "side": "sell",
+        "quantity": 100.0,
+        "price": 97.1498251482,
+        "fee": 0.971498251482,
+        "source_signal_timestamp": "2024-01-02T17:56:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-02T18:19:00+00:00",
+        "symbol": "SIM",
+        "side": "buy",
+        "quantity": 100.0,
+        "price": 97.084978113,
+        "fee": 0.97084978113,
+        "source_signal_timestamp": "2024-01-02T18:18:00+00:00"
+      }
+    ]
+  },
+  {
+    "run_id": "trend_1h_sma_5_20",
+    "adapter": "reference_bar",
+    "strategy": "sma_cross",
+    "dataset": "data\\experiments\\trend_up_1h.csv",
+    "symbol": "SIM",
+    "initial_cash": 100000,
+    "final_cash": 89641.32762479727,
+    "final_position": 100.0,
+    "final_price": 110.87939,
+    "final_equity": 100729.26662479727,
+    "return_pct": 0.7292666247972646,
+    "fill_count": 7,
+    "signal_count": 7,
+    "notes": [],
+    "fills": [
+      {
+        "timestamp": "2024-01-03T10:30:00+00:00",
+        "symbol": "SIM",
+        "side": "buy",
+        "quantity": 100.0,
+        "price": 102.6447478446,
+        "fee": 1.026447478446,
+        "source_signal_timestamp": "2024-01-03T09:30:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-04T01:30:00+00:00",
+        "symbol": "SIM",
+        "side": "sell",
+        "quantity": 100.0,
+        "price": 102.5977223508,
+        "fee": 1.025977223508,
+        "source_signal_timestamp": "2024-01-04T00:30:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-04T13:30:00+00:00",
+        "symbol": "SIM",
+        "side": "buy",
+        "quantity": 100.0,
+        "price": 102.91968282059999,
+        "fee": 1.029196828206,
+        "source_signal_timestamp": "2024-01-04T12:30:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-05T20:30:00+00:00",
+        "symbol": "SIM",
+        "side": "sell",
+        "quantity": 100.0,
+        "price": 105.1288590222,
+        "fee": 1.0512885902220002,
+        "source_signal_timestamp": "2024-01-05T19:30:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-06T10:30:00+00:00",
+        "symbol": "SIM",
+        "side": "buy",
+        "quantity": 100.0,
+        "price": 105.3519151698,
+        "fee": 1.053519151698,
+        "source_signal_timestamp": "2024-01-06T09:30:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-07T18:30:00+00:00",
+        "symbol": "SIM",
+        "side": "sell",
+        "quantity": 100.0,
+        "price": 107.8015963678,
+        "fee": 1.078015963678,
+        "source_signal_timestamp": "2024-01-07T17:30:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-08T07:30:00+00:00",
+        "symbol": "SIM",
+        "side": "buy",
+        "quantity": 100.0,
+        "price": 108.12509869559999,
+        "fee": 1.0812509869559999,
+        "source_signal_timestamp": "2024-01-08T06:30:00+00:00"
+      }
+    ]
+  },
+  {
+    "run_id": "trend_1h_sma_5_20",
+    "adapter": "muni",
+    "strategy": "sma_cross",
+    "dataset": "data\\experiments\\trend_up_1h.csv",
+    "symbol": "SIM",
+    "initial_cash": 100000.0,
+    "final_cash": 89641.32762479727,
+    "final_position": 100.0,
+    "final_price": 110.87939,
+    "final_equity": 100729.26662479727,
+    "return_pct": 0.7292666247972646,
+    "fill_count": 7,
+    "signal_count": 7,
+    "notes": [],
+    "fills": [
+      {
+        "timestamp": "2024-01-03T10:30:00+00:00",
+        "symbol": "SIM",
+        "side": "buy",
+        "quantity": 100.0,
+        "price": 102.6447478446,
+        "fee": 1.026447478446,
+        "source_signal_timestamp": "2024-01-03T09:30:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-04T01:30:00+00:00",
+        "symbol": "SIM",
+        "side": "sell",
+        "quantity": 100.0,
+        "price": 102.5977223508,
+        "fee": 1.025977223508,
+        "source_signal_timestamp": "2024-01-04T00:30:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-04T13:30:00+00:00",
+        "symbol": "SIM",
+        "side": "buy",
+        "quantity": 100.0,
+        "price": 102.91968282059999,
+        "fee": 1.029196828206,
+        "source_signal_timestamp": "2024-01-04T12:30:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-05T20:30:00+00:00",
+        "symbol": "SIM",
+        "side": "sell",
+        "quantity": 100.0,
+        "price": 105.1288590222,
+        "fee": 1.0512885902220002,
+        "source_signal_timestamp": "2024-01-05T19:30:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-06T10:30:00+00:00",
+        "symbol": "SIM",
+        "side": "buy",
+        "quantity": 100.0,
+        "price": 105.3519151698,
+        "fee": 1.053519151698,
+        "source_signal_timestamp": "2024-01-06T09:30:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-07T18:30:00+00:00",
+        "symbol": "SIM",
+        "side": "sell",
+        "quantity": 100.0,
+        "price": 107.8015963678,
+        "fee": 1.078015963678,
+        "source_signal_timestamp": "2024-01-07T17:30:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-08T07:30:00+00:00",
+        "symbol": "SIM",
+        "side": "buy",
+        "quantity": 100.0,
+        "price": 108.12509869559999,
+        "fee": 1.0812509869559999,
+        "source_signal_timestamp": "2024-01-08T06:30:00+00:00"
+      }
+    ]
+  },
+  {
+    "run_id": "trend_1h_breakout_30",
+    "adapter": "reference_bar",
+    "strategy": "breakout_channel",
+    "dataset": "data\\experiments\\trend_up_1h.csv",
+    "symbol": "SIM",
+    "initial_cash": 100000,
+    "final_cash": 89663.93550402072,
+    "final_position": 100.0,
+    "final_price": 110.87939,
+    "final_equity": 100751.87450402071,
+    "return_pct": 0.751874504020722,
+    "fill_count": 1,
+    "signal_count": 1,
+    "notes": [],
+    "fills": [
+      {
+        "timestamp": "2024-01-04T17:30:00+00:00",
+        "symbol": "SIM",
+        "side": "buy",
+        "quantity": 100.0,
+        "price": 103.3503099288,
+        "fee": 1.0335030992879999,
+        "source_signal_timestamp": "2024-01-04T16:30:00+00:00"
+      }
+    ]
+  },
+  {
+    "run_id": "trend_1h_breakout_30",
+    "adapter": "muni",
+    "strategy": "breakout_channel",
+    "dataset": "data\\experiments\\trend_up_1h.csv",
+    "symbol": "SIM",
+    "initial_cash": 100000.0,
+    "final_cash": 89663.93550402072,
+    "final_position": 100.0,
+    "final_price": 110.87939,
+    "final_equity": 100751.87450402071,
+    "return_pct": 0.751874504020722,
+    "fill_count": 1,
+    "signal_count": 1,
+    "notes": [],
+    "fills": [
+      {
+        "timestamp": "2024-01-04T17:30:00+00:00",
+        "symbol": "SIM",
+        "side": "buy",
+        "quantity": 100.0,
+        "price": 103.3503099288,
+        "fee": 1.0335030992879999,
+        "source_signal_timestamp": "2024-01-04T16:30:00+00:00"
+      }
+    ]
+  }
+]

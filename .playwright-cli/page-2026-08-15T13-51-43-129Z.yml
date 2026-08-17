@@ -1,0 +1,23 @@
+- iframe [ref=e2]:
+  - region [ref=f1e2]:
+    - heading "TSLA · 1 month" [level=2] [ref=f1e3]
+    - img "TSLA · 1 month Tesla daily closing price fell from 394 dollars and 46 cents on July 15 to 342 dollars and 27 cents on August 14, with a low close of 298 dollars and 32 cents on July 29." [ref=f1e5]:
+      - generic [ref=f1e8]:
+        - generic [ref=f1e10]: Jul 19
+        - generic [ref=f1e12]: Jul 26
+        - generic [ref=f1e14]: Aug 2
+        - generic [ref=f1e16]: Aug 9
+      - generic [ref=f1e18]:
+        - generic [ref=f1e20]: $280
+        - generic [ref=f1e22]: $300
+        - generic [ref=f1e24]: $320
+        - generic [ref=f1e26]: $340
+        - generic [ref=f1e28]: $360
+        - generic [ref=f1e30]: $380
+        - generic [ref=f1e32]: $400
+      - generic [ref=f1e34]: Trading date
+      - generic [ref=f1e35]: Price (USD)
+      - generic [ref=f1e38]: $342.27
+      - generic [ref=f1e40]: Low close $298.32
+    - paragraph [ref=f1e42]: Daily close in USD · Jul 15–Aug 14, 2026
+    - paragraph [ref=f1e43]: Tesla daily closing price fell from 394 dollars and 46 cents on July 15 to 342 dollars and 27 cents on August 14, with a low close of 298 dollars and 32 cents on July 29.

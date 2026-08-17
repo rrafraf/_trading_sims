@@ -1,0 +1,121 @@
+{
+  "version": 1,
+  "description": "Harder target-position tests for the currently working bar adapters. This is still not the order-intent Hell Bench.",
+  "data_quality": "reject",
+  "adapters": {
+    "reference_bar": {
+      "initial_cash": 100000,
+      "fee_bps": 5,
+      "slippage_bps": 10,
+      "enforce_volume": true
+    },
+    "backtrader": {
+      "initial_cash": 100000,
+      "fee_bps": 5,
+      "slippage_bps": 10,
+      "enforce_volume": true
+    },
+    "vectorbt": {
+      "initial_cash": 100000,
+      "fee_bps": 5,
+      "slippage_bps": 10,
+      "enforce_volume": true
+    },
+    "pybroker": {
+      "initial_cash": 100000,
+      "fee_bps": 5,
+      "slippage_bps": 10,
+      "enforce_volume": true
+    },
+    "muni": {
+      "initial_cash": 100000,
+      "fee_bps": 5,
+      "slippage_bps": 10,
+      "enforce_volume": true,
+      "data_quality": "warn"
+    }
+  },
+  "runs": [
+    {
+      "id": "gap_open_1m_scheduled_entry_exit",
+      "dataset": "data/experiments/gap_open_1m.csv",
+      "symbol": "SIM",
+      "strategy": "scheduled_targets",
+      "quantity": 100,
+      "params": {
+        "steps": [
+          {"index": 9, "target_quantity": 100},
+          {"index": 50, "target_quantity": 0}
+        ]
+      }
+    },
+    {
+      "id": "partial_volume_1m_scheduled_100",
+      "dataset": "data/experiments/partial_volume_1m.csv",
+      "symbol": "SIM",
+      "strategy": "scheduled_targets",
+      "quantity": 100,
+      "params": {
+        "steps": [
+          {"index": 0, "target_quantity": 100},
+          {"index": 20, "target_quantity": 0}
+        ]
+      }
+    },
+    {
+      "id": "liquidity_zero_volume_defer",
+      "dataset": "data/experiments/liquidity_gap_1m.csv",
+      "symbol": "SIM",
+      "strategy": "scheduled_targets",
+      "quantity": 100,
+      "params": {
+        "steps": [
+          {"index": 36, "target_quantity": 100},
+          {"index": 80, "target_quantity": 0}
+        ]
+      }
+    },
+    {
+      "id": "last_bar_signal_no_next_fill",
+      "dataset": "data/experiments/trend_up_1m.csv",
+      "symbol": "SIM",
+      "strategy": "scheduled_targets",
+      "quantity": 100,
+      "params": {
+        "steps": [
+          {"index": 239, "target_quantity": 100}
+        ]
+      }
+    },
+    {
+      "id": "churn_noise_1m_flip_5_high_cost",
+      "dataset": "data/experiments/churn_noise_1m.csv",
+      "symbol": "SIM",
+      "strategy": "flip_every_n",
+      "quantity": 100,
+      "params": {"start_index": 2, "interval": 5, "end_flat": true}
+    },
+    {
+      "id": "short_round_trip_scheduled",
+      "dataset": "data/experiments/trend_up_1m.csv",
+      "symbol": "SIM",
+      "strategy": "scheduled_targets",
+      "quantity": 100,
+      "params": {
+        "steps": [
+          {"index": 10, "target_quantity": -100},
+          {"index": 40, "target_quantity": 0}
+        ]
+      }
+    },
+    {
+      "id": "bad_data_1m_quality_notes",
+      "dataset": "data/experiments/bad_data_1m.csv",
+      "symbol": "SIM",
+      "strategy": "buy_hold",
+      "quantity": 100,
+      "data_quality": "warn",
+      "params": {"start_index": 0}
+    }
+  ]
+}

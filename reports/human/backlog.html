@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trading Project Status</title>
+  <style>
+    :root {
+      --bg: #f5f7f8;
+      --paper: #ffffff;
+      --ink: #16212b;
+      --muted: #5b6874;
+      --line: #d9e0e4;
+      --green: #0f766e;
+      --green-bg: #e7f6f4;
+      --blue: #155e9f;
+      --blue-bg: #eaf3fb;
+      --yellow: #8a5a00;
+      --yellow-bg: #fff7df;
+      --red: #b42318;
+      --red-bg: #fff0ed;
+      --gray-bg: #eef2f3;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    header {
+      background: var(--paper);
+      border-bottom: 1px solid var(--line);
+      padding: 24px 28px;
+    }
+
+    main {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 22px;
+    }
+
+    h1, h2, h3 {
+      margin: 0;
+      letter-spacing: 0;
+    }
+
+    h1 { font-size: 32px; }
+    h2 { font-size: 21px; margin-bottom: 12px; }
+    h3 { font-size: 16px; margin-bottom: 6px; }
+
+    p {
+      margin: 7px 0 0;
+      color: var(--muted);
+      line-height: 1.45;
+    }
+
+    a { color: var(--green); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .subtitle {
+      max-width: 820px;
+      font-size: 16px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 18px;
+      align-items: start;
+    }
+
+    .panel {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 16px;
+      margin-bottom: 16px;
+    }
+
+    .headline {
+      border-left: 8px solid var(--green);
+      background: var(--green-bg);
+    }
+
+    .warning {
+      border-left: 8px solid var(--yellow);
+      background: var(--yellow-bg);
+    }
+
+    .choice {
+      border-left: 8px solid var(--blue);
+      background: var(--blue-bg);
+    }
+
+    .status {
+      display: inline-flex;
+      align-items: center;
+      min-height: 24px;
+      border-radius: 999px;
+      padding: 3px 9px;
+      font-size: 12px;
+      font-weight: 700;
+      border: 1px solid var(--line);
+      white-space: nowrap;
+    }
+
+    .done { color: var(--green); background: var(--green-bg); border-color: #99f6e4; }
+    .ready { color: var(--blue); background: var(--blue-bg); border-color: #bfdbfe; }
+    .later { color: var(--yellow); background: var(--yellow-bg); border-color: #fde68a; }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    th, td {
+      padding: 10px 11px;
+      text-align: left;
+      border-bottom: 1px solid var(--line);
+      vertical-align: top;
+    }
+
+    th {
+      background: var(--gray-bg);
+      font-weight: 700;
+    }
+
+    tr:last-child td { border-bottom: 0; }
+    td:first-child {
+      width: 82px;
+      color: var(--muted);
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .links {
+      display: grid;
+      gap: 8px;
+      margin-top: 10px;
+    }
+
+    code {
+      background: #edf2f4;
+      padding: 2px 5px;
+      border-radius: 4px;
+      font-size: 13px;
+    }
+
+    .small { font-size: 13px; }
+
+    @media (max-width: 900px) {
+      header { padding: 20px; }
+      main { padding: 14px; }
+      .grid { grid-template-columns: 1fr; }
+      table { display: block; overflow-x: auto; }
+      th, td { min-width: 150px; }
+      td:first-child { min-width: 82px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Trading Project Status</h1>
+    <p class="subtitle">One page for Rafa. Short version first, detailed files only below.</p>
+  </header>
+
+  <main>
+    <div class="grid">
+      <section>
+        <section class="panel headline">
+          <h2>What changed today</h2>
+          <p><strong>The slower-timeframe ladder is now in the experiment suite.</strong></p>
+          <p>New 30m and 4h trend runs were added beside the existing 1h runs. Reference, Backtrader, VectorBT, PyBroker, and Muni all match on those new rows.</p>
+          <p>The report wording also now matches the stricter judge: a match means cash, position, equity, signals, and fill details agree.</p>
+        </section>
+
+        <section class="panel">
+          <h2>What is working</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Part</th>
+                <th>Status</th>
+                <th>Plain meaning</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Muni bridge</td>
+                <td><span class="status done">DONE</span></td>
+                <td><code>muni</code> can run inside the benchmark harness without merging the two repos.</td>
+              </tr>
+              <tr>
+                <td>Normal tests</td>
+                <td><span class="status done">DONE</span></td>
+                <td>Muni matches the reference model exactly on the normal experiment set.</td>
+              </tr>
+              <tr>
+                <td>Hard tests</td>
+                <td><span class="status done">DONE</span></td>
+                <td>Gap opens, partial fills, zero-volume waiting, churn, shorts, and last-bar no-fill now match at the trade level.</td>
+              </tr>
+              <tr>
+                <td>Bad data</td>
+                <td><span class="status done">DONE</span></td>
+                <td>Dirty bars are rejected by default. One dirty-data case is allowed on purpose and marked that way.</td>
+              </tr>
+              <tr>
+                <td>Slower bars</td>
+                <td><span class="status done">DONE</span></td>
+                <td>30m, 1h, and 4h trend runs are now covered in the normal experiment report.</td>
+              </tr>
+              <tr>
+                <td>Human page</td>
+                <td><span class="status done">DONE</span></td>
+                <td>This page replaces the long DOCX as the live checkpoint.</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section class="panel warning">
+          <h2>What is not proven yet</h2>
+          <p>This still does not prove real broker behavior. Paper trading and live brokers have their own quirks.</p>
+          <p>We have not yet tested stop orders, limit orders, same-candle stop-vs-target ambiguity, queue position, latency, or market impact.</p>
+        </section>
+      </section>
+
+      <aside>
+        <section class="panel choice">
+          <h2>Next useful choices</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Choice</th>
+                <th>What happens</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Try strategy ideas</td>
+                <td>Use the 30m, 1h, and 4h ladder for simple strategy exploration instead of pushing deeper into 1m scalping.</td>
+              </tr>
+              <tr>
+                <td>Harder orders</td>
+                <td>Add stop/limit/gap/same-candle tests once we want execution behavior beyond target-position fills.</td>
+              </tr>
+              <tr>
+                <td>Keep proof tidy</td>
+                <td>Only update the shelf/status pages when the evidence changes, so they stay useful instead of becoming another doc pile.</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section class="panel">
+          <h2>Current task list</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Task</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>B-001</td>
+                <td>Agree how <code>muni</code> and <code>_trading_sims</code> connect.</td>
+                <td><span class="status done">DONE</span></td>
+              </tr>
+              <tr>
+                <td>B-002</td>
+                <td>Add the <code>muni</code> command-line bridge.</td>
+                <td><span class="status done">DONE</span></td>
+              </tr>
+              <tr>
+                <td>B-003</td>
+                <td>Add the benchmark adapter for <code>muni</code>.</td>
+                <td><span class="status done">DONE</span></td>
+              </tr>
+              <tr>
+                <td>B-004</td>
+                <td>Make bad data fail loudly unless a test allows it.</td>
+                <td><span class="status done">DONE</span></td>
+              </tr>
+              <tr>
+                <td>B-005</td>
+                <td>Rerun parity with the stricter judge.</td>
+                <td><span class="status done">DONE</span></td>
+              </tr>
+              <tr>
+                <td>B-006</td>
+                <td>Add 30m, 1h, and 4h strategy passes.</td>
+                <td><span class="status done">DONE</span></td>
+              </tr>
+              <tr>
+                <td>B-007</td>
+                <td>Add stop and limit order tests.</td>
+                <td><span class="status later">LATER</span></td>
+              </tr>
+              <tr>
+                <td>B-008</td>
+                <td>Use this HTML page as the human checkpoint.</td>
+                <td><span class="status done">DONE</span></td>
+              </tr>
+              <tr>
+                <td>B-009</td>
+                <td>Build the visible trade replay UI.</td>
+                <td><span class="status later">LATER</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section class="panel">
+          <h2>Evidence links</h2>
+          <p class="small">These are for checking details, not required reading.</p>
+          <div class="links">
+            <a href="report-shelf.html">Report shelf</a>
+            <a href="index.html">Plain simulator brief</a>
+            <a href="og-review-2026-08-15.md">OG review</a>
+            <a href="../muni_bridge/experiment/strategy_matrix_comparison.md">Muni normal comparison</a>
+            <a href="../muni_bridge/hardening/strategy_matrix_comparison.md">Muni hard comparison</a>
+            <a href="../../benchmark/MUNI_BRIDGE_CONTRACT.md">Bridge contract</a>
+            <a href="../index.html">All reports</a>
+          </div>
+        </section>
+      </aside>
+    </div>
+  </main>
+</body>
+</html>

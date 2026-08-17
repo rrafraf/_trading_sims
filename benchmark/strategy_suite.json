@@ -1,0 +1,89 @@
+{
+  "version": 1,
+  "adapters": {
+    "reference_bar": {
+      "initial_cash": 100000,
+      "fee_bps": 1,
+      "slippage_bps": 2,
+      "enforce_volume": true
+    },
+    "backtrader": {
+      "initial_cash": 100000,
+      "fee_bps": 1,
+      "slippage_bps": 2,
+      "enforce_volume": true
+    },
+    "vectorbt": {
+      "initial_cash": 100000,
+      "fee_bps": 1,
+      "slippage_bps": 2,
+      "enforce_volume": true
+    },
+    "pybroker": {
+      "initial_cash": 100000,
+      "fee_bps": 1,
+      "slippage_bps": 2,
+      "enforce_volume": true
+    },
+    "lean": {
+      "initial_cash": 100000,
+      "fee_bps": 1,
+      "slippage_bps": 2,
+      "enforce_volume": true
+    }
+  },
+  "runs": [
+    {
+      "id": "sim_daily_buy_hold",
+      "dataset": "data/synthetic/normal_daily.csv",
+      "symbol": "SIM",
+      "strategy": "buy_hold",
+      "quantity": 100,
+      "params": {
+        "start_index": 0
+      }
+    },
+    {
+      "id": "sim_daily_sma_cross_3_8",
+      "dataset": "data/synthetic/normal_daily.csv",
+      "symbol": "SIM",
+      "strategy": "sma_cross",
+      "quantity": 100,
+      "params": {
+        "fast": 3,
+        "slow": 8
+      }
+    },
+    {
+      "id": "sim_daily_breakout_6",
+      "dataset": "data/synthetic/normal_daily.csv",
+      "symbol": "SIM",
+      "strategy": "breakout_channel",
+      "quantity": 100,
+      "params": {
+        "lookback": 6
+      }
+    },
+    {
+      "id": "sim_edge_buy_hold",
+      "dataset": "data/synthetic/edge_case_minute.csv",
+      "symbol": "SIM",
+      "strategy": "buy_hold",
+      "quantity": 100,
+      "params": {
+        "start_index": 0
+      }
+    },
+    {
+      "id": "alpaca_crypto_btc_sma_cross_4_12",
+      "dataset": "data/alpaca/crypto_BTCUSD_ETHUSD_1h_sample.csv",
+      "symbol": "BTC/USD",
+      "strategy": "sma_cross",
+      "quantity": 0.01,
+      "params": {
+        "fast": 4,
+        "slow": 12
+      }
+    }
+  ]
+}

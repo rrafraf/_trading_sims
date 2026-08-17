@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Report Shelf</title>
+  <style>
+    :root {
+      --bg: #f5f7f8;
+      --paper: #ffffff;
+      --ink: #16212b;
+      --muted: #5b6874;
+      --line: #d9e0e4;
+      --green: #0f766e;
+      --green-bg: #e7f6f4;
+      --blue: #155e9f;
+      --blue-bg: #eaf3fb;
+      --yellow: #8a5a00;
+      --yellow-bg: #fff7df;
+      --gray-bg: #eef2f3;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    header {
+      background: var(--paper);
+      border-bottom: 1px solid var(--line);
+      padding: 24px 28px;
+    }
+
+    main {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 22px;
+    }
+
+    h1, h2 {
+      margin: 0;
+      letter-spacing: 0;
+    }
+
+    h1 { font-size: 32px; }
+    h2 { font-size: 21px; margin-bottom: 12px; }
+
+    p {
+      margin: 7px 0 0;
+      color: var(--muted);
+      line-height: 1.45;
+    }
+
+    a { color: var(--green); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .panel {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 16px;
+      margin-bottom: 16px;
+    }
+
+    .start {
+      border-left: 8px solid var(--green);
+      background: var(--green-bg);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    th, td {
+      padding: 10px 11px;
+      text-align: left;
+      border-bottom: 1px solid var(--line);
+      vertical-align: top;
+    }
+
+    th {
+      background: var(--gray-bg);
+      font-weight: 700;
+    }
+
+    tr:last-child td { border-bottom: 0; }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      min-height: 24px;
+      border-radius: 999px;
+      padding: 3px 9px;
+      font-size: 12px;
+      font-weight: 700;
+      border: 1px solid var(--line);
+      white-space: nowrap;
+    }
+
+    .current { color: var(--green); background: var(--green-bg); border-color: #99f6e4; }
+    .support { color: var(--blue); background: var(--blue-bg); border-color: #bfdbfe; }
+    .old { color: var(--yellow); background: var(--yellow-bg); border-color: #fde68a; }
+
+    .small { font-size: 13px; }
+
+    @media (max-width: 900px) {
+      header { padding: 20px; }
+      main { padding: 14px; }
+      table { display: block; overflow-x: auto; }
+      th, td { min-width: 150px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Report Shelf</h1>
+    <p>One pinned list of the reports that matter. Updated 2026-08-15 12:47 +03:00.</p>
+  </header>
+
+  <main>
+    <section class="panel start">
+      <h2>Start Here</h2>
+      <p><strong>Use this shelf when you are lost.</strong> The first rows are the current truth. Older and scratch reports are listed lower so they do not silently disappear.</p>
+      <p class="small">Rule: a report is not considered pinned until it appears on this page with a status and plain meaning.</p>
+    </section>
+
+    <section class="panel">
+      <h2>Current Reports</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Status</th>
+            <th>Report</th>
+            <th>Written / refreshed</th>
+            <th>Plain meaning</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="pill current">CURRENT</span></td>
+            <td><a href="backlog.html">Trading Project Status</a></td>
+            <td>2026-08-15 12:24 +03:00</td>
+            <td>The main checkpoint: slower-timeframe ladder done, what is not proven, and the next choices.</td>
+          </tr>
+          <tr>
+            <td><span class="pill current">CURRENT</span></td>
+            <td><a href="report-shelf.html">Report Shelf</a></td>
+            <td>2026-08-15 12:47 +03:00</td>
+            <td>This page. The pinned index of reports.</td>
+          </tr>
+          <tr>
+            <td><span class="pill current">CURRENT</span></td>
+            <td><a href="../experiments/index.html">All-adapter experiment visual report</a></td>
+            <td>2026-08-15 12:24 +03:00</td>
+            <td>Broad normal-case proof with current adapters, stricter match wording, and 30m/1h/4h trend rows.</td>
+          </tr>
+          <tr>
+            <td><span class="pill current">CURRENT</span></td>
+            <td><a href="../hardening/index.html">All-adapter hardening visual report</a></td>
+            <td>2026-08-15 12:21 +03:00</td>
+            <td>Broad hard-case proof with current adapters and visible policy-diff counts.</td>
+          </tr>
+          <tr>
+            <td><span class="pill current">CURRENT</span></td>
+            <td><a href="../experiments/strategy_matrix_comparison.md">All-adapter experiment comparison</a></td>
+            <td>2026-08-15 01:14 +03:00</td>
+            <td>Raw table behind the normal visual report.</td>
+          </tr>
+          <tr>
+            <td><span class="pill current">CURRENT</span></td>
+            <td><a href="../hardening/strategy_matrix_comparison.md">All-adapter hardening comparison</a></td>
+            <td>2026-08-15 01:14 +03:00</td>
+            <td>Raw table behind the hardening visual report.</td>
+          </tr>
+          <tr>
+            <td><span class="pill current">CURRENT</span></td>
+            <td><a href="og-review-2026-08-15.md">OG independent review</a></td>
+            <td>2026-08-15 00:55 +03:00</td>
+            <td>Independent review that found the old comparison judge was too weak.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="panel">
+      <h2>Supporting Reports</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Status</th>
+            <th>Report</th>
+            <th>Written / refreshed</th>
+            <th>Plain meaning</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="pill support">SUPPORT</span></td>
+            <td><a href="index.html">Plain-English simulator brief</a></td>
+            <td>2026-08-14 23:00 +03:00</td>
+            <td>Human explanation of the simulator experiment. Useful background, but not the freshest status.</td>
+          </tr>
+          <tr>
+            <td><span class="pill support">SUPPORT</span></td>
+            <td><a href="../muni_bridge/experiment/strategy_matrix_comparison.md">Muni-only experiment comparison</a></td>
+            <td>2026-08-15 01:01 +03:00</td>
+            <td>Narrow proof that Muni matches the reference on the normal suite.</td>
+          </tr>
+          <tr>
+            <td><span class="pill support">SUPPORT</span></td>
+            <td><a href="../muni_bridge/hardening/strategy_matrix_comparison.md">Muni-only hardening comparison</a></td>
+            <td>2026-08-15 01:01 +03:00</td>
+            <td>Narrow proof that Muni matches the reference on hard target-position cases, except the deliberate dirty-data policy marker.</td>
+          </tr>
+          <tr>
+            <td><span class="pill support">SUPPORT</span></td>
+            <td><a href="../candidates_inventory.md">Candidate simulator inventory</a></td>
+            <td>2026-08-14 11:57 +03:00</td>
+            <td>List of open-source simulator candidates collected at the start.</td>
+          </tr>
+          <tr>
+            <td><span class="pill support">SUPPORT</span></td>
+            <td><a href="../native_test_focus.md">Native test focus</a></td>
+            <td>2026-08-14 11:58 +03:00</td>
+            <td>Notes about useful upstream test ideas to borrow later.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="panel">
+      <h2>Visualization-Ready Artifacts</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Status</th>
+            <th>Artifact</th>
+            <th>Format</th>
+            <th>Plain meaning</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="pill current">CURRENT</span></td>
+            <td><a href="../experiments/strategy_matrix_results.json">Experiment matrix results</a></td>
+            <td>JSON</td>
+            <td>Best source for summary visuals across adapters, strategies, and 1m/30m/1h/4h timeframes.</td>
+          </tr>
+          <tr>
+            <td><span class="pill current">CURRENT</span></td>
+            <td><a href="../experiments/strategy_matrix_comparison.csv">Experiment strict comparison</a></td>
+            <td>CSV</td>
+            <td>Best source for match/diff heatmaps and adapter agreement tables.</td>
+          </tr>
+          <tr>
+            <td><span class="pill current">CURRENT</span></td>
+            <td><a href="../hardening/strategy_matrix_results.json">Hardening matrix results</a></td>
+            <td>JSON</td>
+            <td>Best source for visualizing hard cases: gap opens, partial volume, zero-volume waiting, churn, shorts, and dirty data.</td>
+          </tr>
+          <tr>
+            <td><span class="pill support">TRACE</span></td>
+            <td><code>C:\Users\Professional\Documents\muni\output\training-ground\app-demo.events.csv</code></td>
+            <td>CSV</td>
+            <td>High-granularity Muni event trace. Good for timeline/process visualization.</td>
+          </tr>
+          <tr>
+            <td><span class="pill support">TRACE</span></td>
+            <td><code>C:\Users\Professional\Documents\muni\output\training-ground\app-demo.decisions.csv</code></td>
+            <td>CSV</td>
+            <td>Muni decision trace. Good for showing what the agent knew and chose at each step.</td>
+          </tr>
+          <tr>
+            <td><span class="pill support">TRACE</span></td>
+            <td><code>C:\Users\Professional\Documents\muni\output\training-ground\app-demo.anomalies.csv</code></td>
+            <td>CSV</td>
+            <td>Muni anomaly trace. Good for surfacing odd execution or data situations.</td>
+          </tr>
+          <tr>
+            <td><span class="pill old">SCRATCH</span></td>
+            <td><code>C:\Users\Professional\Documents\muni\output\training-ground\latest.events.csv</code></td>
+            <td>CSV</td>
+            <td>Latest runner trace. Useful for quick inspection, but it can be overwritten by the next run.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="panel">
+      <h2>Older Or Scratch Reports</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Status</th>
+            <th>Report</th>
+            <th>Written / refreshed</th>
+            <th>Plain meaning</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="pill old">OLDER</span></td>
+            <td><a href="../strategy_matrix_comparison.md">Original strategy comparison</a></td>
+            <td>2026-08-14 20:04 +03:00</td>
+            <td>Early comparison before the Muni bridge and stricter judge. Keep for history only.</td>
+          </tr>
+          <tr>
+            <td><span class="pill old">OLDER</span></td>
+            <td><a href="M55_Vega_Coordination_Ledger.html">Old coordination ledger</a></td>
+            <td>2026-08-14 22:45 +03:00</td>
+            <td>Superseded by the status page and this shelf. Not the live board.</td>
+          </tr>
+          <tr>
+            <td><span class="pill old">SCRATCH</span></td>
+            <td><a href="../tmp_bacon_check/experiment/strategy_matrix_comparison.md">Temporary Bacon bridge check</a></td>
+            <td>2026-08-15 01:18 +03:00</td>
+            <td>Temporary verification that Bacon's Muni-side phase metadata did not break the bridge. Not a canonical report.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Experiment Report</title>
+  <style>
+    :root {
+      --bg: #f4f6f7;
+      --panel: #ffffff;
+      --text: #182026;
+      --muted: #5f6b75;
+      --line: #d8dee3;
+      --accent: #0f766e;
+      --pos: #15803d;
+      --neg: #b42318;
+      --track: #e7ecef;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    header {
+      padding: 24px 28px;
+      background: var(--panel);
+      border-bottom: 1px solid var(--line);
+    }
+    main {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+    h1, h2, h3 { margin: 0; letter-spacing: 0; }
+    h1 { font-size: 26px; }
+    h2 { font-size: 19px; margin-bottom: 12px; }
+    h3 { font-size: 16px; margin-bottom: 12px; }
+    p { margin: 8px 0 0; color: var(--muted); line-height: 1.45; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 16px;
+      margin-top: 18px;
+    }
+    .panel, .card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 18px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+    th, td {
+      text-align: left;
+      padding: 9px 10px;
+      border-bottom: 1px solid var(--line);
+    }
+    th { background: #eef3f2; }
+    code {
+      background: #edf2f4;
+      padding: 2px 5px;
+      border-radius: 4px;
+      font-size: 13px;
+    }
+    .bar-row {
+      display: grid;
+      grid-template-columns: 116px 1fr 82px;
+      gap: 10px;
+      align-items: center;
+      margin: 8px 0;
+    }
+    .adapter { color: var(--muted); }
+    .bar-track {
+      height: 12px;
+      background: var(--track);
+      border-radius: 999px;
+      overflow: hidden;
+    }
+    .bar {
+      height: 100%;
+      min-width: 2px;
+      border-radius: 999px;
+    }
+    .positive { background: var(--pos); }
+    .negative { background: var(--neg); }
+    .ret {
+      text-align: right;
+      font-variant-numeric: tabular-nums;
+      color: var(--muted);
+    }
+    ul {
+      margin: 12px 0 0;
+      padding-left: 18px;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.4;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Experiment Report</h1>
+    <p>Working adapter comparison across deterministic 1-minute and longer synthetic datasets.</p>
+  </header>
+  <main>
+    <section class="panel">
+      <h2>Adapter Agreement</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Adapter</th>
+            <th>Baseline</th>
+            <th>Match</th>
+            <th>Policy diff</th>
+            <th>Diff</th>
+            <th>Unavailable</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td><code>reference_bar</code></td><td>15</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td><code>backtrader</code></td><td>0</td><td>15</td><td>0</td><td>0</td><td>0</td></tr><tr><td><code>muni</code></td><td>0</td><td>15</td><td>0</td><td>0</td><td>0</td></tr><tr><td><code>pybroker</code></td><td>0</td><td>15</td><td>0</td><td>0</td><td>0</td></tr><tr><td><code>vectorbt</code></td><td>0</td><td>15</td><td>0</td><td>0</td><td>0</td></tr>
+        </tbody>
+      </table>
+      <p>Matching here means the adapter agrees with <code>reference_bar</code> on cash, position, equity, signal count, and fill details under the configured policy.</p>
+    </section>
+    <section class="grid">
+      <section class="card"><h3>chop_1m_mr_20</h3><div class="bar-row"><span class="adapter"><code>reference_bar</code></span><div class="bar-track"><div class="bar negative" style="width:14.16%"></div></div><span class="ret">-0.1459%</span></div><div class="bar-row"><span class="adapter"><code>backtrader</code></span><div class="bar-track"><div class="bar negative" style="width:14.16%"></div></div><span class="ret">-0.1459%</span></div><div class="bar-row"><span class="adapter"><code>muni</code></span><div class="bar-track"><div class="bar negative" style="width:14.16%"></div></div><span class="ret">-0.1459%</span></div><div class="bar-row"><span class="adapter"><code>pybroker</code></span><div class="bar-track"><div class="bar negative" style="width:14.16%"></div></div><span class="ret">-0.1459%</span></div><div class="bar-row"><span class="adapter"><code>vectorbt</code></span><div class="bar-track"><div class="bar negative" style="width:14.16%"></div></div><span class="ret">-0.1459%</span></div><ul><li>Backtrader volume filler enabled with FixedSize(size=None)</li></ul></section><section class="card"><h3>chop_1m_sma_5_20</h3><div class="bar-row"><span class="adapter"><code>reference_bar</code></span><div class="bar-track"><div class="bar positive" style="width:23.48%"></div></div><span class="ret">0.2421%</span></div><div class="bar-row"><span class="adapter"><code>backtrader</code></span><div class="bar-track"><div class="bar positive" style="width:23.48%"></div></div><span class="ret">0.2421%</span></div><div class="bar-row"><span class="adapter"><code>muni</code></span><div class="bar-track"><div class="bar positive" style="width:23.48%"></div></div><span class="ret">0.2421%</span></div><div class="bar-row"><span class="adapter"><code>pybroker</code></span><div class="bar-track"><div class="bar positive" style="width:23.48%"></div></div><span class="ret">0.2421%</span></div><div class="bar-row"><span class="adapter"><code>vectorbt</code></span><div class="bar-track"><div class="bar positive" style="width:23.48%"></div></div><span class="ret">0.2421%</span></div><ul><li>Backtrader volume filler enabled with FixedSize(size=None)</li></ul></section><section class="card"><h3>liquidity_1m_buy_hold</h3><div class="bar-row"><span class="adapter"><code>reference_bar</code></span><div class="bar-track"><div class="bar negative" style="width:21.39%"></div></div><span class="ret">-0.2204%</span></div><div class="bar-row"><span class="adapter"><code>backtrader</code></span><div class="bar-track"><div class="bar negative" style="width:21.39%"></div></div><span class="ret">-0.2204%</span></div><div class="bar-row"><span class="adapter"><code>muni</code></span><div class="bar-track"><div class="bar negative" style="width:21.39%"></div></div><span class="ret">-0.2204%</span></div><div class="bar-row"><span class="adapter"><code>pybroker</code></span><div class="bar-track"><div class="bar negative" style="width:21.39%"></div></div><span class="ret">-0.2204%</span></div><div class="bar-row"><span class="adapter"><code>vectorbt</code></span><div class="bar-track"><div class="bar negative" style="width:21.39%"></div></div><span class="ret">-0.2204%</span></div><ul><li>zero-volume bar for SIM at 2024-01-02T15:07:00+00:00</li><li>irregular timestamp gap for SIM before 2024-01-02T15:24:00+00:00: expected 0:01:00, got 0:02:00</li></ul></section><section class="card"><h3>liquidity_1m_sma_5_20</h3><div class="bar-row"><span class="adapter"><code>reference_bar</code></span><div class="bar-track"><div class="bar positive" style="width:14.13%"></div></div><span class="ret">0.1457%</span></div><div class="bar-row"><span class="adapter"><code>backtrader</code></span><div class="bar-track"><div class="bar positive" style="width:14.13%"></div></div><span class="ret">0.1457%</span></div><div class="bar-row"><span class="adapter"><code>muni</code></span><div class="bar-track"><div class="bar positive" style="width:14.13%"></div></div><span class="ret">0.1457%</span></div><div class="bar-row"><span class="adapter"><code>pybroker</code></span><div class="bar-track"><div class="bar positive" style="width:14.13%"></div></div><span class="ret">0.1457%</span></div><div class="bar-row"><span class="adapter"><code>vectorbt</code></span><div class="bar-track"><div class="bar positive" style="width:14.13%"></div></div><span class="ret">0.1457%</span></div><ul><li>zero-volume bar for SIM at 2024-01-02T15:07:00+00:00</li><li>irregular timestamp gap for SIM before 2024-01-02T15:24:00+00:00: expected 0:01:00, got 0:02:00</li></ul></section><section class="card"><h3>regime_1m_breakout_30</h3><div class="bar-row"><span class="adapter"><code>reference_bar</code></span><div class="bar-track"><div class="bar positive" style="width:2.00%"></div></div><span class="ret">0.0000%</span></div><div class="bar-row"><span class="adapter"><code>backtrader</code></span><div class="bar-track"><div class="bar positive" style="width:2.00%"></div></div><span class="ret">0.0000%</span></div><div class="bar-row"><span class="adapter"><code>muni</code></span><div class="bar-track"><div class="bar positive" style="width:2.00%"></div></div><span class="ret">0.0000%</span></div><div class="bar-row"><span class="adapter"><code>pybroker</code></span><div class="bar-track"><div class="bar positive" style="width:2.00%"></div></div><span class="ret">0.0000%</span></div><div class="bar-row"><span class="adapter"><code>vectorbt</code></span><div class="bar-track"><div class="bar positive" style="width:2.00%"></div></div><span class="ret">0.0000%</span></div><ul><li>Backtrader volume filler enabled with FixedSize(size=None)</li></ul></section><section class="card"><h3>regime_1m_sma_5_20</h3><div class="bar-row"><span class="adapter"><code>reference_bar</code></span><div class="bar-track"><div class="bar positive" style="width:20.65%"></div></div><span class="ret">0.2129%</span></div><div class="bar-row"><span class="adapter"><code>backtrader</code></span><div class="bar-track"><div class="bar positive" style="width:20.65%"></div></div><span class="ret">0.2129%</span></div><div class="bar-row"><span class="adapter"><code>muni</code></span><div class="bar-track"><div class="bar positive" style="width:20.65%"></div></div><span class="ret">0.2129%</span></div><div class="bar-row"><span class="adapter"><code>pybroker</code></span><div class="bar-track"><div class="bar positive" style="width:20.65%"></div></div><span class="ret">0.2129%</span></div><div class="bar-row"><span class="adapter"><code>vectorbt</code></span><div class="bar-track"><div class="bar positive" style="width:20.65%"></div></div><span class="ret">0.2129%</span></div><ul><li>Backtrader volume filler enabled with FixedSize(size=None)</li></ul></section><section class="card"><h3>trend_1h_breakout_30</h3><div class="bar-row"><span class="adapter"><code>reference_bar</code></span><div class="bar-track"><div class="bar positive" style="width:72.94%"></div></div><span class="ret">0.7519%</span></div><div class="bar-row"><span class="adapter"><code>backtrader</code></span><div class="bar-track"><div class="bar positive" style="width:72.94%"></div></div><span class="ret">0.7519%</span></div><div class="bar-row"><span class="adapter"><code>muni</code></span><div class="bar-track"><div class="bar positive" style="width:72.94%"></div></div><span class="ret">0.7519%</span></div><div class="bar-row"><span class="adapter"><code>pybroker</code></span><div class="bar-track"><div class="bar positive" style="width:72.94%"></div></div><span class="ret">0.7519%</span></div><div class="bar-row"><span class="adapter"><code>vectorbt</code></span><div class="bar-track"><div class="bar positive" style="width:72.94%"></div></div><span class="ret">0.7519%</span></div><ul><li>Backtrader volume filler enabled with FixedSize(size=None)</li></ul></section><section class="card"><h3>trend_1h_sma_5_20</h3><div class="bar-row"><span class="adapter"><code>reference_bar</code></span><div class="bar-track"><div class="bar positive" style="width:70.75%"></div></div><span class="ret">0.7293%</span></div><div class="bar-row"><span class="adapter"><code>backtrader</code></span><div class="bar-track"><div class="bar positive" style="width:70.75%"></div></div><span class="ret">0.7293%</span></div><div class="bar-row"><span class="adapter"><code>muni</code></span><div class="bar-track"><div class="bar positive" style="width:70.75%"></div></div><span class="ret">0.7293%</span></div><div class="bar-row"><span class="adapter"><code>pybroker</code></span><div class="bar-track"><div class="bar positive" style="width:70.75%"></div></div><span class="ret">0.7293%</span></div><div class="bar-row"><span class="adapter"><code>vectorbt</code></span><div class="bar-track"><div class="bar positive" style="width:70.75%"></div></div><span class="ret">0.7293%</span></div><ul><li>Backtrader volume filler enabled with FixedSize(size=None)</li></ul></section><section class="card"><h3>trend_1m_breakout_30</h3><div class="bar-row"><span class="adapter"><code>reference_bar</code></span><div class="bar-track"><div class="bar positive" style="width:2.00%"></div></div><span class="ret">0.0000%</span></div><div class="bar-row"><span class="adapter"><code>backtrader</code></span><div class="bar-track"><div class="bar positive" style="width:2.00%"></div></div><span class="ret">0.0000%</span></div><div class="bar-row"><span class="adapter"><code>muni</code></span><div class="bar-track"><div class="bar positive" style="width:2.00%"></div></div><span class="ret">0.0000%</span></div><div class="bar-row"><span class="adapter"><code>pybroker</code></span><div class="bar-track"><div class="bar positive" style="width:2.00%"></div></div><span class="ret">0.0000%</span></div><div class="bar-row"><span class="adapter"><code>vectorbt</code></span><div class="bar-track"><div class="bar positive" style="width:2.00%"></div></div><span class="ret">0.0000%</span></div><ul><li>Backtrader volume filler enabled with FixedSize(size=None)</li></ul></section><section class="card"><h3>trend_1m_buy_hold</h3><div class="bar-row"><span class="adapter"><code>reference_bar</code></span><div class="bar-track"><div class="bar positive" style="width:44.30%"></div></div><span class="ret">0.4567%</span></div><div class="bar-row"><span class="adapter"><code>backtrader</code></span><div class="bar-track"><div class="bar positive" style="width:44.30%"></div></div><span class="ret">0.4567%</span></div><div class="bar-row"><span class="adapter"><code>muni</code></span><div class="bar-track"><div class="bar positive" style="width:44.30%"></div></div><span class="ret">0.4567%</span></div><div class="bar-row"><span class="adapter"><code>pybroker</code></span><div class="bar-track"><div class="bar positive" style="width:44.30%"></div></div><span class="ret">0.4567%</span></div><div class="bar-row"><span class="adapter"><code>vectorbt</code></span><div class="bar-track"><div class="bar positive" style="width:44.30%"></div></div><span class="ret">0.4567%</span></div><ul><li>Backtrader volume filler enabled with FixedSize(size=None)</li></ul></section><section class="card"><h3>trend_1m_sma_5_20</h3><div class="bar-row"><span class="adapter"><code>reference_bar</code></span><div class="bar-track"><div class="bar positive" style="width:30.28%"></div></div><span class="ret">0.3122%</span></div><div class="bar-row"><span class="adapter"><code>backtrader</code></span><div class="bar-track"><div class="bar positive" style="width:30.28%"></div></div><span class="ret">0.3122%</span></div><div class="bar-row"><span class="adapter"><code>muni</code></span><div class="bar-track"><div class="bar positive" style="width:30.28%"></div></div><span class="ret">0.3122%</span></div><div class="bar-row"><span class="adapter"><code>pybroker</code></span><div class="bar-track"><div class="bar positive" style="width:30.28%"></div></div><span class="ret">0.3122%</span></div><div class="bar-row"><span class="adapter"><code>vectorbt</code></span><div class="bar-track"><div class="bar positive" style="width:30.28%"></div></div><span class="ret">0.3122%</span></div><ul><li>Backtrader volume filler enabled with FixedSize(size=None)</li></ul></section><section class="card"><h3>trend_30m_breakout_30</h3><div class="bar-row"><span class="adapter"><code>reference_bar</code></span><div class="bar-track"><div class="bar positive" style="width:64.70%"></div></div><span class="ret">0.6670%</span></div><div class="bar-row"><span class="adapter"><code>backtrader</code></span><div class="bar-track"><div class="bar positive" style="width:64.70%"></div></div><span class="ret">0.6670%</span></div><div class="bar-row"><span class="adapter"><code>muni</code></span><div class="bar-track"><div class="bar positive" style="width:64.70%"></div></div><span class="ret">0.6670%</span></div><div class="bar-row"><span class="adapter"><code>pybroker</code></span><div class="bar-track"><div class="bar positive" style="width:64.70%"></div></div><span class="ret">0.6670%</span></div><div class="bar-row"><span class="adapter"><code>vectorbt</code></span><div class="bar-track"><div class="bar positive" style="width:64.70%"></div></div><span class="ret">0.6670%</span></div><ul><li>Backtrader volume filler enabled with FixedSize(size=None)</li></ul></section><section class="card"><h3>trend_30m_sma_5_20</h3><div class="bar-row"><span class="adapter"><code>reference_bar</code></span><div class="bar-track"><div class="bar positive" style="width:62.14%"></div></div><span class="ret">0.6405%</span></div><div class="bar-row"><span class="adapter"><code>backtrader</code></span><div class="bar-track"><div class="bar positive" style="width:62.14%"></div></div><span class="ret">0.6405%</span></div><div class="bar-row"><span class="adapter"><code>muni</code></span><div class="bar-track"><div class="bar positive" style="width:62.14%"></div></div><span class="ret">0.6405%</span></div><div class="bar-row"><span class="adapter"><code>pybroker</code></span><div class="bar-track"><div class="bar positive" style="width:62.14%"></div></div><span class="ret">0.6405%</span></div><div class="bar-row"><span class="adapter"><code>vectorbt</code></span><div class="bar-track"><div class="bar positive" style="width:62.14%"></div></div><span class="ret">0.6405%</span></div><ul><li>Backtrader volume filler enabled with FixedSize(size=None)</li></ul></section><section class="card"><h3>trend_4h_breakout_30</h3><div class="bar-row"><span class="adapter"><code>reference_bar</code></span><div class="bar-track"><div class="bar positive" style="width:98.60%"></div></div><span class="ret">1.0164%</span></div><div class="bar-row"><span class="adapter"><code>backtrader</code></span><div class="bar-track"><div class="bar positive" style="width:98.60%"></div></div><span class="ret">1.0164%</span></div><div class="bar-row"><span class="adapter"><code>muni</code></span><div class="bar-track"><div class="bar positive" style="width:98.60%"></div></div><span class="ret">1.0164%</span></div><div class="bar-row"><span class="adapter"><code>pybroker</code></span><div class="bar-track"><div class="bar positive" style="width:98.60%"></div></div><span class="ret">1.0164%</span></div><div class="bar-row"><span class="adapter"><code>vectorbt</code></span><div class="bar-track"><div class="bar positive" style="width:98.60%"></div></div><span class="ret">1.0164%</span></div><ul><li>Backtrader volume filler enabled with FixedSize(size=None)</li></ul></section><section class="card"><h3>trend_4h_sma_5_20</h3><div class="bar-row"><span class="adapter"><code>reference_bar</code></span><div class="bar-track"><div class="bar positive" style="width:100.00%"></div></div><span class="ret">1.0308%</span></div><div class="bar-row"><span class="adapter"><code>backtrader</code></span><div class="bar-track"><div class="bar positive" style="width:100.00%"></div></div><span class="ret">1.0308%</span></div><div class="bar-row"><span class="adapter"><code>muni</code></span><div class="bar-track"><div class="bar positive" style="width:100.00%"></div></div><span class="ret">1.0308%</span></div><div class="bar-row"><span class="adapter"><code>pybroker</code></span><div class="bar-track"><div class="bar positive" style="width:100.00%"></div></div><span class="ret">1.0308%</span></div><div class="bar-row"><span class="adapter"><code>vectorbt</code></span><div class="bar-track"><div class="bar positive" style="width:100.00%"></div></div><span class="ret">1.0308%</span></div><ul><li>Backtrader volume filler enabled with FixedSize(size=None)</li></ul></section>
+    </section>
+    <p><a href="strategy_matrix_results.md">Raw matrix results</a> · <a href="strategy_matrix_comparison.md">Raw comparison</a></p>
+  </main>
+</body>
+</html>

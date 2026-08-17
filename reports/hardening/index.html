@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Experiment Report</title>
+  <style>
+    :root {
+      --bg: #f4f6f7;
+      --panel: #ffffff;
+      --text: #182026;
+      --muted: #5f6b75;
+      --line: #d8dee3;
+      --accent: #0f766e;
+      --pos: #15803d;
+      --neg: #b42318;
+      --track: #e7ecef;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    header {
+      padding: 24px 28px;
+      background: var(--panel);
+      border-bottom: 1px solid var(--line);
+    }
+    main {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+    h1, h2, h3 { margin: 0; letter-spacing: 0; }
+    h1 { font-size: 26px; }
+    h2 { font-size: 19px; margin-bottom: 12px; }
+    h3 { font-size: 16px; margin-bottom: 12px; }
+    p { margin: 8px 0 0; color: var(--muted); line-height: 1.45; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 16px;
+      margin-top: 18px;
+    }
+    .panel, .card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 18px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+    th, td {
+      text-align: left;
+      padding: 9px 10px;
+      border-bottom: 1px solid var(--line);
+    }
+    th { background: #eef3f2; }
+    code {
+      background: #edf2f4;
+      padding: 2px 5px;
+      border-radius: 4px;
+      font-size: 13px;
+    }
+    .bar-row {
+      display: grid;
+      grid-template-columns: 116px 1fr 82px;
+      gap: 10px;
+      align-items: center;
+      margin: 8px 0;
+    }
+    .adapter { color: var(--muted); }
+    .bar-track {
+      height: 12px;
+      background: var(--track);
+      border-radius: 999px;
+      overflow: hidden;
+    }
+    .bar {
+      height: 100%;
+      min-width: 2px;
+      border-radius: 999px;
+    }
+    .positive { background: var(--pos); }
+    .negative { background: var(--neg); }
+    .ret {
+      text-align: right;
+      font-variant-numeric: tabular-nums;
+      color: var(--muted);
+    }
+    ul {
+      margin: 12px 0 0;
+      padding-left: 18px;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.4;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Experiment Report</h1>
+    <p>Working adapter comparison across deterministic 1-minute and longer synthetic datasets.</p>
+  </header>
+  <main>
+    <section class="panel">
+      <h2>Adapter Agreement</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Adapter</th>
+            <th>Baseline</th>
+            <th>Match</th>
+            <th>Policy diff</th>
+            <th>Diff</th>
+            <th>Unavailable</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td><code>reference_bar</code></td><td>7</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td><code>backtrader</code></td><td>0</td><td>7</td><td>0</td><td>0</td><td>0</td></tr><tr><td><code>muni</code></td><td>0</td><td>6</td><td>1</td><td>0</td><td>0</td></tr><tr><td><code>pybroker</code></td><td>0</td><td>6</td><td>0</td><td>1</td><td>0</td></tr><tr><td><code>vectorbt</code></td><td>0</td><td>7</td><td>0</td><td>0</td><td>0</td></tr>
+        </tbody>
+      </table>
+      <p>Matching here means the adapter agrees with <code>reference_bar</code> on cash, position, equity, signal count, and fill details under the configured policy.</p>
+    </section>
+    <section class="grid">
+      <section class="card"><h3>bad_data_1m_quality_notes</h3><div class="bar-row"><span class="adapter"><code>reference_bar</code></span><div class="bar-track"><div class="bar positive" style="width:2.00%"></div></div><span class="ret">0.0084%</span></div><div class="bar-row"><span class="adapter"><code>backtrader</code></span><div class="bar-track"><div class="bar positive" style="width:2.00%"></div></div><span class="ret">0.0084%</span></div><div class="bar-row"><span class="adapter"><code>muni</code></span><div class="bar-track"><div class="bar positive" style="width:2.00%"></div></div><span class="ret">0.0084%</span></div><div class="bar-row"><span class="adapter"><code>pybroker</code></span><div class="bar-track"><div class="bar positive" style="width:2.27%"></div></div><span class="ret">0.0113%</span></div><div class="bar-row"><span class="adapter"><code>vectorbt</code></span><div class="bar-track"><div class="bar positive" style="width:2.00%"></div></div><span class="ret">0.0084%</span></div><ul><li>duplicate timestamp for SIM at 2024-01-02T14:40:00+00:00</li><li>out-of-order timestamp for SIM at 2024-01-02T14:40:00+00:00</li></ul></section><section class="card"><h3>churn_noise_1m_flip_5_high_cost</h3><div class="bar-row"><span class="adapter"><code>reference_bar</code></span><div class="bar-track"><div class="bar negative" style="width:100.00%"></div></div><span class="ret">-0.5001%</span></div><div class="bar-row"><span class="adapter"><code>backtrader</code></span><div class="bar-track"><div class="bar negative" style="width:100.00%"></div></div><span class="ret">-0.5001%</span></div><div class="bar-row"><span class="adapter"><code>muni</code></span><div class="bar-track"><div class="bar negative" style="width:100.00%"></div></div><span class="ret">-0.5001%</span></div><div class="bar-row"><span class="adapter"><code>pybroker</code></span><div class="bar-track"><div class="bar negative" style="width:100.00%"></div></div><span class="ret">-0.5001%</span></div><div class="bar-row"><span class="adapter"><code>vectorbt</code></span><div class="bar-track"><div class="bar negative" style="width:100.00%"></div></div><span class="ret">-0.5001%</span></div><ul><li>Backtrader volume filler enabled with FixedSize(size=None)</li></ul></section><section class="card"><h3>gap_open_1m_scheduled_entry_exit</h3><div class="bar-row"><span class="adapter"><code>reference_bar</code></span><div class="bar-track"><div class="bar positive" style="width:3.55%"></div></div><span class="ret">0.0178%</span></div><div class="bar-row"><span class="adapter"><code>backtrader</code></span><div class="bar-track"><div class="bar positive" style="width:3.55%"></div></div><span class="ret">0.0178%</span></div><div class="bar-row"><span class="adapter"><code>muni</code></span><div class="bar-track"><div class="bar positive" style="width:3.55%"></div></div><span class="ret">0.0178%</span></div><div class="bar-row"><span class="adapter"><code>pybroker</code></span><div class="bar-track"><div class="bar positive" style="width:3.55%"></div></div><span class="ret">0.0178%</span></div><div class="bar-row"><span class="adapter"><code>vectorbt</code></span><div class="bar-track"><div class="bar positive" style="width:3.55%"></div></div><span class="ret">0.0178%</span></div><ul><li>Backtrader volume filler enabled with FixedSize(size=None)</li></ul></section><section class="card"><h3>last_bar_signal_no_next_fill</h3><div class="bar-row"><span class="adapter"><code>reference_bar</code></span><div class="bar-track"><div class="bar positive" style="width:2.00%"></div></div><span class="ret">0.0000%</span></div><div class="bar-row"><span class="adapter"><code>backtrader</code></span><div class="bar-track"><div class="bar positive" style="width:2.00%"></div></div><span class="ret">0.0000%</span></div><div class="bar-row"><span class="adapter"><code>muni</code></span><div class="bar-track"><div class="bar positive" style="width:2.00%"></div></div><span class="ret">0.0000%</span></div><div class="bar-row"><span class="adapter"><code>pybroker</code></span><div class="bar-track"><div class="bar positive" style="width:2.00%"></div></div><span class="ret">0.0000%</span></div><div class="bar-row"><span class="adapter"><code>vectorbt</code></span><div class="bar-track"><div class="bar positive" style="width:2.00%"></div></div><span class="ret">0.0000%</span></div><ul><li>Backtrader volume filler enabled with FixedSize(size=None)</li></ul></section><section class="card"><h3>liquidity_zero_volume_defer</h3><div class="bar-row"><span class="adapter"><code>reference_bar</code></span><div class="bar-track"><div class="bar positive" style="width:2.11%"></div></div><span class="ret">0.0105%</span></div><div class="bar-row"><span class="adapter"><code>backtrader</code></span><div class="bar-track"><div class="bar positive" style="width:2.11%"></div></div><span class="ret">0.0105%</span></div><div class="bar-row"><span class="adapter"><code>muni</code></span><div class="bar-track"><div class="bar positive" style="width:2.11%"></div></div><span class="ret">0.0105%</span></div><div class="bar-row"><span class="adapter"><code>pybroker</code></span><div class="bar-track"><div class="bar positive" style="width:2.11%"></div></div><span class="ret">0.0105%</span></div><div class="bar-row"><span class="adapter"><code>vectorbt</code></span><div class="bar-track"><div class="bar positive" style="width:2.11%"></div></div><span class="ret">0.0105%</span></div><ul><li>zero-volume bar for SIM at 2024-01-02T15:07:00+00:00</li><li>irregular timestamp gap for SIM before 2024-01-02T15:24:00+00:00: expected 0:01:00, got 0:02:00</li></ul></section><section class="card"><h3>partial_volume_1m_scheduled_100</h3><div class="bar-row"><span class="adapter"><code>reference_bar</code></span><div class="bar-track"><div class="bar negative" style="width:5.74%"></div></div><span class="ret">-0.0287%</span></div><div class="bar-row"><span class="adapter"><code>backtrader</code></span><div class="bar-track"><div class="bar negative" style="width:5.74%"></div></div><span class="ret">-0.0287%</span></div><div class="bar-row"><span class="adapter"><code>muni</code></span><div class="bar-track"><div class="bar negative" style="width:5.74%"></div></div><span class="ret">-0.0287%</span></div><div class="bar-row"><span class="adapter"><code>pybroker</code></span><div class="bar-track"><div class="bar negative" style="width:5.74%"></div></div><span class="ret">-0.0287%</span></div><div class="bar-row"><span class="adapter"><code>vectorbt</code></span><div class="bar-track"><div class="bar negative" style="width:5.74%"></div></div><span class="ret">-0.0287%</span></div><ul><li>partial volume-limited fill at 2024-01-02T14:31:00+00:00: requested 100.00000000, filled 25.00000000</li><li>partial volume-limited fill at 2024-01-02T14:32:00+00:00: requested 75.00000000, filled 25.00000000</li><li>Backtrader volume filler enabled with FixedSize(size=None)</li></ul></section><section class="card"><h3>short_round_trip_scheduled</h3><div class="bar-row"><span class="adapter"><code>reference_bar</code></span><div class="bar-track"><div class="bar negative" style="width:9.10%"></div></div><span class="ret">-0.0455%</span></div><div class="bar-row"><span class="adapter"><code>backtrader</code></span><div class="bar-track"><div class="bar negative" style="width:9.10%"></div></div><span class="ret">-0.0455%</span></div><div class="bar-row"><span class="adapter"><code>muni</code></span><div class="bar-track"><div class="bar negative" style="width:9.10%"></div></div><span class="ret">-0.0455%</span></div><div class="bar-row"><span class="adapter"><code>pybroker</code></span><div class="bar-track"><div class="bar negative" style="width:9.10%"></div></div><span class="ret">-0.0455%</span></div><div class="bar-row"><span class="adapter"><code>vectorbt</code></span><div class="bar-track"><div class="bar negative" style="width:9.10%"></div></div><span class="ret">-0.0455%</span></div><ul><li>Backtrader volume filler enabled with FixedSize(size=None)</li></ul></section>
+    </section>
+    <p><a href="strategy_matrix_results.md">Raw matrix results</a> · <a href="strategy_matrix_comparison.md">Raw comparison</a></p>
+  </main>
+</body>
+</html>

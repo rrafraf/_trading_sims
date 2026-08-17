@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trading Simulator Evaluation</title>
+  <style>
+    :root {
+      --bg: #f5f7f8;
+      --panel: #ffffff;
+      --text: #182026;
+      --muted: #5d6972;
+      --line: #d8dee3;
+      --accent: #0f766e;
+      --warn: #a16207;
+      --bad: #b42318;
+      --ok: #166534;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+    }
+    header {
+      border-bottom: 1px solid var(--line);
+      background: var(--panel);
+      padding: 20px 28px;
+    }
+    main {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+    h1 {
+      margin: 0 0 6px;
+      font-size: 24px;
+      letter-spacing: 0;
+    }
+    h2 {
+      margin: 0 0 12px;
+      font-size: 18px;
+      letter-spacing: 0;
+    }
+    p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.45;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 16px;
+      margin-bottom: 20px;
+    }
+    .panel {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 18px;
+    }
+    .metric {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 12px;
+      padding: 9px 0;
+      border-top: 1px solid var(--line);
+    }
+    .metric:first-of-type { border-top: 0; }
+    .metric b { font-size: 20px; }
+    .links {
+      display: grid;
+      gap: 8px;
+      margin-top: 10px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    th, td {
+      text-align: left;
+      padding: 10px 12px;
+      border-bottom: 1px solid var(--line);
+      vertical-align: top;
+    }
+    th {
+      background: #eef3f2;
+      font-weight: 700;
+    }
+    tr:last-child td { border-bottom: 0; }
+    .status {
+      display: inline-block;
+      min-width: 84px;
+      text-align: center;
+      border-radius: 999px;
+      padding: 3px 8px;
+      font-size: 12px;
+      font-weight: 700;
+      border: 1px solid var(--line);
+    }
+    .match { color: var(--ok); background: #ecfdf3; border-color: #bbf7d0; }
+    .pending { color: var(--warn); background: #fffbeb; border-color: #fde68a; }
+    .baseline { color: var(--accent); background: #ecfeff; border-color: #a5f3fc; }
+    code {
+      background: #edf2f4;
+      padding: 2px 5px;
+      border-radius: 4px;
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Trading Simulator Evaluation</h1>
+    <p>First-form benchmark harness for comparing shared 1m+ bar strategies across simulators.</p>
+  </header>
+  <main>
+    <section class="grid">
+      <div class="panel">
+        <h2>Current Scope</h2>
+        <div class="metric"><span>Candidate repos cloned</span><b>25</b></div>
+        <div class="metric"><span>Registered adapters</span><b>7</b></div>
+        <div class="metric"><span>Running compared adapters</span><b>5</b></div>
+      </div>
+      <div class="panel">
+        <h2>Important Files</h2>
+        <div class="links">
+          <a href="../PROJECT_STATUS.md">Central project status</a>
+          <a href="human/report-shelf.html">Report shelf</a>
+          <a href="../benchmark/DEV_HANDOFF.md">Dev handoff</a>
+          <a href="../benchmark/ADAPTER_PLAN.md">Adapter plan</a>
+          <a href="../benchmark/FAILURE_CLASSIFICATION.md">Failure classification</a>
+          <a href="../benchmark/REPO_INTEGRATION_OPTIONS.md">Repo integration options</a>
+          <a href="strategy_matrix_results.md">Strategy matrix results</a>
+          <a href="strategy_matrix_comparison.md">Strategy comparison</a>
+          <a href="experiments/index.html">Experiment visual report</a>
+          <a href="experiments/summary.md">Experiment summary</a>
+          <a href="hardening/index.html">Hardening visual report</a>
+          <a href="../benchmark/HARDENING_RESULTS.md">Hardening result notes</a>
+          <a href="human/backlog.html">M55 / Vega backlog</a>
+          <a href="human/og-review-2026-08-15.md">OG independent review (2026-08-15)</a>
+          <a href="muni_bridge/experiment/strategy_matrix_comparison.md">Muni experiment comparison</a>
+          <a href="muni_bridge/hardening/strategy_matrix_comparison.md">Muni hardening comparison</a>
+          <a href="human/index.html">Plain-English presentation</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Adapter Status</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Adapter</th>
+            <th>Status</th>
+            <th>Use</th>
+            <th>Next Step</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>reference_bar</code></td>
+            <td><span class="status baseline">baseline</span></td>
+            <td>Deterministic market-to-target reference policy.</td>
+            <td>Keep as comparison anchor.</td>
+          </tr>
+          <tr>
+            <td><code>backtrader</code></td>
+            <td><span class="status match">running</span></td>
+            <td>Practical pure-Python 1m+ bar strategy testing.</td>
+            <td>Add stop/limit stress scenarios.</td>
+          </tr>
+          <tr>
+            <td><code>vectorbt</code></td>
+            <td><span class="status match">running</span></td>
+            <td>Fast parameter/grid sweeps.</td>
+            <td>Add grid-search scenarios.</td>
+          </tr>
+          <tr>
+            <td><code>pybroker</code></td>
+            <td><span class="status match">running</span></td>
+            <td>Alpaca/ML/walk-forward research.</td>
+            <td>Matched valid hardening cases; dirty data now belongs behind the strict data gate.</td>
+          </tr>
+          <tr>
+            <td><code>muni</code></td>
+            <td><span class="status match">running</span></td>
+            <td>In-house execution engine connected through the bridge contract.</td>
+            <td>Matches reference on saved normal and hardening suites using the stricter comparator.</td>
+          </tr>
+          <tr>
+            <td><code>lean</code></td>
+            <td><span class="status pending">runner pending</span></td>
+            <td>Serious all-around broker/order model comparison.</td>
+            <td>Deferred until the three running engines plus muni bridge need a heavier benchmark.</td>
+          </tr>
+          <tr>
+            <td><code>own_engine_template</code></td>
+            <td><span class="status pending">template</span></td>
+            <td>Starting point for the in-house simulator.</td>
+            <td>Copy and wire to the dev engine API.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+</body>
+</html>

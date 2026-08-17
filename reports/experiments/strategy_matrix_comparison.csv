@@ -1,0 +1,76 @@
+run_id,adapter,baseline_adapter,status,final_equity,baseline_equity,final_cash_diff,final_position_diff,final_price_diff,equity_diff,return_diff_pct,fill_count_diff,signal_count_diff,mismatches,notes
+chop_1m_mr_20,reference_bar,reference_bar,baseline,99854.07200955466,99854.07200955466,0.0,0.0,0.0,0.0,0.0,0,0,,
+chop_1m_mr_20,backtrader,reference_bar,match,99854.07200955466,99854.07200955466,0.0,0.0,0.0,0.0,0.0,0,0,,Backtrader volume filler enabled with FixedSize(size=None)
+chop_1m_mr_20,vectorbt,reference_bar,match,99854.07200955466,99854.07200955466,0.0,0.0,0.0,0.0,0.0,0,0,,
+chop_1m_mr_20,pybroker,reference_bar,match,99854.07200955466,99854.07200955466,0.0,0.0,0.0,0.0,0.0,0,0,,
+chop_1m_mr_20,muni,reference_bar,match,99854.07200955466,99854.07200955466,0.0,0.0,0.0,0.0,0.0,0,0,,
+chop_1m_sma_5_20,reference_bar,reference_bar,baseline,100242.07929096608,100242.07929096608,0.0,0.0,0.0,0.0,0.0,0,0,,
+chop_1m_sma_5_20,backtrader,reference_bar,match,100242.07929096607,100242.07929096608,-1.4551915228366852e-11,0.0,0.0,-1.4551915228366852e-11,-2.220446049250313e-14,0,0,,Backtrader volume filler enabled with FixedSize(size=None)
+chop_1m_sma_5_20,vectorbt,reference_bar,match,100242.07929096608,100242.07929096608,0.0,0.0,0.0,0.0,0.0,0,0,,
+chop_1m_sma_5_20,pybroker,reference_bar,match,100242.0792909661,100242.07929096608,1.4551915228366852e-11,0.0,0.0,1.4551915228366852e-11,0.0,0,0,,
+chop_1m_sma_5_20,muni,reference_bar,match,100242.07929096608,100242.07929096608,0.0,0.0,0.0,0.0,0.0,0,0,,
+liquidity_1m_buy_hold,reference_bar,reference_bar,baseline,99779.557359984,99779.557359984,0.0,0.0,0.0,0.0,0.0,0,0,,"zero-volume bar for SIM at 2024-01-02T15:07:00+00:00 | irregular timestamp gap for SIM before 2024-01-02T15:24:00+00:00: expected 0:01:00, got 0:02:00 | zero-volume bar for SIM at 2024-01-02T15:44:00+00:00"
+liquidity_1m_buy_hold,backtrader,reference_bar,match,99779.557359984,99779.557359984,0.0,0.0,0.0,0.0,0.0,0,0,,"zero-volume bar for SIM at 2024-01-02T15:07:00+00:00 | irregular timestamp gap for SIM before 2024-01-02T15:24:00+00:00: expected 0:01:00, got 0:02:00 | zero-volume bar for SIM at 2024-01-02T15:44:00+00:00"
+liquidity_1m_buy_hold,vectorbt,reference_bar,match,99779.557359984,99779.557359984,0.0,0.0,0.0,0.0,0.0,0,0,,"zero-volume bar for SIM at 2024-01-02T15:07:00+00:00 | irregular timestamp gap for SIM before 2024-01-02T15:24:00+00:00: expected 0:01:00, got 0:02:00 | zero-volume bar for SIM at 2024-01-02T15:44:00+00:00"
+liquidity_1m_buy_hold,pybroker,reference_bar,match,99779.557359984,99779.557359984,0.0,0.0,0.0,0.0,0.0,0,0,,"zero-volume bar for SIM at 2024-01-02T15:07:00+00:00 | irregular timestamp gap for SIM before 2024-01-02T15:24:00+00:00: expected 0:01:00, got 0:02:00 | zero-volume bar for SIM at 2024-01-02T15:44:00+00:00"
+liquidity_1m_buy_hold,muni,reference_bar,match,99779.557359984,99779.557359984,0.0,0.0,0.0,0.0,0.0,0,0,,"zero-volume bar for SIM at 2024-01-02T15:07:00+00:00 | irregular timestamp gap for SIM before 2024-01-02T15:24:00+00:00: expected 0:01:00, got 0:02:00 | zero-volume bar for SIM at 2024-01-02T15:44:00+00:00"
+liquidity_1m_sma_5_20,reference_bar,reference_bar,baseline,100145.69670591556,100145.69670591556,0.0,0.0,0.0,0.0,0.0,0,0,,"zero-volume bar for SIM at 2024-01-02T15:07:00+00:00 | irregular timestamp gap for SIM before 2024-01-02T15:24:00+00:00: expected 0:01:00, got 0:02:00 | zero-volume bar for SIM at 2024-01-02T15:44:00+00:00"
+liquidity_1m_sma_5_20,backtrader,reference_bar,match,100145.69670591551,100145.69670591556,-4.3655745685100555e-11,0.0,0.0,-4.3655745685100555e-11,-4.440892098500626e-14,0,0,,"zero-volume bar for SIM at 2024-01-02T15:07:00+00:00 | irregular timestamp gap for SIM before 2024-01-02T15:24:00+00:00: expected 0:01:00, got 0:02:00 | zero-volume bar for SIM at 2024-01-02T15:44:00+00:00"
+liquidity_1m_sma_5_20,vectorbt,reference_bar,match,100145.69670591556,100145.69670591556,0.0,0.0,0.0,0.0,0.0,0,0,,"zero-volume bar for SIM at 2024-01-02T15:07:00+00:00 | irregular timestamp gap for SIM before 2024-01-02T15:24:00+00:00: expected 0:01:00, got 0:02:00 | zero-volume bar for SIM at 2024-01-02T15:44:00+00:00"
+liquidity_1m_sma_5_20,pybroker,reference_bar,match,100145.69670591554,100145.69670591556,-2.9103830456733704e-11,0.0,0.0,-1.4551915228366852e-11,-2.220446049250313e-14,0,0,,"zero-volume bar for SIM at 2024-01-02T15:07:00+00:00 | irregular timestamp gap for SIM before 2024-01-02T15:24:00+00:00: expected 0:01:00, got 0:02:00 | zero-volume bar for SIM at 2024-01-02T15:44:00+00:00"
+liquidity_1m_sma_5_20,muni,reference_bar,match,100145.69670591556,100145.69670591556,0.0,0.0,0.0,0.0,0.0,0,0,,"zero-volume bar for SIM at 2024-01-02T15:07:00+00:00 | irregular timestamp gap for SIM before 2024-01-02T15:24:00+00:00: expected 0:01:00, got 0:02:00 | zero-volume bar for SIM at 2024-01-02T15:44:00+00:00"
+regime_1m_breakout_30,reference_bar,reference_bar,baseline,100000.0,100000.0,0.0,0.0,0.0,0.0,0.0,0,0,,
+regime_1m_breakout_30,backtrader,reference_bar,match,100000.0,100000.0,0.0,0.0,0.0,0.0,0.0,0,0,,Backtrader volume filler enabled with FixedSize(size=None)
+regime_1m_breakout_30,vectorbt,reference_bar,match,100000.0,100000.0,0.0,0.0,0.0,0.0,0.0,0,0,,
+regime_1m_breakout_30,pybroker,reference_bar,match,100000.0,100000.0,0.0,0.0,0.0,0.0,0.0,0,0,,
+regime_1m_breakout_30,muni,reference_bar,match,100000.0,100000.0,0.0,0.0,0.0,0.0,0.0,0,0,,
+regime_1m_sma_5_20,reference_bar,reference_bar,baseline,100212.87250731073,100212.87250731073,0.0,0.0,0.0,0.0,0.0,0,0,,
+regime_1m_sma_5_20,backtrader,reference_bar,match,100212.87250731076,100212.87250731073,2.9103830456733704e-11,0.0,0.0,2.9103830456733704e-11,4.440892098500626e-14,0,0,,Backtrader volume filler enabled with FixedSize(size=None)
+regime_1m_sma_5_20,vectorbt,reference_bar,match,100212.87250731073,100212.87250731073,0.0,0.0,0.0,0.0,0.0,0,0,,
+regime_1m_sma_5_20,pybroker,reference_bar,match,100212.87250731075,100212.87250731073,1.4551915228366852e-11,0.0,0.0,1.4551915228366852e-11,2.220446049250313e-14,0,0,,
+regime_1m_sma_5_20,muni,reference_bar,match,100212.87250731073,100212.87250731073,0.0,0.0,0.0,0.0,0.0,0,0,,
+trend_1h_breakout_30,reference_bar,reference_bar,baseline,100751.87450402071,100751.87450402071,0.0,0.0,0.0,0.0,0.0,0,0,,
+trend_1h_breakout_30,backtrader,reference_bar,match,100751.87450402071,100751.87450402071,0.0,0.0,0.0,0.0,0.0,0,0,,Backtrader volume filler enabled with FixedSize(size=None)
+trend_1h_breakout_30,vectorbt,reference_bar,match,100751.87450402071,100751.87450402071,0.0,0.0,0.0,0.0,0.0,0,0,,
+trend_1h_breakout_30,pybroker,reference_bar,match,100751.87450402071,100751.87450402071,0.0,0.0,0.0,0.0,0.0,0,0,,
+trend_1h_breakout_30,muni,reference_bar,match,100751.87450402071,100751.87450402071,0.0,0.0,0.0,0.0,0.0,0,0,,
+trend_1h_sma_5_20,reference_bar,reference_bar,baseline,100729.26662479727,100729.26662479727,0.0,0.0,0.0,0.0,0.0,0,0,,
+trend_1h_sma_5_20,backtrader,reference_bar,match,100729.26662479727,100729.26662479727,0.0,0.0,0.0,0.0,0.0,0,0,,Backtrader volume filler enabled with FixedSize(size=None)
+trend_1h_sma_5_20,vectorbt,reference_bar,match,100729.26662479727,100729.26662479727,0.0,0.0,0.0,0.0,0.0,0,0,,
+trend_1h_sma_5_20,pybroker,reference_bar,match,100729.26662479728,100729.26662479727,1.4551915228366852e-11,0.0,0.0,1.4551915228366852e-11,2.220446049250313e-14,0,0,,
+trend_1h_sma_5_20,muni,reference_bar,match,100729.26662479727,100729.26662479727,0.0,0.0,0.0,0.0,0.0,0,0,,
+trend_1m_breakout_30,reference_bar,reference_bar,baseline,100000.0,100000.0,0.0,0.0,0.0,0.0,0.0,0,0,,
+trend_1m_breakout_30,backtrader,reference_bar,match,100000.0,100000.0,0.0,0.0,0.0,0.0,0.0,0,0,,Backtrader volume filler enabled with FixedSize(size=None)
+trend_1m_breakout_30,vectorbt,reference_bar,match,100000.0,100000.0,0.0,0.0,0.0,0.0,0.0,0,0,,
+trend_1m_breakout_30,pybroker,reference_bar,match,100000.0,100000.0,0.0,0.0,0.0,0.0,0.0,0,0,,
+trend_1m_breakout_30,muni,reference_bar,match,100000.0,100000.0,0.0,0.0,0.0,0.0,0.0,0,0,,
+trend_1m_buy_hold,reference_bar,reference_bar,baseline,100456.656019968,100456.656019968,0.0,0.0,0.0,0.0,0.0,0,0,,
+trend_1m_buy_hold,backtrader,reference_bar,match,100456.656019968,100456.656019968,0.0,0.0,0.0,0.0,0.0,0,0,,Backtrader volume filler enabled with FixedSize(size=None)
+trend_1m_buy_hold,vectorbt,reference_bar,match,100456.656019968,100456.656019968,0.0,0.0,0.0,0.0,0.0,0,0,,
+trend_1m_buy_hold,pybroker,reference_bar,match,100456.656019968,100456.656019968,0.0,0.0,0.0,0.0,0.0,0,0,,
+trend_1m_buy_hold,muni,reference_bar,match,100456.656019968,100456.656019968,0.0,0.0,0.0,0.0,0.0,0,0,,
+trend_1m_sma_5_20,reference_bar,reference_bar,baseline,100312.16521644278,100312.16521644278,0.0,0.0,0.0,0.0,0.0,0,0,,
+trend_1m_sma_5_20,backtrader,reference_bar,match,100312.16521644277,100312.16521644278,-1.4551915228366852e-11,0.0,0.0,-1.4551915228366852e-11,0.0,0,0,,Backtrader volume filler enabled with FixedSize(size=None)
+trend_1m_sma_5_20,vectorbt,reference_bar,match,100312.16521644278,100312.16521644278,0.0,0.0,0.0,0.0,0.0,0,0,,
+trend_1m_sma_5_20,pybroker,reference_bar,match,100312.16521644278,100312.16521644278,0.0,0.0,0.0,0.0,0.0,0,0,,
+trend_1m_sma_5_20,muni,reference_bar,match,100312.16521644278,100312.16521644278,0.0,0.0,0.0,0.0,0.0,0,0,,
+trend_30m_breakout_30,reference_bar,reference_bar,baseline,100666.97677251854,100666.97677251854,0.0,0.0,0.0,0.0,0.0,0,0,,
+trend_30m_breakout_30,backtrader,reference_bar,match,100666.97677251854,100666.97677251854,0.0,0.0,0.0,0.0,0.0,0,0,,Backtrader volume filler enabled with FixedSize(size=None)
+trend_30m_breakout_30,vectorbt,reference_bar,match,100666.97677251854,100666.97677251854,0.0,0.0,0.0,0.0,0.0,0,0,,
+trend_30m_breakout_30,pybroker,reference_bar,match,100666.97677251854,100666.97677251854,-1.4551915228366852e-11,0.0,0.0,0.0,0.0,0,0,,
+trend_30m_breakout_30,muni,reference_bar,match,100666.97677251854,100666.97677251854,0.0,0.0,0.0,0.0,0.0,0,0,,
+trend_30m_sma_5_20,reference_bar,reference_bar,baseline,100640.510121201,100640.510121201,0.0,0.0,0.0,0.0,0.0,0,0,,
+trend_30m_sma_5_20,backtrader,reference_bar,match,100640.510121201,100640.510121201,0.0,0.0,0.0,0.0,0.0,0,0,,Backtrader volume filler enabled with FixedSize(size=None)
+trend_30m_sma_5_20,vectorbt,reference_bar,match,100640.510121201,100640.510121201,0.0,0.0,0.0,0.0,0.0,0,0,,
+trend_30m_sma_5_20,pybroker,reference_bar,match,100640.510121201,100640.510121201,0.0,0.0,0.0,0.0,0.0,0,0,,
+trend_30m_sma_5_20,muni,reference_bar,match,100640.510121201,100640.510121201,0.0,0.0,0.0,0.0,0.0,0,0,,
+trend_4h_breakout_30,reference_bar,reference_bar,baseline,101016.36672403573,101016.36672403573,0.0,0.0,0.0,0.0,0.0,0,0,,
+trend_4h_breakout_30,backtrader,reference_bar,match,101016.36672403573,101016.36672403573,0.0,0.0,0.0,0.0,0.0,0,0,,Backtrader volume filler enabled with FixedSize(size=None)
+trend_4h_breakout_30,vectorbt,reference_bar,match,101016.36672403573,101016.36672403573,0.0,0.0,0.0,0.0,0.0,0,0,,
+trend_4h_breakout_30,pybroker,reference_bar,match,101016.36672403573,101016.36672403573,0.0,0.0,0.0,0.0,0.0,0,0,,
+trend_4h_breakout_30,muni,reference_bar,match,101016.36672403573,101016.36672403573,0.0,0.0,0.0,0.0,0.0,0,0,,
+trend_4h_sma_5_20,reference_bar,reference_bar,baseline,101030.80638487257,101030.80638487257,0.0,0.0,0.0,0.0,0.0,0,0,,
+trend_4h_sma_5_20,backtrader,reference_bar,match,101030.80638487256,101030.80638487257,-1.4551915228366852e-11,0.0,0.0,-1.4551915228366852e-11,0.0,0,0,,Backtrader volume filler enabled with FixedSize(size=None)
+trend_4h_sma_5_20,vectorbt,reference_bar,match,101030.80638487257,101030.80638487257,0.0,0.0,0.0,0.0,0.0,0,0,,
+trend_4h_sma_5_20,pybroker,reference_bar,match,101030.80638487257,101030.80638487257,0.0,0.0,0.0,0.0,0.0,0,0,,
+trend_4h_sma_5_20,muni,reference_bar,match,101030.80638487257,101030.80638487257,0.0,0.0,0.0,0.0,0.0,0,0,,

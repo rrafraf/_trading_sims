@@ -1,0 +1,23 @@
+run_id,adapter,baseline_adapter,status,final_equity,baseline_equity,final_cash_diff,final_position_diff,final_price_diff,equity_diff,return_diff_pct,fill_count_diff,signal_count_diff,mismatches,notes
+chop_1m_mr_20,reference_bar,reference_bar,baseline,99854.07200955466,99854.07200955466,0.0,0.0,0.0,0.0,0.0,0,0,,
+chop_1m_mr_20,muni,reference_bar,match,99854.07200955466,99854.07200955466,0.0,0.0,0.0,0.0,0.0,0,0,,
+chop_1m_sma_5_20,reference_bar,reference_bar,baseline,100242.07929096608,100242.07929096608,0.0,0.0,0.0,0.0,0.0,0,0,,
+chop_1m_sma_5_20,muni,reference_bar,match,100242.07929096608,100242.07929096608,0.0,0.0,0.0,0.0,0.0,0,0,,
+liquidity_1m_buy_hold,reference_bar,reference_bar,baseline,99779.557359984,99779.557359984,0.0,0.0,0.0,0.0,0.0,0,0,,"zero-volume bar for SIM at 2024-01-02T15:07:00+00:00 | irregular timestamp gap for SIM before 2024-01-02T15:24:00+00:00: expected 0:01:00, got 0:02:00 | zero-volume bar for SIM at 2024-01-02T15:44:00+00:00"
+liquidity_1m_buy_hold,muni,reference_bar,match,99779.557359984,99779.557359984,0.0,0.0,0.0,0.0,0.0,0,0,,"zero-volume bar for SIM at 2024-01-02T15:07:00+00:00 | irregular timestamp gap for SIM before 2024-01-02T15:24:00+00:00: expected 0:01:00, got 0:02:00 | zero-volume bar for SIM at 2024-01-02T15:44:00+00:00"
+liquidity_1m_sma_5_20,reference_bar,reference_bar,baseline,100145.69670591556,100145.69670591556,0.0,0.0,0.0,0.0,0.0,0,0,,"zero-volume bar for SIM at 2024-01-02T15:07:00+00:00 | irregular timestamp gap for SIM before 2024-01-02T15:24:00+00:00: expected 0:01:00, got 0:02:00 | zero-volume bar for SIM at 2024-01-02T15:44:00+00:00"
+liquidity_1m_sma_5_20,muni,reference_bar,match,100145.69670591556,100145.69670591556,0.0,0.0,0.0,0.0,0.0,0,0,,"zero-volume bar for SIM at 2024-01-02T15:07:00+00:00 | irregular timestamp gap for SIM before 2024-01-02T15:24:00+00:00: expected 0:01:00, got 0:02:00 | zero-volume bar for SIM at 2024-01-02T15:44:00+00:00"
+regime_1m_breakout_30,reference_bar,reference_bar,baseline,100000.0,100000.0,0.0,0.0,0.0,0.0,0.0,0,0,,
+regime_1m_breakout_30,muni,reference_bar,match,100000.0,100000.0,0.0,0.0,0.0,0.0,0.0,0,0,,
+regime_1m_sma_5_20,reference_bar,reference_bar,baseline,100212.87250731073,100212.87250731073,0.0,0.0,0.0,0.0,0.0,0,0,,
+regime_1m_sma_5_20,muni,reference_bar,match,100212.87250731073,100212.87250731073,0.0,0.0,0.0,0.0,0.0,0,0,,
+trend_1h_breakout_30,reference_bar,reference_bar,baseline,100751.87450402071,100751.87450402071,0.0,0.0,0.0,0.0,0.0,0,0,,
+trend_1h_breakout_30,muni,reference_bar,match,100751.87450402071,100751.87450402071,0.0,0.0,0.0,0.0,0.0,0,0,,
+trend_1h_sma_5_20,reference_bar,reference_bar,baseline,100729.26662479727,100729.26662479727,0.0,0.0,0.0,0.0,0.0,0,0,,
+trend_1h_sma_5_20,muni,reference_bar,match,100729.26662479727,100729.26662479727,0.0,0.0,0.0,0.0,0.0,0,0,,
+trend_1m_breakout_30,reference_bar,reference_bar,baseline,100000.0,100000.0,0.0,0.0,0.0,0.0,0.0,0,0,,
+trend_1m_breakout_30,muni,reference_bar,match,100000.0,100000.0,0.0,0.0,0.0,0.0,0.0,0,0,,
+trend_1m_buy_hold,reference_bar,reference_bar,baseline,100456.656019968,100456.656019968,0.0,0.0,0.0,0.0,0.0,0,0,,
+trend_1m_buy_hold,muni,reference_bar,match,100456.656019968,100456.656019968,0.0,0.0,0.0,0.0,0.0,0,0,,
+trend_1m_sma_5_20,reference_bar,reference_bar,baseline,100312.16521644278,100312.16521644278,0.0,0.0,0.0,0.0,0.0,0,0,,
+trend_1m_sma_5_20,muni,reference_bar,match,100312.16521644278,100312.16521644278,0.0,0.0,0.0,0.0,0.0,0,0,,

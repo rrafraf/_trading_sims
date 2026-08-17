@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>M55 + Vega Coordination Ledger</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #0b2545;
+      --muted: #5b677a;
+      --line: #b9c3cf;
+      --header: #e8eef5;
+      --surface: #ffffff;
+      --page: #f5f7fa;
+      --blue: #2e74b5;
+      --waiting: #fff4cc;
+      --done: #eaf6ef;
+      --blocked: #fce8e6;
+    }
+    body {
+      margin: 0;
+      background: var(--page);
+      color: #1f2937;
+      font: 15px/1.5 Calibri, Arial, sans-serif;
+    }
+    main {
+      max-width: 980px;
+      margin: 24px auto;
+      padding: 36px 44px 48px;
+      background: var(--surface);
+      border: 1px solid #d7dde5;
+      box-shadow: 0 18px 50px rgba(31, 41, 55, 0.10);
+    }
+    h1 {
+      margin: 0 0 2px;
+      color: var(--ink);
+      font-size: 34px;
+      line-height: 1.12;
+    }
+    .subtitle {
+      margin: 0 0 18px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    h2 {
+      margin: 28px 0 12px;
+      color: var(--blue);
+      font-size: 22px;
+    }
+    h3, h4 {
+      color: #1f4d78;
+    }
+    p {
+      margin: 0 0 12px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 8px 0 20px;
+      table-layout: fixed;
+    }
+    th, td {
+      border: 1px solid var(--line);
+      padding: 9px 10px;
+      vertical-align: middle;
+      overflow-wrap: anywhere;
+    }
+    th {
+      background: var(--header);
+      color: var(--ink);
+      text-align: center;
+      font-weight: 700;
+    }
+    td.status {
+      text-align: center;
+      color: var(--ink);
+      font-weight: 700;
+    }
+    td.waiting {
+      background: var(--waiting);
+    }
+    td.done {
+      background: var(--done);
+    }
+    td.blocked {
+      background: var(--blocked);
+    }
+    @media (max-width: 760px) {
+      main {
+        margin: 0;
+        padding: 22px 16px 32px;
+        border: 0;
+        box-shadow: none;
+      }
+      h1 {
+        font-size: 28px;
+      }
+      table {
+        display: block;
+        overflow-x: auto;
+        table-layout: auto;
+      }
+      th, td {
+        min-width: 140px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>M55 + Vega Coordination Ledger</h1><p class="subtitle">Human-facing checkpoint for Rafa. Last updated: 2026-08-14.</p><p>Purpose: Keep the machine-speed work legible. This document records what each agent is doing next, what is waiting on Rafa, and which decisions are already settled.</p><h2>Current Snapshot</h2><table><tr><th class="">Area</th><th class="">State</th><th class="">Meaning for Rafa</th></tr><tr><td class="">Bridge direction</td><td class="status done">DECIDED</td><td class="">Do not merge repos yet. Use a file/subprocess bridge first.</td></tr><tr><td class="">_trading_sims</td><td class="status done">WORKING SURFACE</td><td class="">Owns benchmark harness, adapters, canonical scenarios, comparison reports.</td></tr><tr><td class="">muni</td><td class="">ENGINE SURFACE</td><td class="">Owns execution semantics, trace/evidence UI, anomaly vocabulary.</td></tr><tr><td class="">Implementation</td><td class="status waiting">WAITING ON RAFA</td><td class="">No code bridge starts until Rafa approves the next bounded chunk.</td></tr><tr><td class="">Credit discipline</td><td class="">ACTIVE RULE</td><td class="">No new agent task, fork, or recurring watcher without explicit approval.</td></tr></table><h2>Agent Status</h2><table><tr><th class="">Agent</th><th class="">Status</th><th class="">Next Thing</th><th class="">Stop Condition</th></tr><tr><td class="">M55</td><td class="status waiting">WAITING ON RAFA</td><td class="">If approved, implement the muni target-position-v1 CLI seam. Otherwise maintain this ledger and coordinate decisions only.</td><td class="">Stops after a tested bounded chunk, or when a human decision is required.</td></tr><tr><td class="">Vega</td><td class="status waiting">WAITING</td><td class="">Benchmark harness and bridge contract are captured. Can answer what M55 should reuse first, or later add muni_adapter.py after the muni CLI exists.</td><td class="">Stops until Rafa or M55 asks for a specific benchmark-side move.</td></tr><tr><td class="">Rafa</td><td class="">HUMAN OWNER</td><td class="">Choose the next bounded move when ready: implement CLI seam, ask Vega for reuse list, or pause coding.</td><td class="">Final authority. Agent-to-agent notes are advisory only.</td></tr></table><h2>Shared Rules</h2><table><tr><th class="">Rule</th><th class="">Text</th></tr><tr><td class="">Visible stop state</td><td class="status waiting">Every agent stop should say DONE, WORKING UNTIL X, WAITING ON RAFA, WAITING ON VEGA, or BLOCKED.</td></tr><tr><td class="">Authority</td><td class="">Agents may recommend. Rafa decides project direction and credit-spending actions.</td></tr><tr><td class="">Bridge first</td><td class="">First bridge mode is target-position-v1 for cheap parity. Second mode is order-intent-v1 for hard execution semantics.</td></tr><tr><td class="status waiting">No silent waiting</td><td class="status waiting">If an agent pauses, it must say what it is waiting on in the task and update this ledger when practical.</td></tr></table><h2>Next Choices</h2><table><tr><th class="">Choice</th><th class="">Cost</th><th class="">Result</th></tr><tr><td class="">Approve M55 CLI seam</td><td class="">Medium</td><td class="">Creates the real muni output contract needed for _trading_sims to compare muni as an engine.</td></tr><tr><td class="">Ask Vega for reuse list</td><td class="">Low</td><td class="">Produces a benchmark-side shortlist of code/tests/contracts to reuse before M55 edits muni.</td></tr><tr><td class="">Pause coding</td><td class="">Low</td><td class="">Keeps current state stable. Agents only update status when you return.</td></tr></table><h2>Update Protocol For Agents</h2><p>When M55 or Vega makes meaningful progress, update the Agent Status row and Current Snapshot if the human-facing state changed. Keep entries short. Do not turn this into a full engineering journal.</p><p>If a change would spend credits, create/fork a task, start recurring work, or change repo direction, mark WAITING ON RAFA instead of proceeding silently.</p>
+  </main>
+</body>
+</html>

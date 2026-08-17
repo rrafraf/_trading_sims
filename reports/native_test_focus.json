@@ -1,0 +1,2161 @@
+[
+  {
+    "name": "Lean",
+    "test_files": 818,
+    "focused_topic_count": 12,
+    "order_lifecycle": 277,
+    "fills": 132,
+    "limit_market_stop": 812,
+    "time_in_force": 24,
+    "slippage_impact": 22,
+    "fees_costs": 269,
+    "latency_time": 51,
+    "queue_orderbook": 78,
+    "broker_rules": 237,
+    "calendar_sessions": 49,
+    "data_quality": 814,
+    "agent_rl": 147,
+    "sample_files": {
+      "order_lifecycle": [
+        "Algorithm.CSharp\\UniverseSelectionSymbolCacheRemovalRegressionTest.cs",
+        "Common\\Api\\OptimizationBacktest.cs",
+        "Optimizer\\Analysis\\OptimizationFailedBacktests.cs",
+        "Tests\\AlgorithmRunner.cs",
+        "Tests\\Algorithm\\AlgorithmAddDataTests.cs",
+        "Tests\\Algorithm\\AlgorithmAddSecurityTests.cs",
+        "Tests\\Algorithm\\AlgorithmAddUniverseTests.cs",
+        "Tests\\Algorithm\\AlgorithmBenchmarkTests.cs"
+      ],
+      "fills": [
+        "Tests\\AlgorithmRunnerResults.cs",
+        "Tests\\Algorithm\\AlgorithmAddDataTests.cs",
+        "Tests\\Algorithm\\AlgorithmAddSecurityTests.cs",
+        "Tests\\Algorithm\\AlgorithmChainsTests.cs",
+        "Tests\\Algorithm\\AlgorithmHistoryTests.cs",
+        "Tests\\Algorithm\\AlgorithmLiveTradingTests.cs",
+        "Tests\\Algorithm\\AlgorithmSetBrokerageTests.cs",
+        "Tests\\Algorithm\\AlgorithmSetHoldingsTests.cs"
+      ],
+      "limit_market_stop": [
+        "Algorithm.CSharp\\UniverseSelectionSymbolCacheRemovalRegressionTest.cs",
+        "Common\\Api\\Backtest.cs",
+        "Common\\Api\\OptimizationBacktest.cs",
+        "Optimizer\\Analysis\\OptimizationFailedBacktests.cs",
+        "Tests\\AlgorithmFactory\\LoaderTests.cs",
+        "Tests\\AlgorithmRunner.cs",
+        "Tests\\AlgorithmRunnerResults.cs",
+        "Tests\\Algorithm\\AlgorithmAddDataTests.cs"
+      ],
+      "time_in_force": [
+        "Tests\\Algorithm\\Framework\\Alphas\\CommonAlphaModelTests.cs",
+        "Tests\\Algorithm\\Framework\\Portfolio\\AccumulativeInsightPortfolioConstructionModelTests.cs",
+        "Tests\\Algorithm\\Framework\\Portfolio\\BaseWeightingPortfolioConstructionModelTests.cs",
+        "Tests\\Algorithm\\Framework\\Portfolio\\BlackLittermanOptimizationPortfolioConstructionModelTests.cs",
+        "Tests\\Algorithm\\Framework\\Portfolio\\ConfidenceWeightedPortfolioConstructionModelTests.cs",
+        "Tests\\Algorithm\\Framework\\Portfolio\\EqualWeightingPortfolioConstructionModelTests.cs",
+        "Tests\\Algorithm\\Framework\\Portfolio\\InsightWeightingPortfolioConstructionModelTests.cs",
+        "Tests\\Algorithm\\Framework\\Portfolio\\LongOnlyEqualWeightingPortfolioConstructionModelTests.cs"
+      ],
+      "slippage_impact": [
+        "Tests\\Algorithm\\AlgorithmAddSecurityTests.cs",
+        "Tests\\Algorithm\\AlgorithmSetBrokerageTests.cs",
+        "Tests\\Algorithm\\Framework\\Execution\\SpreadExecutionModelTests.cs",
+        "Tests\\Algorithm\\Framework\\Portfolio\\PortfolioTargetCollectionTests.cs",
+        "Tests\\Brokerages\\ComboLimitOrderTestParameters.cs",
+        "Tests\\Common\\Brokerages\\BrokerageModelTests.cs",
+        "Tests\\Common\\Data\\RenkoConsolidatorTests.cs",
+        "Tests\\Common\\OrderTargetsByMarginImpactTests.cs"
+      ],
+      "fees_costs": [
+        "Algorithm.CSharp\\UniverseSelectionSymbolCacheRemovalRegressionTest.cs",
+        "Tests\\AlgorithmRunner.cs",
+        "Tests\\Algorithm\\AlgorithmAddDataTests.cs",
+        "Tests\\Algorithm\\AlgorithmAddSecurityTests.cs",
+        "Tests\\Algorithm\\AlgorithmAddUniverseTests.cs",
+        "Tests\\Algorithm\\AlgorithmBenchmarkTests.cs",
+        "Tests\\Algorithm\\AlgorithmChainsTests.cs",
+        "Tests\\Algorithm\\AlgorithmHistoryTests.cs"
+      ],
+      "latency_time": [
+        "Tests\\Algorithm\\AlgorithmIndicatorsTests.cs",
+        "Tests\\Algorithm\\Framework\\Alphas\\Serialization\\InsightJsonConverterTests.cs",
+        "Tests\\Algorithm\\Framework\\Portfolio\\ReturnsSymbolDataTests.cs",
+        "Tests\\Api\\ObjectStoreTests.cs",
+        "Tests\\Api\\ProjectTests.cs",
+        "Tests\\Brokerages\\BrokerageTests.cs",
+        "Tests\\Brokerages\\LevelOneOrderBook\\LevelOneMarketDataTests.cs",
+        "Tests\\Brokerages\\OrderCrossingBrokerageTests.cs"
+      ],
+      "queue_orderbook": [
+        "Tests\\AlgorithmRunner.cs",
+        "Tests\\Algorithm\\AlgorithmAddDataTests.cs",
+        "Tests\\Algorithm\\AlgorithmAddUniverseTests.cs",
+        "Tests\\Algorithm\\AlgorithmHistoryTests.cs",
+        "Tests\\Algorithm\\AlgorithmIndicatorsTests.cs",
+        "Tests\\Algorithm\\AlgorithmTradingTests.cs",
+        "Tests\\Algorithm\\Framework\\Alphas\\CommonAlphaModelTests.cs",
+        "Tests\\Api\\ApiTestBase.cs"
+      ],
+      "broker_rules": [
+        "Algorithm.CSharp\\UniverseSelectionSymbolCacheRemovalRegressionTest.cs",
+        "Common\\Api\\Backtest.cs",
+        "Tests\\AlgorithmRunner.cs",
+        "Tests\\Algorithm\\AlgorithmAddDataTests.cs",
+        "Tests\\Algorithm\\AlgorithmAddSecurityTests.cs",
+        "Tests\\Algorithm\\AlgorithmHistoryTests.cs",
+        "Tests\\Algorithm\\AlgorithmInitializeTests.cs",
+        "Tests\\Algorithm\\AlgorithmLiveTradingTests.cs"
+      ],
+      "calendar_sessions": [
+        "Tests\\Algorithm\\AlgorithmHistoryTests.cs",
+        "Tests\\Brokerages\\MarketOnCloseOrderTestParameters.cs",
+        "Tests\\Brokerages\\MarketOnOpenOrderTestParameters.cs",
+        "Tests\\Common\\Brokerages\\TradierBrokerageModelTests.cs",
+        "Tests\\Common\\Brokerages\\WebullBrokerageModelTests.cs",
+        "Tests\\Common\\Data\\CalendarConsolidatorsTests.cs",
+        "Tests\\Common\\Data\\MarketHourAwareConsolidatorTests.cs",
+        "Tests\\Common\\Data\\PeriodCountConsolidatorTests.cs"
+      ],
+      "data_quality": [
+        "Algorithm.CSharp\\UniverseSelectionSymbolCacheRemovalRegressionTest.cs",
+        "Common\\Api\\Backtest.cs",
+        "Common\\Api\\OptimizationBacktest.cs",
+        "Optimizer\\Analysis\\OptimizationFailedBacktests.cs",
+        "Tests\\AlgorithmFactory\\LoaderTests.cs",
+        "Tests\\AlgorithmRunner.cs",
+        "Tests\\AlgorithmRunnerResults.cs",
+        "Tests\\Algorithm\\AlgorithmAddDataTests.cs"
+      ],
+      "agent_rl": [
+        "Tests\\AlgorithmRunner.cs",
+        "Tests\\Algorithm\\AlgorithmAddSecurityTests.cs",
+        "Tests\\Algorithm\\AlgorithmHistoryTests.cs",
+        "Tests\\Algorithm\\AlgorithmLiveTradingTests.cs",
+        "Tests\\Algorithm\\AlgorithmNamingTests.cs",
+        "Tests\\Algorithm\\AlgorithmSettingsTest.cs",
+        "Tests\\Algorithm\\AlgorithmTradingTests.cs",
+        "Tests\\Algorithm\\CashModelAlgorithmTradingTests.cs"
+      ]
+    },
+    "test_focus_score": 156
+  },
+  {
+    "name": "nautilus_trader",
+    "test_files": 327,
+    "focused_topic_count": 12,
+    "order_lifecycle": 225,
+    "fills": 154,
+    "limit_market_stop": 314,
+    "time_in_force": 71,
+    "slippage_impact": 61,
+    "fees_costs": 92,
+    "latency_time": 162,
+    "queue_orderbook": 105,
+    "broker_rules": 117,
+    "calendar_sessions": 37,
+    "data_quality": 174,
+    "agent_rl": 135,
+    "sample_files": {
+      "order_lifecycle": [
+        "crates\\adapters\\architect_ax\\tests\\common\\server.rs",
+        "crates\\adapters\\architect_ax\\tests\\data_client.rs",
+        "crates\\adapters\\architect_ax\\tests\\exec_client.rs",
+        "crates\\adapters\\architect_ax\\tests\\http.rs",
+        "crates\\adapters\\architect_ax\\tests\\websocket.rs",
+        "crates\\adapters\\betfair\\tests\\README.md",
+        "crates\\adapters\\betfair\\tests\\common\\mod.rs",
+        "crates\\adapters\\betfair\\tests\\data_client.rs"
+      ],
+      "fills": [
+        "crates\\adapters\\architect_ax\\tests\\common\\server.rs",
+        "crates\\adapters\\architect_ax\\tests\\exec_client.rs",
+        "crates\\adapters\\architect_ax\\tests\\http.rs",
+        "crates\\adapters\\betfair\\tests\\README.md",
+        "crates\\adapters\\betfair\\tests\\exec_client.rs",
+        "crates\\adapters\\betfair\\tests\\harness\\mod.rs",
+        "crates\\adapters\\betfair\\tests\\live.rs",
+        "crates\\adapters\\betfair\\tests\\node.rs"
+      ],
+      "limit_market_stop": [
+        "crates\\adapters\\architect_ax\\tests\\common\\mod.rs",
+        "crates\\adapters\\architect_ax\\tests\\common\\server.rs",
+        "crates\\adapters\\architect_ax\\tests\\data_client.rs",
+        "crates\\adapters\\architect_ax\\tests\\exec_client.rs",
+        "crates\\adapters\\architect_ax\\tests\\http.rs",
+        "crates\\adapters\\architect_ax\\tests\\websocket.rs",
+        "crates\\adapters\\betfair\\tests\\README.md",
+        "crates\\adapters\\betfair\\tests\\common\\mod.rs"
+      ],
+      "time_in_force": [
+        "crates\\adapters\\architect_ax\\tests\\exec_client.rs",
+        "crates\\adapters\\architect_ax\\tests\\http.rs",
+        "crates\\adapters\\architect_ax\\tests\\websocket.rs",
+        "crates\\adapters\\betfair\\tests\\exec_client.rs",
+        "crates\\adapters\\betfair\\tests\\harness\\mod.rs",
+        "crates\\adapters\\betfair\\tests\\node.rs",
+        "crates\\adapters\\binance\\tests\\futures\\data_client.rs",
+        "crates\\adapters\\binance\\tests\\futures\\exec_client.rs"
+      ],
+      "slippage_impact": [
+        "crates\\adapters\\architect_ax\\tests\\exec_client.rs",
+        "crates\\adapters\\bybit\\tests\\exec_client.rs",
+        "crates\\adapters\\coinbase\\tests\\exec_client.rs",
+        "crates\\adapters\\derive\\tests\\data_client.rs",
+        "crates\\adapters\\derive\\tests\\exec_client.rs",
+        "crates\\adapters\\dydx\\tests\\exec_client.rs",
+        "crates\\adapters\\dydx\\tests\\http.rs",
+        "crates\\adapters\\dydx\\tests\\websocket.rs"
+      ],
+      "fees_costs": [
+        "crates\\adapters\\architect_ax\\tests\\exec_client.rs",
+        "crates\\adapters\\architect_ax\\tests\\http.rs",
+        "crates\\adapters\\betfair\\tests\\README.md",
+        "crates\\adapters\\betfair\\tests\\harness\\mod.rs",
+        "crates\\adapters\\betfair\\tests\\live.rs",
+        "crates\\adapters\\betfair\\tests\\node.rs",
+        "crates\\adapters\\binance\\tests\\futures\\exec_client.rs",
+        "crates\\adapters\\binance\\tests\\futures\\http.rs"
+      ],
+      "latency_time": [
+        "crates\\adapters\\architect_ax\\tests\\common\\server.rs",
+        "crates\\adapters\\architect_ax\\tests\\data_client.rs",
+        "crates\\adapters\\architect_ax\\tests\\exec_client.rs",
+        "crates\\adapters\\architect_ax\\tests\\http.rs",
+        "crates\\adapters\\architect_ax\\tests\\websocket.rs",
+        "crates\\adapters\\betfair\\tests\\README.md",
+        "crates\\adapters\\betfair\\tests\\common\\mod.rs",
+        "crates\\adapters\\betfair\\tests\\data_client.rs"
+      ],
+      "queue_orderbook": [
+        "crates\\adapters\\architect_ax\\tests\\common\\server.rs",
+        "crates\\adapters\\architect_ax\\tests\\data_client.rs",
+        "crates\\adapters\\architect_ax\\tests\\websocket.rs",
+        "crates\\adapters\\betfair\\tests\\README.md",
+        "crates\\adapters\\betfair\\tests\\data_client.rs",
+        "crates\\adapters\\betfair\\tests\\exec_client.rs",
+        "crates\\adapters\\betfair\\tests\\harness\\mod.rs",
+        "crates\\adapters\\betfair\\tests\\live.rs"
+      ],
+      "broker_rules": [
+        "crates\\adapters\\architect_ax\\tests\\exec_client.rs",
+        "crates\\adapters\\architect_ax\\tests\\http.rs",
+        "crates\\adapters\\architect_ax\\tests\\websocket.rs",
+        "crates\\adapters\\betfair\\tests\\README.md",
+        "crates\\adapters\\betfair\\tests\\data_client.rs",
+        "crates\\adapters\\betfair\\tests\\exec_client.rs",
+        "crates\\adapters\\betfair\\tests\\harness\\mod.rs",
+        "crates\\adapters\\betfair\\tests\\http_client.rs"
+      ],
+      "calendar_sessions": [
+        "crates\\adapters\\architect_ax\\tests\\common\\server.rs",
+        "crates\\adapters\\architect_ax\\tests\\exec_client.rs",
+        "crates\\adapters\\architect_ax\\tests\\http.rs",
+        "crates\\adapters\\betfair\\tests\\common\\mod.rs",
+        "crates\\adapters\\betfair\\tests\\exec_client.rs",
+        "crates\\adapters\\betfair\\tests\\http_client.rs",
+        "crates\\adapters\\betfair\\tests\\stream_client.rs",
+        "crates\\adapters\\binance\\tests\\spot\\exec_client.rs"
+      ],
+      "data_quality": [
+        "crates\\adapters\\architect_ax\\tests\\common\\server.rs",
+        "crates\\adapters\\architect_ax\\tests\\data_client.rs",
+        "crates\\adapters\\architect_ax\\tests\\exec_client.rs",
+        "crates\\adapters\\architect_ax\\tests\\http.rs",
+        "crates\\adapters\\architect_ax\\tests\\websocket.rs",
+        "crates\\adapters\\betfair\\tests\\common\\mod.rs",
+        "crates\\adapters\\betfair\\tests\\data_client.rs",
+        "crates\\adapters\\betfair\\tests\\exec_client.rs"
+      ],
+      "agent_rl": [
+        "crates\\adapters\\architect_ax\\tests\\exec_client.rs",
+        "crates\\adapters\\betfair\\tests\\data_client.rs",
+        "crates\\adapters\\betfair\\tests\\node.rs",
+        "crates\\adapters\\binance\\tests\\futures\\data_client.rs",
+        "crates\\adapters\\binance\\tests\\futures\\http.rs",
+        "crates\\adapters\\binance\\tests\\futures\\websocket_streams.rs",
+        "crates\\adapters\\binance\\tests\\python.rs",
+        "crates\\adapters\\binance\\tests\\spot\\data_client.rs"
+      ]
+    },
+    "test_focus_score": 156
+  },
+  {
+    "name": "freqtrade",
+    "test_files": 139,
+    "focused_topic_count": 12,
+    "order_lifecycle": 69,
+    "fills": 48,
+    "limit_market_stop": 80,
+    "time_in_force": 11,
+    "slippage_impact": 4,
+    "fees_costs": 45,
+    "latency_time": 49,
+    "queue_orderbook": 13,
+    "broker_rules": 70,
+    "calendar_sessions": 18,
+    "data_quality": 80,
+    "agent_rl": 16,
+    "sample_files": {
+      "order_lifecycle": [
+        "ft_client\\test_client\\test_rest_client.py",
+        "tests\\conftest.py",
+        "tests\\conftest_trades.py",
+        "tests\\conftest_trades_usdt.py",
+        "tests\\data\\test_converter.py",
+        "tests\\data\\test_converter_orderflow.py",
+        "tests\\data\\test_datahandler.py",
+        "tests\\data\\test_dataprovider.py"
+      ],
+      "fills": [
+        "tests\\conftest.py",
+        "tests\\conftest_trades.py",
+        "tests\\conftest_trades_usdt.py",
+        "tests\\data\\test_converter.py",
+        "tests\\data\\test_dataprovider.py",
+        "tests\\data\\test_history.py",
+        "tests\\data\\test_trade_converter_kraken.py",
+        "tests\\data\\test_trade_parallelism.py"
+      ],
+      "limit_market_stop": [
+        "ft_client\\test_client\\test_rest_client.py",
+        "tests\\commands\\test_commands.py",
+        "tests\\conftest.py",
+        "tests\\conftest_hyperopt.py",
+        "tests\\conftest_trades.py",
+        "tests\\conftest_trades_usdt.py",
+        "tests\\data\\test_datahandler.py",
+        "tests\\data\\test_dataprovider.py"
+      ],
+      "time_in_force": [
+        "tests\\conftest.py",
+        "tests\\exchange\\test_binance.py",
+        "tests\\exchange\\test_exchange.py",
+        "tests\\exchange\\test_kraken.py",
+        "tests\\exchange_online\\conftest.py",
+        "tests\\strategy\\strats\\strategy_test_v2.py",
+        "tests\\strategy\\strats\\strategy_test_v3.py",
+        "tests\\strategy\\test_default_strategy.py"
+      ],
+      "slippage_impact": [
+        "tests\\exchange\\test_exchange.py",
+        "tests\\freqtradebot\\test_freqtradebot.py",
+        "tests\\optimize\\test_backtesting.py",
+        "tests\\plugins\\test_pairlist.py"
+      ],
+      "fees_costs": [
+        "tests\\commands\\test_commands.py",
+        "tests\\conftest.py",
+        "tests\\conftest_trades.py",
+        "tests\\conftest_trades_usdt.py",
+        "tests\\data\\test_btanalysis.py",
+        "tests\\data\\test_converter.py",
+        "tests\\data\\test_converter_orderflow.py",
+        "tests\\data\\test_datahandler.py"
+      ],
+      "latency_time": [
+        "tests\\commands\\test_commands.py",
+        "tests\\conftest.py",
+        "tests\\data\\test_btanalysis.py",
+        "tests\\data\\test_converter.py",
+        "tests\\data\\test_converter_orderflow.py",
+        "tests\\data\\test_datahandler.py",
+        "tests\\data\\test_dataprovider.py",
+        "tests\\data\\test_historic_precision.py"
+      ],
+      "queue_orderbook": [
+        "tests\\conftest.py",
+        "tests\\data\\test_dataprovider.py",
+        "tests\\exchange\\test_binance.py",
+        "tests\\exchange\\test_exchange.py",
+        "tests\\exchange\\test_gate.py",
+        "tests\\exchange\\test_kraken.py",
+        "tests\\exchange\\test_okx.py",
+        "tests\\exchange_online\\conftest.py"
+      ],
+      "broker_rules": [
+        "ft_client\\test_client\\test_rest_client.py",
+        "tests\\commands\\test_build_config.py",
+        "tests\\commands\\test_commands.py",
+        "tests\\conftest.py",
+        "tests\\conftest_hyperopt.py",
+        "tests\\conftest_trades.py",
+        "tests\\conftest_trades_usdt.py",
+        "tests\\data\\test_btanalysis.py"
+      ],
+      "calendar_sessions": [
+        "ft_client\\test_client\\test_rest_client.py",
+        "tests\\conftest.py",
+        "tests\\exchange\\test_binance_public_data.py",
+        "tests\\exchange\\test_exchange.py",
+        "tests\\freqtradebot\\test_freqtradebot.py",
+        "tests\\freqtradebot\\test_integration.py",
+        "tests\\freqtradebot\\test_stoploss_on_exchange.py",
+        "tests\\persistence\\test_db_migration.py"
+      ],
+      "data_quality": [
+        "ft_client\\test_client\\test_rest_client.py",
+        "tests\\commands\\test_build_config.py",
+        "tests\\commands\\test_commands.py",
+        "tests\\conftest.py",
+        "tests\\conftest_hyperopt.py",
+        "tests\\conftest_trades.py",
+        "tests\\conftest_trades_usdt.py",
+        "tests\\data\\test_converter.py"
+      ],
+      "agent_rl": [
+        "tests\\conftest.py",
+        "tests\\exchange\\test_kraken.py",
+        "tests\\freqai\\conftest.py",
+        "tests\\freqai\\test_freqai_datadrawer.py",
+        "tests\\freqai\\test_models\\ReinforcementLearner_test_3ac.py",
+        "tests\\freqai\\test_models\\ReinforcementLearner_test_4ac.py",
+        "tests\\freqtradebot\\test_freqtradebot.py",
+        "tests\\freqtradebot\\test_integration.py"
+      ]
+    },
+    "test_focus_score": 150
+  },
+  {
+    "name": "quantreplay",
+    "test_files": 380,
+    "focused_topic_count": 12,
+    "order_lifecycle": 163,
+    "fills": 121,
+    "limit_market_stop": 93,
+    "time_in_force": 14,
+    "slippage_impact": 16,
+    "fees_costs": 2,
+    "latency_time": 54,
+    "queue_orderbook": 79,
+    "broker_rules": 23,
+    "calendar_sessions": 67,
+    "data_quality": 45,
+    "agent_rl": 60,
+    "sample_files": {
+      "order_lifecycle": [
+        "project\\core\\tests\\unit_tests\\common\\attributes_tests.cpp",
+        "project\\core\\tests\\unit_tests\\common\\json\\attributes_tests.cpp",
+        "project\\core\\tests\\unit_tests\\domain\\enumerators_tests.cpp",
+        "project\\data_layer\\tests\\unit_tests\\converters\\column_mapping_tests.cpp",
+        "project\\data_layer\\tests\\unit_tests\\inspectors\\datasource_inspectors_tests.cpp",
+        "project\\data_layer\\tests\\unit_tests\\inspectors\\listing_inspectors_tests.cpp",
+        "project\\data_layer\\tests\\unit_tests\\inspectors\\market_phase_inspectors_tests.cpp",
+        "project\\data_layer\\tests\\unit_tests\\inspectors\\venue_inspectors_tests.cpp"
+      ],
+      "fills": [
+        "project\\core\\tests\\unit_tests\\common\\attributes_tests.cpp",
+        "project\\core\\tests\\unit_tests\\common\\json\\attributes_tests.cpp",
+        "project\\core\\tests\\unit_tests\\domain\\enumerators_tests.cpp",
+        "project\\data_layer\\tests\\unit_tests\\converters\\column_mapping_tests.cpp",
+        "project\\data_layer\\tests\\unit_tests\\inspectors\\datasource_inspectors_tests.cpp",
+        "project\\data_layer\\tests\\unit_tests\\inspectors\\venue_inspectors_tests.cpp",
+        "project\\data_layer\\tests\\unit_tests\\models\\datasource_tests.cpp",
+        "project\\data_layer\\tests\\unit_tests\\models\\fix_session_tests.cpp"
+      ],
+      "limit_market_stop": [
+        "project\\app\\tests\\unit_tests\\command_options_tests.cpp",
+        "project\\core\\tests\\test_utils\\utils.hpp",
+        "project\\core\\tests\\unit_tests\\common\\json\\type_tests.cpp",
+        "project\\core\\tests\\unit_tests\\domain\\enumerators_tests.cpp",
+        "project\\core\\tests\\unit_tests\\tools\\numeric_round_to_tick_tests.cpp",
+        "project\\core\\tests\\unit_tests\\tools\\numeric_tests.cpp",
+        "project\\data_layer\\tests\\test_utils\\utils.hpp",
+        "project\\data_layer\\tests\\unit_tests\\inspectors\\datasource_inspectors_tests.cpp"
+      ],
+      "time_in_force": [
+        "project\\data_layer\\tests\\unit_tests\\inspectors\\venue_inspectors_tests.cpp",
+        "project\\data_layer\\tests\\unit_tests\\models\\venue_tests.cpp",
+        "project\\data_layer\\tests\\unit_tests\\pqxx\\common\\column_resolver_tests.cpp",
+        "project\\http\\tests\\unit_tests\\marshalling\\json\\detail\\key_resolver_tests.cpp",
+        "project\\http\\tests\\unit_tests\\marshalling\\json\\venue_marshalling_tests.cpp",
+        "project\\trading_system\\components\\matching_engine\\tests\\unit_tests\\orders\\actions\\auction_placement_tests.cpp",
+        "project\\trading_system\\components\\matching_engine\\tests\\unit_tests\\orders\\actions\\market_amendment_tests.cpp",
+        "project\\trading_system\\components\\matching_engine\\tests\\unit_tests\\orders\\actions\\regular_amendment_tests.cpp"
+      ],
+      "slippage_impact": [
+        "project\\core\\tests\\unit_tests\\domain\\enumerators_tests.cpp",
+        "project\\data_layer\\tests\\unit_tests\\inspectors\\listing_inspectors_tests.cpp",
+        "project\\data_layer\\tests\\unit_tests\\models\\listing_tests.cpp",
+        "project\\data_layer\\tests\\unit_tests\\pqxx\\common\\column_resolver_tests.cpp",
+        "project\\fix\\common\\tests\\unit_tests\\mapping\\from_fix_conversion_tests.cpp",
+        "project\\fix\\common\\tests\\unit_tests\\mapping\\to_fix_conversion_tests.cpp",
+        "project\\generator\\tests\\unit_tests\\random\\algorithm\\utils\\price_params_selector_tests.cpp",
+        "project\\generator\\tests\\unit_tests\\random\\generators\\price_generator_tests.cpp"
+      ],
+      "fees_costs": [
+        "project\\http\\tests\\test_utils\\processors.hpp",
+        "project\\trading_system\\components\\matching_engine\\tests\\unit_tests\\orders\\order_system_facade_tests.cpp"
+      ],
+      "latency_time": [
+        "project\\core\\tests\\test_definitions\\test_attributes.hpp",
+        "project\\core\\tests\\unit_tests\\common\\attributes_tests.cpp",
+        "project\\core\\tests\\unit_tests\\common\\json\\attribute_tests.cpp",
+        "project\\core\\tests\\unit_tests\\common\\json\\attributes_tests.cpp",
+        "project\\core\\tests\\unit_tests\\tools\\time_tests.cpp",
+        "project\\data_layer\\tests\\common\\marshaller.hpp",
+        "project\\data_layer\\tests\\unit_tests\\converters\\column_mapping_tests.cpp",
+        "project\\data_layer\\tests\\unit_tests\\inspectors\\column_mapping_inspectors_tests.cpp"
+      ],
+      "queue_orderbook": [
+        "project\\data_layer\\tests\\unit_tests\\converters\\column_mapping_tests.cpp",
+        "project\\data_layer\\tests\\unit_tests\\inspectors\\datasource_inspectors_tests.cpp",
+        "project\\data_layer\\tests\\unit_tests\\inspectors\\listing_inspectors_tests.cpp",
+        "project\\data_layer\\tests\\unit_tests\\models\\datasource_tests.cpp",
+        "project\\data_layer\\tests\\unit_tests\\models\\listing_tests.cpp",
+        "project\\data_layer\\tests\\unit_tests\\pqxx\\common\\column_resolver_tests.cpp",
+        "project\\data_layer\\tests\\unit_tests\\pqxx\\common\\enumeration_resolver_tests.cpp",
+        "project\\data_layer\\tests\\unit_tests\\validations\\column_mapping_tests.cpp"
+      ],
+      "broker_rules": [
+        "project\\core\\tests\\unit_tests\\domain\\enumerators_tests.cpp",
+        "project\\fix\\acceptor\\tests\\unit_tests\\mapping\\from_fix_mapper_tests.cpp",
+        "project\\fix\\acceptor\\tests\\unit_tests\\mapping\\to_fix_mapper_tests.cpp",
+        "project\\fix\\common\\tests\\unit_tests\\mapping\\from_fix_conversion_tests.cpp",
+        "project\\fix\\common\\tests\\unit_tests\\mapping\\to_fix_conversion_tests.cpp",
+        "project\\generator\\tests\\unit_tests\\tracing\\json_tracer_tests.cpp",
+        "project\\trading_system\\components\\common\\tests\\unit_tests\\instrument_state_tests.cpp",
+        "project\\trading_system\\components\\matching_engine\\tests\\tools\\order_builder.hpp"
+      ],
+      "calendar_sessions": [
+        "project\\core\\tests\\unit_tests\\domain\\enumerators_tests.cpp",
+        "project\\data_layer\\tests\\unit_tests\\inspectors\\fix_session_inspectors_tests.cpp",
+        "project\\data_layer\\tests\\unit_tests\\models\\fix_session_tests.cpp",
+        "project\\data_layer\\tests\\unit_tests\\pqxx\\common\\column_resolver_tests.cpp",
+        "project\\data_layer\\tests\\unit_tests\\pqxx\\queries\\fix_session_queries_tests.cpp",
+        "project\\fix\\acceptor\\tests\\mocks\\event_processor_mock.hpp",
+        "project\\fix\\acceptor\\tests\\mocks\\reply_sender_mock.hpp",
+        "project\\fix\\acceptor\\tests\\mocks\\request_processor_mock.hpp"
+      ],
+      "data_quality": [
+        "project\\core\\tests\\unit_tests\\common\\json\\type_tests.cpp",
+        "project\\core\\tests\\unit_tests\\domain\\enumerators_tests.cpp",
+        "project\\core\\tests\\unit_tests\\tools\\numeric_round_to_tick_tests.cpp",
+        "project\\core\\tests\\unit_tests\\tools\\numeric_tests.cpp",
+        "project\\data_layer\\tests\\unit_tests\\models\\datasource_tests.cpp",
+        "project\\data_layer\\tests\\unit_tests\\models\\fix_session_tests.cpp",
+        "project\\data_layer\\tests\\unit_tests\\models\\listing_tests.cpp",
+        "project\\data_layer\\tests\\unit_tests\\models\\market_phase_tests.cpp"
+      ],
+      "agent_rl": [
+        "project\\core\\tests\\unit_tests\\domain\\enumerators_tests.cpp",
+        "project\\data_layer\\tests\\unit_tests\\common\\database\\ping_agent_tests.cpp",
+        "project\\data_layer\\tests\\unit_tests\\common\\queries\\data_extractor_tests.cpp",
+        "project\\data_layer\\tests\\unit_tests\\pqxx\\database\\connection_abort_timer_tests.cpp",
+        "project\\data_layer\\tests\\unit_tests\\pqxx\\database\\transaction_tests.cpp",
+        "project\\fix\\acceptor\\tests\\unit_tests\\mapping\\to_fix_mapper_tests.cpp",
+        "project\\fix\\common\\tests\\unit_tests\\mapping\\from_fix_conversion_tests.cpp",
+        "project\\fix\\common\\tests\\unit_tests\\mapping\\to_fix_conversion_tests.cpp"
+      ]
+    },
+    "test_focus_score": 148
+  },
+  {
+    "name": "basana",
+    "test_files": 60,
+    "focused_topic_count": 12,
+    "order_lifecycle": 33,
+    "fills": 15,
+    "limit_market_stop": 59,
+    "time_in_force": 5,
+    "slippage_impact": 6,
+    "fees_costs": 11,
+    "latency_time": 11,
+    "queue_orderbook": 16,
+    "broker_rules": 12,
+    "calendar_sessions": 5,
+    "data_quality": 21,
+    "agent_rl": 4,
+    "sample_files": {
+      "order_lifecycle": [
+        "tests\\backtesting_exchange_orders_test_data.py",
+        "tests\\fixtures\\ccxt.py",
+        "tests\\test_backtesting_account_balances.py",
+        "tests\\test_backtesting_charts.py",
+        "tests\\test_backtesting_dispatcher.py",
+        "tests\\test_backtesting_exchange.py",
+        "tests\\test_backtesting_exchange_auto_lending.py",
+        "tests\\test_backtesting_exchange_loans.py"
+      ],
+      "fills": [
+        "tests\\backtesting_exchange_orders_test_data.py",
+        "tests\\fixtures\\binance.py",
+        "tests\\fixtures\\ccxt.py",
+        "tests\\test_backtesting_account_balances.py",
+        "tests\\test_backtesting_exchange_orders.py",
+        "tests\\test_backtesting_fees.py",
+        "tests\\test_backtesting_orders.py",
+        "tests\\test_binance_exchange_cross_margin.py"
+      ],
+      "limit_market_stop": [
+        "tests\\__init__.py",
+        "tests\\backtesting_exchange_orders_test_data.py",
+        "tests\\common.py",
+        "tests\\conftest.py",
+        "tests\\fixtures\\binance.py",
+        "tests\\fixtures\\bitstamp.py",
+        "tests\\fixtures\\ccxt.py",
+        "tests\\fixtures\\dispatcher.py"
+      ],
+      "time_in_force": [
+        "tests\\fixtures\\ccxt.py",
+        "tests\\test_binance_exchange_cross_margin.py",
+        "tests\\test_binance_exchange_isolated_margin.py",
+        "tests\\test_binance_exchange_spot.py",
+        "tests\\test_binance_user_data.py"
+      ],
+      "slippage_impact": [
+        "tests\\test_backtesting_account_balances.py",
+        "tests\\test_backtesting_exchange_orders.py",
+        "tests\\test_backtesting_liquidity.py",
+        "tests\\test_backtesting_margin.py",
+        "tests\\test_backtesting_orders.py",
+        "tests\\test_backtesting_prices.py"
+      ],
+      "fees_costs": [
+        "tests\\backtesting_exchange_orders_test_data.py",
+        "tests\\fixtures\\ccxt.py",
+        "tests\\test_backtesting_exchange.py",
+        "tests\\test_backtesting_exchange_auto_lending.py",
+        "tests\\test_backtesting_exchange_orders.py",
+        "tests\\test_backtesting_fees.py",
+        "tests\\test_binance_exchange_cross_margin.py",
+        "tests\\test_binance_exchange_spot.py"
+      ],
+      "latency_time": [
+        "tests\\test_backtesting_exchange_loans.py",
+        "tests\\test_binance_bars.py",
+        "tests\\test_binance_user_data.py",
+        "tests\\test_bitstamp_bars.py",
+        "tests\\test_bitstamp_client.py",
+        "tests\\test_bitstamp_exchange.py",
+        "tests\\test_bitstamp_order_book.py",
+        "tests\\test_bitstamp_orders.py"
+      ],
+      "queue_orderbook": [
+        "tests\\fixtures\\ccxt.py",
+        "tests\\test_backtesting_account_balances.py",
+        "tests\\test_backtesting_dispatcher.py",
+        "tests\\test_backtesting_exchange.py",
+        "tests\\test_backtesting_exchange_auto_lending.py",
+        "tests\\test_backtesting_exchange_orders.py",
+        "tests\\test_binance_exchange.py",
+        "tests\\test_binance_order_book updates.py"
+      ],
+      "broker_rules": [
+        "tests\\fixtures\\ccxt.py",
+        "tests\\test_backtesting_account_balances.py",
+        "tests\\test_backtesting_exchange.py",
+        "tests\\test_backtesting_exchange_auto_lending.py",
+        "tests\\test_backtesting_exchange_loans.py",
+        "tests\\test_backtesting_margin.py",
+        "tests\\test_binance_exchange_cross_margin.py",
+        "tests\\test_binance_exchange_isolated_margin.py"
+      ],
+      "calendar_sessions": [
+        "tests\\test_binance_exchange.py",
+        "tests\\test_binance_order_book.py",
+        "tests\\test_bitstamp_exchange.py",
+        "tests\\test_bitstamp_order_book.py",
+        "tests\\test_ccxt_exchange.py"
+      ],
+      "data_quality": [
+        "tests\\conftest.py",
+        "tests\\fixtures\\binance.py",
+        "tests\\fixtures\\ccxt.py",
+        "tests\\helpers.py",
+        "tests\\test_backtesting_dispatcher.py",
+        "tests\\test_bar.py",
+        "tests\\test_binance_bars.py",
+        "tests\\test_binance_client.py"
+      ],
+      "agent_rl": [
+        "tests\\test_backtesting_exchange_auto_lending.py",
+        "tests\\test_binance_exchange_cross_margin.py",
+        "tests\\test_binance_exchange_spot.py",
+        "tests\\test_bitstamp_exchange.py"
+      ]
+    },
+    "test_focus_score": 136
+  },
+  {
+    "name": "zipline-reloaded",
+    "test_files": 97,
+    "focused_topic_count": 11,
+    "order_lifecycle": 50,
+    "fills": 38,
+    "limit_market_stop": 33,
+    "time_in_force": 0,
+    "slippage_impact": 9,
+    "fees_costs": 6,
+    "latency_time": 57,
+    "queue_orderbook": 5,
+    "broker_rules": 15,
+    "calendar_sessions": 50,
+    "data_quality": 65,
+    "agent_rl": 23,
+    "sample_files": {
+      "order_lifecycle": [
+        "src\\zipline\\sources\\test_source.py",
+        "src\\zipline\\test_algorithms.py",
+        "tests\\conftest.py",
+        "tests\\data\\test_fx.py",
+        "tests\\data\\test_minute_bars.py",
+        "tests\\data\\test_resample.py",
+        "tests\\events\\test_events.py",
+        "tests\\events\\test_events_cme.py"
+      ],
+      "fills": [
+        "src\\zipline\\test_algorithms.py",
+        "tests\\data\\bundles\\test_csvdir.py",
+        "tests\\data\\bundles\\test_quandl.py",
+        "tests\\data\\test_fx.py",
+        "tests\\data\\test_resample.py",
+        "tests\\events\\test_events_nyse.py",
+        "tests\\finance\\test_commissions.py",
+        "tests\\finance\\test_risk.py"
+      ],
+      "limit_market_stop": [
+        "src\\zipline\\sources\\test_source.py",
+        "src\\zipline\\test_algorithms.py",
+        "tests\\data\\test_daily_bars.py",
+        "tests\\data\\test_dispatch_bar_reader.py",
+        "tests\\data\\test_minute_bars.py",
+        "tests\\data\\test_resample.py",
+        "tests\\events\\test_events.py",
+        "tests\\events\\test_events_cme.py"
+      ],
+      "slippage_impact": [
+        "src\\zipline\\test_algorithms.py",
+        "tests\\finance\\test_commissions.py",
+        "tests\\finance\\test_slippage.py",
+        "tests\\metrics\\test_metrics.py",
+        "tests\\test_algorithm.py",
+        "tests\\test_blotter.py",
+        "tests\\test_finance.py",
+        "tests\\test_ordering.py"
+      ],
+      "fees_costs": [
+        "src\\zipline\\test_algorithms.py",
+        "tests\\finance\\test_commissions.py",
+        "tests\\metrics\\test_metrics.py",
+        "tests\\test_algorithm.py",
+        "tests\\test_blotter.py",
+        "tests\\test_ordering.py"
+      ],
+      "latency_time": [
+        "src\\zipline\\sources\\test_source.py",
+        "tests\\conftest.py",
+        "tests\\data\\bundles\\test_core.py",
+        "tests\\data\\bundles\\test_csvdir.py",
+        "tests\\data\\bundles\\test_quandl.py",
+        "tests\\data\\test_daily_bars.py",
+        "tests\\data\\test_dispatch_bar_reader.py",
+        "tests\\data\\test_fx.py"
+      ],
+      "queue_orderbook": [
+        "tests\\pipeline\\test_domain.py",
+        "tests\\pipeline\\test_engine.py",
+        "tests\\pipeline\\test_hooks.py",
+        "tests\\test_algorithm.py",
+        "tests\\test_bar_data.py"
+      ],
+      "broker_rules": [
+        "src\\zipline\\test_algorithms.py",
+        "tests\\finance\\test_risk.py",
+        "tests\\finance\\test_slippage.py",
+        "tests\\metrics\\test_metrics.py",
+        "tests\\pipeline\\test_engine.py",
+        "tests\\pipeline\\test_filter.py",
+        "tests\\pipeline\\test_quarters_estimates.py",
+        "tests\\resources\\fetcher_inputs\\fetcher_test_data.py"
+      ],
+      "calendar_sessions": [
+        "src\\zipline\\sources\\test_source.py",
+        "tests\\conftest.py",
+        "tests\\data\\bundles\\test_core.py",
+        "tests\\data\\bundles\\test_csvdir.py",
+        "tests\\data\\bundles\\test_quandl.py",
+        "tests\\data\\test_adjustments.py",
+        "tests\\data\\test_daily_bars.py",
+        "tests\\data\\test_dispatch_bar_reader.py"
+      ],
+      "data_quality": [
+        "src\\zipline\\test_algorithms.py",
+        "tests\\conftest.py",
+        "tests\\data\\bundles\\test_core.py",
+        "tests\\data\\bundles\\test_csvdir.py",
+        "tests\\data\\bundles\\test_quandl.py",
+        "tests\\data\\test_adjustments.py",
+        "tests\\data\\test_daily_bars.py",
+        "tests\\data\\test_dispatch_bar_reader.py"
+      ],
+      "agent_rl": [
+        "src\\zipline\\test_algorithms.py",
+        "tests\\conftest.py",
+        "tests\\data\\bundles\\test_core.py",
+        "tests\\data\\bundles\\test_csvdir.py",
+        "tests\\data\\bundles\\test_quandl.py",
+        "tests\\events\\test_events.py",
+        "tests\\finance\\test_commissions.py",
+        "tests\\finance\\test_slippage.py"
+      ]
+    },
+    "test_focus_score": 133
+  },
+  {
+    "name": "pyalgotrade",
+    "test_files": 55,
+    "focused_topic_count": 12,
+    "order_lifecycle": 20,
+    "fills": 17,
+    "limit_market_stop": 55,
+    "time_in_force": 5,
+    "slippage_impact": 2,
+    "fees_costs": 31,
+    "latency_time": 1,
+    "queue_orderbook": 2,
+    "broker_rules": 13,
+    "calendar_sessions": 10,
+    "data_quality": 21,
+    "agent_rl": 13,
+    "sample_files": {
+      "order_lifecycle": [
+        "testcases\\barfeed_test.py",
+        "testcases\\bitstamp_test.py",
+        "testcases\\broker_backtesting_test.py",
+        "testcases\\broker_test.py",
+        "testcases\\doc_test.py",
+        "testcases\\drawdown_analyzer_test.py",
+        "testcases\\fill_strategy_test.py",
+        "testcases\\logger_test.py"
+      ],
+      "fills": [
+        "testcases\\bitstamp_test.py",
+        "testcases\\broker_backtesting_test.py",
+        "testcases\\broker_test.py",
+        "testcases\\dataseries_test.py",
+        "testcases\\dbfeed_test.py",
+        "testcases\\drawdown_analyzer_test.py",
+        "testcases\\fill_strategy_test.py",
+        "testcases\\logger_test.py"
+      ],
+      "limit_market_stop": [
+        "testcases\\bar_test.py",
+        "testcases\\barfeed_test.py",
+        "testcases\\bitstamp_test.py",
+        "testcases\\broker_backtesting_test.py",
+        "testcases\\broker_test.py",
+        "testcases\\btcharts_test.py",
+        "testcases\\csvfeed_test.py",
+        "testcases\\dataseries_test.py"
+      ],
+      "time_in_force": [
+        "testcases\\broker_backtesting_test.py",
+        "testcases\\drawdown_analyzer_test.py",
+        "testcases\\position_test.py",
+        "testcases\\sharpe_analyzer_test.py",
+        "testcases\\strategy_test.py"
+      ],
+      "slippage_impact": [
+        "testcases\\returns_analyzer_test.py",
+        "testcases\\slippage_model_test.py"
+      ],
+      "fees_costs": [
+        "testcases\\barfeed_test.py",
+        "testcases\\bitstamp_test.py",
+        "testcases\\broker_backtesting_test.py",
+        "testcases\\btcharts_test.py",
+        "testcases\\csvfeed_test.py",
+        "testcases\\dbfeed_test.py",
+        "testcases\\doc_test.py",
+        "testcases\\drawdown_analyzer_test.py"
+      ],
+      "latency_time": [
+        "testcases\\utils_test.py"
+      ],
+      "queue_orderbook": [
+        "testcases\\bitstamp_test.py",
+        "testcases\\doc_test.py"
+      ],
+      "broker_rules": [
+        "testcases\\bitstamp_test.py",
+        "testcases\\broker_backtesting_test.py",
+        "testcases\\drawdown_analyzer_test.py",
+        "testcases\\logger_test.py",
+        "testcases\\multi_instrument_strategy_test.py",
+        "testcases\\position_test.py",
+        "testcases\\returns_analyzer_test.py",
+        "testcases\\sharpe_analyzer_test.py"
+      ],
+      "calendar_sessions": [
+        "testcases\\broker_backtesting_test.py",
+        "testcases\\csvfeed_test.py",
+        "testcases\\dbfeed_test.py",
+        "testcases\\multi_instrument_strategy_test.py",
+        "testcases\\ninjatraderfeed_test.py",
+        "testcases\\position_test.py",
+        "testcases\\resample_test.py",
+        "testcases\\returns_analyzer_test.py"
+      ],
+      "data_quality": [
+        "testcases\\broker_backtesting_test.py",
+        "testcases\\csvfeed_test.py",
+        "testcases\\dbfeed_test.py",
+        "testcases\\doc_test.py",
+        "testcases\\eventprofiler_test.py",
+        "testcases\\fill_strategy_test.py",
+        "testcases\\google_test.py",
+        "testcases\\multi_instrument_strategy_test.py"
+      ],
+      "agent_rl": [
+        "testcases\\bitstamp_test.py",
+        "testcases\\broker_backtesting_test.py",
+        "testcases\\broker_test.py",
+        "testcases\\drawdown_analyzer_test.py",
+        "testcases\\fill_strategy_test.py",
+        "testcases\\quandl_test.py",
+        "testcases\\returns_analyzer_test.py",
+        "testcases\\sharpe_analyzer_test.py"
+      ]
+    },
+    "test_focus_score": 126
+  },
+  {
+    "name": "jesse",
+    "test_files": 53,
+    "focused_topic_count": 10,
+    "order_lifecycle": 26,
+    "fills": 14,
+    "limit_market_stop": 15,
+    "time_in_force": 0,
+    "slippage_impact": 0,
+    "fees_costs": 17,
+    "latency_time": 15,
+    "queue_orderbook": 2,
+    "broker_rules": 17,
+    "calendar_sessions": 15,
+    "data_quality": 25,
+    "agent_rl": 5,
+    "sample_files": {
+      "order_lifecycle": [
+        "jesse\\mcp\\tools\\services\\significance_test.py",
+        "jesse\\mcp\\tools\\significance_test.py",
+        "tests\\data\\test_candles_indicators.py",
+        "tests\\test_backtest_session_chart_data.py",
+        "tests\\test_broker.py",
+        "tests\\test_completed_trade.py",
+        "tests\\test_conflicting_orders.py",
+        "tests\\test_dynamic_numpy_array.py"
+      ],
+      "fills": [
+        "tests\\test_broker.py",
+        "tests\\test_config_safety.py",
+        "tests\\test_helpers.py",
+        "tests\\test_import_candles.py",
+        "tests\\test_import_candles_workflow.py",
+        "tests\\test_live_session_chart_data.py",
+        "tests\\test_mcp_config.py",
+        "tests\\test_mcp_usage_limits.py"
+      ],
+      "limit_market_stop": [
+        "jesse\\mcp\\tools\\services\\significance_test.py",
+        "jesse\\mcp\\tools\\significance_test.py",
+        "tests\\test_broker.py",
+        "tests\\test_dynamic_numpy_array.py",
+        "tests\\test_exchange.py",
+        "tests\\test_import_candle_drivers.py",
+        "tests\\test_import_candles_workflow.py",
+        "tests\\test_indicators.py"
+      ],
+      "fees_costs": [
+        "jesse\\mcp\\tools\\services\\significance_test.py",
+        "tests\\test_broker.py",
+        "tests\\test_completed_trade.py",
+        "tests\\test_config_safety.py",
+        "tests\\test_exchange.py",
+        "tests\\test_helpers.py",
+        "tests\\test_isolated_backtest.py",
+        "tests\\test_mcp_config.py"
+      ],
+      "latency_time": [
+        "tests\\test_backtest.py",
+        "tests\\test_candle_service.py",
+        "tests\\test_candle_timeframe_filter.py",
+        "tests\\test_e2e_database.py",
+        "tests\\test_helpers.py",
+        "tests\\test_import_candle_drivers.py",
+        "tests\\test_import_candles.py",
+        "tests\\test_import_candles_workflow.py"
+      ],
+      "queue_orderbook": [
+        "tests\\test_helpers.py",
+        "tests\\test_state_orderbook.py"
+      ],
+      "broker_rules": [
+        "jesse\\mcp\\tools\\services\\significance_test.py",
+        "jesse\\mcp\\tools\\significance_test.py",
+        "tests\\test_broker.py",
+        "tests\\test_candle_timeframe_filter.py",
+        "tests\\test_completed_trade.py",
+        "tests\\test_exchange.py",
+        "tests\\test_helpers.py",
+        "tests\\test_indicators.py"
+      ],
+      "calendar_sessions": [
+        "jesse\\mcp\\tools\\services\\significance_test.py",
+        "jesse\\mcp\\tools\\significance_test.py",
+        "tests\\test_backtest_session_chart_data.py",
+        "tests\\test_chart_data_serialization.py",
+        "tests\\test_e2e_database.py",
+        "tests\\test_import_candle_drivers.py",
+        "tests\\test_import_candles_workflow.py",
+        "tests\\test_live_session_chart_data.py"
+      ],
+      "data_quality": [
+        "jesse\\mcp\\tools\\services\\significance_test.py",
+        "jesse\\mcp\\tools\\significance_test.py",
+        "tests\\data\\test_candles_indicators.py",
+        "tests\\test_backtest_session_chart_data.py",
+        "tests\\test_candle_service.py",
+        "tests\\test_chart_data_serialization.py",
+        "tests\\test_config_safety.py",
+        "tests\\test_e2e_database.py"
+      ],
+      "agent_rl": [
+        "jesse\\mcp\\tools\\services\\significance_test.py",
+        "jesse\\mcp\\tools\\significance_test.py",
+        "tests\\test_e2e_database.py",
+        "tests\\test_mcp_resources.py",
+        "tests\\test_rule_significance_testing.py"
+      ]
+    },
+    "test_focus_score": 117
+  },
+  {
+    "name": "rqalpha",
+    "test_files": 52,
+    "focused_topic_count": 11,
+    "order_lifecycle": 37,
+    "fills": 23,
+    "limit_market_stop": 13,
+    "time_in_force": 0,
+    "slippage_impact": 4,
+    "fees_costs": 10,
+    "latency_time": 3,
+    "queue_orderbook": 1,
+    "broker_rules": 23,
+    "calendar_sessions": 3,
+    "data_quality": 12,
+    "agent_rl": 16,
+    "sample_files": {
+      "order_lifecycle": [
+        "rqalpha\\examples\\test_pt.py",
+        "tests\\integration_tests\\conftest.py",
+        "tests\\integration_tests\\test_api\\mod\\sys_accounts\\test_account_model.py",
+        "tests\\integration_tests\\test_api\\mod\\sys_accounts\\test_margin_stocks.py",
+        "tests\\integration_tests\\test_api\\mod\\sys_accounts\\test_position_models.py",
+        "tests\\integration_tests\\test_api\\mod\\sys_simulation\\test_management_fee.py",
+        "tests\\integration_tests\\test_api\\mod\\sys_simulation\\test_signal_broker.py",
+        "tests\\integration_tests\\test_api\\mod\\sys_simulation\\test_simulation_broker.py"
+      ],
+      "fills": [
+        "rqalpha\\examples\\extend_api\\test_extend_api.py",
+        "tests\\integration_tests\\test_api\\mod\\sys_analyser\\test_negative_benchmark.py",
+        "tests\\integration_tests\\test_api\\mod\\sys_simulation\\test_simulation_broker.py",
+        "tests\\integration_tests\\test_api\\test_api_base.py",
+        "tests\\integration_tests\\test_api\\test_api_future.py",
+        "tests\\integration_tests\\test_api\\test_api_stock.py",
+        "tests\\integration_tests\\test_api\\test_config.py",
+        "tests\\integration_tests\\test_backtest_results\\test_f_buy_and_hold.py"
+      ],
+      "limit_market_stop": [
+        "tests\\integration_tests\\test_api\\mod\\sys_scheduler\\test_scheduler.py",
+        "tests\\integration_tests\\test_api\\mod\\sys_simulation\\test_signal_broker.py",
+        "tests\\integration_tests\\test_api\\mod\\sys_simulation\\test_simulation_broker.py",
+        "tests\\integration_tests\\test_api\\mod\\sys_simulation\\test_simulation_event_source_integration.py",
+        "tests\\integration_tests\\test_api\\test_api_base.py",
+        "tests\\integration_tests\\test_api\\test_api_stock.py",
+        "tests\\integration_tests\\test_api\\test_order_target_portfolio_smart_api.py",
+        "tests\\integration_tests\\test_backtest_results\\test_f_mean_reverting.py"
+      ],
+      "slippage_impact": [
+        "tests\\integration_tests\\test_backtest_results\\test_f_mean_reverting.py",
+        "tests\\integration_tests\\test_backtest_results\\test_f_tick_size.py",
+        "tests\\integration_tests\\test_backtest_results\\test_s_tick_size.py",
+        "tests\\unittest\\test_mod\\test_sys_simulation\\test_matcher.py"
+      ],
+      "fees_costs": [
+        "tests\\integration_tests\\test_api\\mod\\sys_accounts\\test_futures_settlement_price_type.py",
+        "tests\\integration_tests\\test_api\\mod\\sys_accounts\\test_position_models.py",
+        "tests\\integration_tests\\test_api\\mod\\sys_simulation\\test_management_fee.py",
+        "tests\\integration_tests\\test_api\\mod\\sys_transaction_cost\\test_commission_multiplier.py",
+        "tests\\integration_tests\\test_api\\test_config.py",
+        "tests\\integration_tests\\test_backtest_results\\test_s_pit_tax.py",
+        "tests\\integration_tests\\test_backtest_results\\test_s_scheduler.py",
+        "tests\\unittest\\test_mod\\test_sys_accounts\\test_api\\test_order_target_portfolio_smart_api_unittest.py"
+      ],
+      "latency_time": [
+        "tests\\test_bundle\\test_daybar.py",
+        "tests\\test_bundle\\test_daybar_checker.py",
+        "tests\\unittest\\test_mod\\test_sys_accounts\\test_api\\test_order_target_portfolio_smart_api_unittest.py"
+      ],
+      "queue_orderbook": [
+        "tests\\integration_tests\\test_api\\test_position_queue.py"
+      ],
+      "broker_rules": [
+        "rqalpha\\examples\\test_pt.py",
+        "tests\\integration_tests\\test_api\\mod\\sys_accounts\\test_account_model.py",
+        "tests\\integration_tests\\test_api\\mod\\sys_accounts\\test_futures_settlement_price_type.py",
+        "tests\\integration_tests\\test_api\\mod\\sys_accounts\\test_margin_stocks.py",
+        "tests\\integration_tests\\test_api\\mod\\sys_accounts\\test_position_models.py",
+        "tests\\integration_tests\\test_api\\mod\\sys_simulation\\test_signal_broker.py",
+        "tests\\integration_tests\\test_api\\test_api_base.py",
+        "tests\\integration_tests\\test_api\\test_api_future.py"
+      ],
+      "calendar_sessions": [
+        "tests\\integration_tests\\test_backtest_results\\conftest.py",
+        "tests\\unittest\\test_mod\\test_sys_simulation\\test_matcher.py",
+        "tests\\unittest\\test_mod\\test_sys_simulation\\test_simulation_event_source.py"
+      ],
+      "data_quality": [
+        "tests\\integration_tests\\conftest.py",
+        "tests\\integration_tests\\test_api\\mod\\sys_accounts\\test_account_model.py",
+        "tests\\integration_tests\\test_api\\mod\\sys_accounts\\test_futures_settlement_price_type.py",
+        "tests\\integration_tests\\test_api\\mod\\sys_accounts\\test_margin_stocks.py",
+        "tests\\integration_tests\\test_api\\mod\\sys_accounts\\test_position_models.py",
+        "tests\\integration_tests\\test_api\\test_api_base.py",
+        "tests\\integration_tests\\test_api\\test_api_stock.py",
+        "tests\\integration_tests\\test_api\\test_position_queue.py"
+      ],
+      "agent_rl": [
+        "tests\\integration_tests\\test_api\\mod\\sys_accounts\\test_futures_settlement_price_type.py",
+        "tests\\integration_tests\\test_api\\mod\\sys_accounts\\test_position_models.py",
+        "tests\\integration_tests\\test_api\\mod\\sys_analyser\\test_negative_benchmark.py",
+        "tests\\integration_tests\\test_api\\mod\\sys_simulation\\test_signal_broker.py",
+        "tests\\integration_tests\\test_api\\mod\\sys_transaction_cost\\test_commission_multiplier.py",
+        "tests\\integration_tests\\test_api\\test_api_stock.py",
+        "tests\\integration_tests\\test_api\\test_config.py",
+        "tests\\integration_tests\\test_backtest_results\\test_f_macd.py"
+      ]
+    },
+    "test_focus_score": 114
+  },
+  {
+    "name": "qlib",
+    "test_files": 43,
+    "focused_topic_count": 11,
+    "order_lifecycle": 10,
+    "fills": 10,
+    "limit_market_stop": 14,
+    "time_in_force": 0,
+    "slippage_impact": 2,
+    "fees_costs": 6,
+    "latency_time": 5,
+    "queue_orderbook": 4,
+    "broker_rules": 2,
+    "calendar_sessions": 6,
+    "data_quality": 18,
+    "agent_rl": 6,
+    "sample_files": {
+      "order_lifecycle": [
+        "tests\\backtest\\test_file_strategy.py",
+        "tests\\backtest\\test_high_freq_trading.py",
+        "tests\\misc\\test_index_data.py",
+        "tests\\misc\\test_utils.py",
+        "tests\\rl\\test_logger.py",
+        "tests\\rl\\test_qlib_simulator.py",
+        "tests\\rl\\test_saoe_simple.py",
+        "tests\\test_all_pipeline.py"
+      ],
+      "fills": [
+        "tests\\backtest\\test_high_freq_trading.py",
+        "tests\\backtest\\test_soft_topk_strategy.py",
+        "tests\\backtest\\test_soft_topk_strategy_cold_start.py",
+        "tests\\data_mid_layer_tests\\test_dataloader.py",
+        "tests\\data_mid_layer_tests\\test_dataset.py",
+        "tests\\data_mid_layer_tests\\test_processor.py",
+        "tests\\misc\\test_index_data.py",
+        "tests\\rl\\test_qlib_simulator.py"
+      ],
+      "limit_market_stop": [
+        "qlib\\tests\\__init__.py",
+        "tests\\backtest\\test_file_strategy.py",
+        "tests\\backtest\\test_high_freq_trading.py",
+        "tests\\backtest\\test_soft_topk_strategy.py",
+        "tests\\backtest\\test_soft_topk_strategy_cold_start.py",
+        "tests\\ops\\test_elem_operator.py",
+        "tests\\ops\\test_special_ops.py",
+        "tests\\rl\\test_finite_env.py"
+      ],
+      "slippage_impact": [
+        "tests\\backtest\\test_soft_topk_strategy.py",
+        "tests\\backtest\\test_soft_topk_strategy_cold_start.py"
+      ],
+      "fees_costs": [
+        "tests\\backtest\\test_file_strategy.py",
+        "tests\\backtest\\test_high_freq_trading.py",
+        "tests\\backtest\\test_soft_topk_strategy.py",
+        "tests\\backtest\\test_soft_topk_strategy_cold_start.py",
+        "tests\\rl\\test_qlib_simulator.py",
+        "tests\\test_all_pipeline.py"
+      ],
+      "latency_time": [
+        "tests\\misc\\test_index_data.py",
+        "tests\\misc\\test_utils.py",
+        "tests\\rl\\test_qlib_simulator.py",
+        "tests\\rl\\test_saoe_simple.py",
+        "tests\\test_dump_data.py"
+      ],
+      "queue_orderbook": [
+        "qlib\\tests\\config.py",
+        "tests\\backtest\\test_high_freq_trading.py",
+        "tests\\rl\\test_data_queue.py",
+        "tests\\rl\\test_logger.py"
+      ],
+      "broker_rules": [
+        "tests\\backtest\\test_file_strategy.py",
+        "tests\\backtest\\test_high_freq_trading.py"
+      ],
+      "calendar_sessions": [
+        "qlib\\tests\\__init__.py",
+        "qlib\\tests\\data.py",
+        "tests\\misc\\test_utils.py",
+        "tests\\rolling_tests\\test_update_pred.py",
+        "tests\\storage_tests\\test_storage.py",
+        "tests\\test_dump_data.py"
+      ],
+      "data_quality": [
+        "qlib\\tests\\data.py",
+        "qlib\\tests\\test_config_validation.py",
+        "tests\\backtest\\test_file_strategy.py",
+        "tests\\data_mid_layer_tests\\test_dataloader.py",
+        "tests\\data_mid_layer_tests\\test_dataset.py",
+        "tests\\data_mid_layer_tests\\test_handler.py",
+        "tests\\data_mid_layer_tests\\test_processor.py",
+        "tests\\dependency_tests\\test_mlflow.py"
+      ],
+      "agent_rl": [
+        "tests\\rl\\test_finite_env.py",
+        "tests\\rl\\test_logger.py",
+        "tests\\rl\\test_qlib_simulator.py",
+        "tests\\rl\\test_saoe_simple.py",
+        "tests\\rl\\test_trainer.py",
+        "tests\\test_structured_cov_estimator.py"
+      ]
+    },
+    "test_focus_score": 104
+  },
+  {
+    "name": "tensortrade",
+    "test_files": 76,
+    "focused_topic_count": 9,
+    "order_lifecycle": 18,
+    "fills": 12,
+    "limit_market_stop": 13,
+    "time_in_force": 0,
+    "slippage_impact": 0,
+    "fees_costs": 27,
+    "latency_time": 8,
+    "queue_orderbook": 0,
+    "broker_rules": 3,
+    "calendar_sessions": 4,
+    "data_quality": 6,
+    "agent_rl": 9,
+    "sample_files": {
+      "order_lifecycle": [
+        "tests\\tensortrade\\integration\\rllib\\test_checkpoint.py",
+        "tests\\tensortrade\\integration\\rllib\\test_env_creation.py",
+        "tests\\tensortrade\\integration\\rllib\\test_ray_training.py",
+        "tests\\tensortrade\\integration\\test_end_to_end.py",
+        "tests\\tensortrade\\unit\\base\\test_registry.py",
+        "tests\\tensortrade\\unit\\oms\\exchanges\\test_exchange_streams.py",
+        "tests\\tensortrade\\unit\\oms\\orders\\criteria\\test_compound.py",
+        "tests\\tensortrade\\unit\\oms\\orders\\criteria\\test_criteria.py"
+      ],
+      "fills": [
+        "tests\\tensortrade\\integration\\rllib\\test_checkpoint.py",
+        "tests\\tensortrade\\integration\\rllib\\test_env_creation.py",
+        "tests\\tensortrade\\integration\\rllib\\test_ray_training.py",
+        "tests\\tensortrade\\integration\\test_end_to_end.py",
+        "tests\\tensortrade\\unit\\feed\\api\\float\\test_imputations.py",
+        "tests\\tensortrade\\unit\\feed\\api\\float\\test_utils.py",
+        "tests\\tensortrade\\unit\\oms\\exchanges\\test_exchange_streams.py",
+        "tests\\tensortrade\\unit\\oms\\instruments\\test_quantity.py"
+      ],
+      "limit_market_stop": [
+        "tests\\tensortrade\\integration\\__init__.py",
+        "tests\\tensortrade\\integration\\rllib\\__init__.py",
+        "tests\\tensortrade\\integration\\rllib\\conftest.py",
+        "tests\\tensortrade\\integration\\rllib\\test_checkpoint.py",
+        "tests\\tensortrade\\integration\\rllib\\test_env_creation.py",
+        "tests\\tensortrade\\integration\\rllib\\test_ray_training.py",
+        "tests\\tensortrade\\integration\\test_end_to_end.py",
+        "tests\\tensortrade\\unit\\oms\\exchanges\\test_exchange_streams.py"
+      ],
+      "fees_costs": [
+        "tests\\tensortrade\\integration\\rllib\\test_checkpoint.py",
+        "tests\\tensortrade\\integration\\rllib\\test_env_creation.py",
+        "tests\\tensortrade\\integration\\rllib\\test_ray_training.py",
+        "tests\\tensortrade\\integration\\test_end_to_end.py",
+        "tests\\tensortrade\\unit\\feed\\api\\float\\test_accumulators.py",
+        "tests\\tensortrade\\unit\\feed\\api\\float\\test_imputations.py",
+        "tests\\tensortrade\\unit\\feed\\api\\float\\test_operations.py",
+        "tests\\tensortrade\\unit\\feed\\api\\float\\test_ordering.py"
+      ],
+      "latency_time": [
+        "tests\\tensortrade\\unit\\base\\test_clock.py",
+        "tests\\tensortrade\\unit\\oms\\orders\\criteria\\test_compound.py",
+        "tests\\tensortrade\\unit\\oms\\orders\\criteria\\test_timed.py",
+        "tests\\tensortrade\\unit\\oms\\orders\\test_order.py",
+        "tests\\tensortrade\\unit\\oms\\orders\\test_order_listener.py",
+        "tests\\tensortrade\\unit\\oms\\orders\\test_order_spec.py",
+        "tests\\tensortrade\\unit\\oms\\services\\execution\\test_simulated.py",
+        "tests\\tensortrade\\unit\\oms\\wallets\\test_portfolio.py"
+      ],
+      "broker_rules": [
+        "tests\\tensortrade\\integration\\rllib\\test_checkpoint.py",
+        "tests\\tensortrade\\integration\\rllib\\test_env_creation.py",
+        "tests\\tensortrade\\integration\\rllib\\test_ray_training.py"
+      ],
+      "calendar_sessions": [
+        "tests\\tensortrade\\integration\\rllib\\conftest.py",
+        "tests\\tensortrade\\integration\\rllib\\test_checkpoint.py",
+        "tests\\tensortrade\\integration\\rllib\\test_env_creation.py",
+        "tests\\tensortrade\\integration\\rllib\\test_ray_training.py"
+      ],
+      "data_quality": [
+        "tests\\tensortrade\\unit\\feed\\api\\float\\test_accumulators.py",
+        "tests\\tensortrade\\unit\\feed\\api\\float\\test_imputations.py",
+        "tests\\tensortrade\\unit\\feed\\api\\float\\test_utils.py",
+        "tests\\tensortrade\\unit\\feed\\api\\float\\window\\test_ewm.py",
+        "tests\\tensortrade\\unit\\feed\\api\\float\\window\\test_expanding.py",
+        "tests\\tensortrade\\unit\\feed\\api\\float\\window\\test_rolling.py"
+      ],
+      "agent_rl": [
+        "tests\\tensortrade\\integration\\rllib\\conftest.py",
+        "tests\\tensortrade\\integration\\rllib\\test_checkpoint.py",
+        "tests\\tensortrade\\integration\\rllib\\test_env_creation.py",
+        "tests\\tensortrade\\integration\\rllib\\test_ray_training.py",
+        "tests\\tensortrade\\integration\\test_end_to_end.py",
+        "tests\\tensortrade\\unit\\base\\test_component.py",
+        "tests\\tensortrade\\unit\\base\\test_context.py",
+        "tests\\tensortrade\\unit\\base\\test_registry.py"
+      ]
+    },
+    "test_focus_score": 97
+  },
+  {
+    "name": "tradingenv",
+    "test_files": 33,
+    "focused_topic_count": 11,
+    "order_lifecycle": 4,
+    "fills": 2,
+    "limit_market_stop": 3,
+    "time_in_force": 0,
+    "slippage_impact": 8,
+    "fees_costs": 6,
+    "latency_time": 6,
+    "queue_orderbook": 2,
+    "broker_rules": 15,
+    "calendar_sessions": 3,
+    "data_quality": 12,
+    "agent_rl": 17,
+    "sample_files": {
+      "order_lifecycle": [
+        "tests\\integration\\test_transmitter.py",
+        "tests\\notebooks\\test_notebooks.py",
+        "tests\\unit\\test_exchange.py",
+        "tests\\unit\\test_transmitter.py"
+      ],
+      "fills": [
+        "tests\\integration\\test_transmitter.py",
+        "tests\\notebooks\\test_notebooks.py"
+      ],
+      "limit_market_stop": [
+        "tests\\examples\\__init__.py",
+        "tests\\integration\\test_transmitter.py",
+        "tests\\unit\\test_exchange.py"
+      ],
+      "slippage_impact": [
+        "tests\\examples\\test_readme.py",
+        "tests\\integration\\test_broker.py",
+        "tests\\integration\\test_env.py",
+        "tests\\integration\\test_transmitter.py",
+        "tests\\regression\\test_env.py",
+        "tests\\unit\\test_exchange.py",
+        "tests\\unit\\test_library.py",
+        "tests\\unit\\test_trade.py"
+      ],
+      "fees_costs": [
+        "tests\\examples\\test_readme.py",
+        "tests\\integration\\test_broker.py",
+        "tests\\integration\\test_env.py",
+        "tests\\regression\\test_env.py",
+        "tests\\unit\\test_fees.py",
+        "tests\\unit\\test_trade.py"
+      ],
+      "latency_time": [
+        "tests\\examples\\test_readme.py",
+        "tests\\integration\\test_env.py",
+        "tests\\integration\\test_track_record.py",
+        "tests\\integration\\test_transmitter.py",
+        "tests\\unit\\test_library.py",
+        "tests\\unit\\test_transmitter.py"
+      ],
+      "queue_orderbook": [
+        "tests\\integration\\test_transmitter.py",
+        "tests\\unit\\test_exchange.py"
+      ],
+      "broker_rules": [
+        "tests\\examples\\test_readme.py",
+        "tests\\integration\\test_allocation.py",
+        "tests\\integration\\test_broker.py",
+        "tests\\integration\\test_env.py",
+        "tests\\integration\\test_features.py",
+        "tests\\integration\\test_rebalancing.py",
+        "tests\\integration\\test_track_record.py",
+        "tests\\regression\\test_env.py"
+      ],
+      "calendar_sessions": [
+        "tests\\examples\\test_readme.py",
+        "tests\\unit\\test_contracts.py",
+        "tests\\unit\\test_metrics.py"
+      ],
+      "data_quality": [
+        "tests\\examples\\test_readme.py",
+        "tests\\integration\\test_broker.py",
+        "tests\\integration\\test_env.py",
+        "tests\\integration\\test_rebalancing.py",
+        "tests\\integration\\test_track_record.py",
+        "tests\\integration\\test_transmitter.py",
+        "tests\\regression\\test_env.py",
+        "tests\\unit\\test_exchange.py"
+      ],
+      "agent_rl": [
+        "tests\\examples\\test_readme.py",
+        "tests\\integration\\test_broker.py",
+        "tests\\integration\\test_env.py",
+        "tests\\integration\\test_features.py",
+        "tests\\integration\\test_rebalancing.py",
+        "tests\\integration\\test_state.py",
+        "tests\\notebooks\\__init__.py",
+        "tests\\regression\\test_env.py"
+      ]
+    },
+    "test_focus_score": 97
+  },
+  {
+    "name": "vectorbt",
+    "test_files": 16,
+    "focused_topic_count": 10,
+    "order_lifecycle": 10,
+    "fills": 8,
+    "limit_market_stop": 6,
+    "time_in_force": 0,
+    "slippage_impact": 3,
+    "fees_costs": 4,
+    "latency_time": 8,
+    "queue_orderbook": 1,
+    "broker_rules": 5,
+    "calendar_sessions": 0,
+    "data_quality": 14,
+    "agent_rl": 1,
+    "sample_files": {
+      "order_lifecycle": [
+        "tests\\conftest.py",
+        "tests\\test_base.py",
+        "tests\\test_data.py",
+        "tests\\test_engine.py",
+        "tests\\test_generic.py",
+        "tests\\test_indicators.py",
+        "tests\\test_plotting.py",
+        "tests\\test_portfolio.py"
+      ],
+      "fills": [
+        "tests\\test_base.py",
+        "tests\\test_engine.py",
+        "tests\\test_generic.py",
+        "tests\\test_plotting.py",
+        "tests\\test_portfolio.py",
+        "tests\\test_records.py",
+        "tests\\test_returns.py",
+        "tests\\test_signals.py"
+      ],
+      "limit_market_stop": [
+        "tests\\test_base.py",
+        "tests\\test_engine.py",
+        "tests\\test_generic.py",
+        "tests\\test_indicators.py",
+        "tests\\test_portfolio.py",
+        "tests\\test_signals.py"
+      ],
+      "slippage_impact": [
+        "tests\\test_engine.py",
+        "tests\\test_portfolio.py",
+        "tests\\test_records.py"
+      ],
+      "fees_costs": [
+        "tests\\test_engine.py",
+        "tests\\test_plotting.py",
+        "tests\\test_portfolio.py",
+        "tests\\test_records.py"
+      ],
+      "latency_time": [
+        "tests\\test_data.py",
+        "tests\\test_generic.py",
+        "tests\\test_indicators.py",
+        "tests\\test_portfolio.py",
+        "tests\\test_records.py",
+        "tests\\test_returns.py",
+        "tests\\test_signals.py",
+        "tests\\test_utils.py"
+      ],
+      "queue_orderbook": [
+        "tests\\test_plotting.py"
+      ],
+      "broker_rules": [
+        "tests\\test_engine.py",
+        "tests\\test_indicators.py",
+        "tests\\test_plotting.py",
+        "tests\\test_portfolio.py",
+        "tests\\test_records.py"
+      ],
+      "data_quality": [
+        "tests\\conftest.py",
+        "tests\\test_base.py",
+        "tests\\test_data.py",
+        "tests\\test_engine.py",
+        "tests\\test_generic.py",
+        "tests\\test_indicators.py",
+        "tests\\test_labels.py",
+        "tests\\test_plotting.py"
+      ],
+      "agent_rl": [
+        "tests\\test_plotting.py"
+      ]
+    },
+    "test_focus_score": 86
+  },
+  {
+    "name": "qstrader",
+    "test_files": 30,
+    "focused_topic_count": 10,
+    "order_lifecycle": 11,
+    "fills": 4,
+    "limit_market_stop": 0,
+    "time_in_force": 2,
+    "slippage_impact": 0,
+    "fees_costs": 8,
+    "latency_time": 24,
+    "queue_orderbook": 1,
+    "broker_rules": 8,
+    "calendar_sessions": 2,
+    "data_quality": 1,
+    "agent_rl": 5,
+    "sample_files": {
+      "order_lifecycle": [
+        "tests\\conftest.py",
+        "tests\\integration\\portcon\\test_pcm_e2e.py",
+        "tests\\integration\\trading\\test_backtest_e2e.py",
+        "tests\\unit\\broker\\portfolio\\test_portfolio.py",
+        "tests\\unit\\broker\\portfolio\\test_position.py",
+        "tests\\unit\\broker\\portfolio\\test_position_handler.py",
+        "tests\\unit\\broker\\test_simulated_broker.py",
+        "tests\\unit\\broker\\transaction\\test_transaction.py"
+      ],
+      "fills": [
+        "tests\\integration\\portcon\\test_pcm_e2e.py",
+        "tests\\integration\\trading\\test_backtest_e2e.py",
+        "tests\\unit\\broker\\portfolio\\test_position.py",
+        "tests\\unit\\portcon\\test_pcm.py"
+      ],
+      "time_in_force": [
+        "tests\\integration\\portcon\\test_pcm_e2e.py",
+        "tests\\unit\\portcon\\test_pcm.py"
+      ],
+      "fees_costs": [
+        "tests\\unit\\broker\\fee_model\\test_percent_fee_model.py",
+        "tests\\unit\\broker\\fee_model\\test_zero_fee_model.py",
+        "tests\\unit\\broker\\portfolio\\test_portfolio.py",
+        "tests\\unit\\broker\\portfolio\\test_position.py",
+        "tests\\unit\\broker\\portfolio\\test_position_handler.py",
+        "tests\\unit\\broker\\test_simulated_broker.py",
+        "tests\\unit\\portcon\\order_sizer\\test_dollar_weighted.py",
+        "tests\\unit\\portcon\\order_sizer\\test_long_short.py"
+      ],
+      "latency_time": [
+        "tests\\integration\\portcon\\test_pcm_e2e.py",
+        "tests\\integration\\trading\\test_backtest_e2e.py",
+        "tests\\unit\\alpha_model\\test_fixed_signals.py",
+        "tests\\unit\\alpha_model\\test_single_signal.py",
+        "tests\\unit\\asset\\universe\\test_dynamic_universe.py",
+        "tests\\unit\\asset\\universe\\test_static_universe.py",
+        "tests\\unit\\broker\\portfolio\\test_portfolio.py",
+        "tests\\unit\\broker\\portfolio\\test_position.py"
+      ],
+      "queue_orderbook": [
+        "tests\\unit\\broker\\test_simulated_broker.py"
+      ],
+      "broker_rules": [
+        "tests\\integration\\portcon\\test_pcm_e2e.py",
+        "tests\\integration\\trading\\test_backtest_e2e.py",
+        "tests\\unit\\asset\\test_cash.py",
+        "tests\\unit\\broker\\portfolio\\test_portfolio.py",
+        "tests\\unit\\broker\\portfolio\\test_position.py",
+        "tests\\unit\\broker\\test_simulated_broker.py",
+        "tests\\unit\\portcon\\order_sizer\\test_dollar_weighted.py",
+        "tests\\unit\\portcon\\order_sizer\\test_long_short.py"
+      ],
+      "calendar_sessions": [
+        "tests\\integration\\trading\\test_backtest_e2e.py",
+        "tests\\unit\\system\\rebalance\\test_buy_and_hold_rebalance.py"
+      ],
+      "data_quality": [
+        "tests\\unit\\broker\\test_simulated_broker.py"
+      ],
+      "agent_rl": [
+        "tests\\unit\\broker\\portfolio\\test_portfolio.py",
+        "tests\\unit\\broker\\portfolio\\test_position.py",
+        "tests\\unit\\broker\\portfolio\\test_position_handler.py",
+        "tests\\unit\\broker\\test_simulated_broker.py",
+        "tests\\unit\\broker\\transaction\\test_transaction.py"
+      ]
+    },
+    "test_focus_score": 81
+  },
+  {
+    "name": "blankly",
+    "test_files": 19,
+    "focused_topic_count": 11,
+    "order_lifecycle": 16,
+    "fills": 5,
+    "limit_market_stop": 5,
+    "time_in_force": 1,
+    "slippage_impact": 0,
+    "fees_costs": 3,
+    "latency_time": 4,
+    "queue_orderbook": 1,
+    "broker_rules": 5,
+    "calendar_sessions": 1,
+    "data_quality": 6,
+    "agent_rl": 3,
+    "sample_files": {
+      "order_lifecycle": [
+        "tests\\exchanges\\interfaces\\alpaca\\test_alpaca_interface.py",
+        "tests\\exchanges\\interfaces\\alpaca\\test_alpaca_interface_functional.py",
+        "tests\\exchanges\\interfaces\\binance\\test_binance_interface.py",
+        "tests\\exchanges\\interfaces\\coinbase_pro\\test_coinbase_pro_interface.py",
+        "tests\\exchanges\\interfaces\\ftx\\test_ftx_interface.py",
+        "tests\\exchanges\\interfaces\\ftx\\test_ftx_interface_utils.py",
+        "tests\\exchanges\\interfaces\\oanda\\test_oanda_interface.py",
+        "tests\\exchanges\\test_interface_homogeneity.py"
+      ],
+      "fills": [
+        "tests\\exchanges\\interfaces\\alpaca\\test_alpaca_interface.py",
+        "tests\\exchanges\\interfaces\\alpaca\\test_alpaca_interface_functional.py",
+        "tests\\exchanges\\interfaces\\binance\\test_binance_interface.py",
+        "tests\\exchanges\\interfaces\\ftx\\test_ftx_interface.py",
+        "tests\\exchanges\\test_interface_homogeneity.py"
+      ],
+      "limit_market_stop": [
+        "tests\\exchanges\\interfaces\\alpaca\\test_alpaca_interface.py",
+        "tests\\exchanges\\interfaces\\coinbase_pro\\test_coinbase_pro_interface.py",
+        "tests\\exchanges\\interfaces\\ftx\\test_ftx_interface.py",
+        "tests\\exchanges\\interfaces\\oanda\\test_oanda_interface.py",
+        "tests\\exchanges\\test_interface_homogeneity.py"
+      ],
+      "time_in_force": [
+        "tests\\exchanges\\test_interface_homogeneity.py"
+      ],
+      "fees_costs": [
+        "tests\\exchanges\\interfaces\\alpaca\\test_alpaca_interface.py",
+        "tests\\exchanges\\interfaces\\ftx\\test_ftx_interface.py",
+        "tests\\exchanges\\test_interface_homogeneity.py"
+      ],
+      "latency_time": [
+        "tests\\exchanges\\interfaces\\alpaca\\test_alpaca_interface_functional.py",
+        "tests\\exchanges\\interfaces\\coinbase_pro\\test_coinbase_pro_interface.py",
+        "tests\\exchanges\\interfaces\\oanda\\test_oanda_interface.py",
+        "tests\\exchanges\\test_interface_homogeneity.py"
+      ],
+      "queue_orderbook": [
+        "tests\\websockets\\test_crypto_websockets.py"
+      ],
+      "broker_rules": [
+        "tests\\exchanges\\interfaces\\alpaca\\test_alpaca_interface.py",
+        "tests\\exchanges\\interfaces\\alpaca\\test_alpaca_interface_functional.py",
+        "tests\\exchanges\\interfaces\\oanda\\test_oanda_interface.py",
+        "tests\\indicators\\test_moving_averages.py",
+        "tests\\indicators\\test_oscillators.py"
+      ],
+      "calendar_sessions": [
+        "tests\\exchanges\\test_interface_homogeneity.py"
+      ],
+      "data_quality": [
+        "tests\\exchanges\\interfaces\\alpaca\\test_alpaca_interface.py",
+        "tests\\exchanges\\interfaces\\binance\\test_binance_interface.py",
+        "tests\\exchanges\\test_interface_homogeneity.py",
+        "tests\\strategy\\test_strategy.py",
+        "tests\\testing_utils.py",
+        "tests\\websockets\\test_crypto_websockets.py"
+      ],
+      "agent_rl": [
+        "tests\\exchanges\\interfaces\\alpaca\\test_alpaca_interface.py",
+        "tests\\exchanges\\interfaces\\alpaca\\test_alpaca_interface_functional.py",
+        "tests\\exchanges\\test_interface_homogeneity.py"
+      ]
+    },
+    "test_focus_score": 77
+  },
+  {
+    "name": "pybroker",
+    "test_files": 16,
+    "focused_topic_count": 10,
+    "order_lifecycle": 6,
+    "fills": 9,
+    "limit_market_stop": 4,
+    "time_in_force": 0,
+    "slippage_impact": 2,
+    "fees_costs": 4,
+    "latency_time": 5,
+    "queue_orderbook": 0,
+    "broker_rules": 5,
+    "calendar_sessions": 3,
+    "data_quality": 6,
+    "agent_rl": 3,
+    "sample_files": {
+      "order_lifecycle": [
+        "tests\\fixtures.py",
+        "tests\\test_context.py",
+        "tests\\test_portfolio.py",
+        "tests\\test_scope.py",
+        "tests\\test_slippage.py",
+        "tests\\test_strategy.py"
+      ],
+      "fills": [
+        "tests\\fixtures.py",
+        "tests\\test_context.py",
+        "tests\\test_data.py",
+        "tests\\test_exit_on_last_bar_perf.py",
+        "tests\\test_indicator.py",
+        "tests\\test_model.py",
+        "tests\\test_portfolio.py",
+        "tests\\test_scope.py"
+      ],
+      "limit_market_stop": [
+        "tests\\fixtures.py",
+        "tests\\test_context.py",
+        "tests\\test_portfolio.py",
+        "tests\\test_strategy.py"
+      ],
+      "slippage_impact": [
+        "tests\\test_slippage.py",
+        "tests\\test_strategy.py"
+      ],
+      "fees_costs": [
+        "tests\\test_context.py",
+        "tests\\test_eval.py",
+        "tests\\test_portfolio.py",
+        "tests\\test_strategy.py"
+      ],
+      "latency_time": [
+        "tests\\test_common.py",
+        "tests\\test_data.py",
+        "tests\\test_eval.py",
+        "tests\\test_indicator.py",
+        "tests\\test_strategy.py"
+      ],
+      "broker_rules": [
+        "tests\\test_context.py",
+        "tests\\test_indicator.py",
+        "tests\\test_portfolio.py",
+        "tests\\test_strategy.py",
+        "tests\\test_vect.py"
+      ],
+      "calendar_sessions": [
+        "tests\\test_context.py",
+        "tests\\test_slippage.py",
+        "tests\\test_strategy.py"
+      ],
+      "data_quality": [
+        "tests\\test_common.py",
+        "tests\\test_data.py",
+        "tests\\test_indicator.py",
+        "tests\\test_scope.py",
+        "tests\\test_strategy.py",
+        "tests\\test_vect.py"
+      ],
+      "agent_rl": [
+        "tests\\test_context.py",
+        "tests\\test_portfolio.py",
+        "tests\\test_strategy.py"
+      ]
+    },
+    "test_focus_score": 77
+  },
+  {
+    "name": "abides-jpmc-public",
+    "test_files": 22,
+    "focused_topic_count": 7,
+    "order_lifecycle": 17,
+    "fills": 4,
+    "limit_market_stop": 10,
+    "time_in_force": 0,
+    "slippage_impact": 0,
+    "fees_costs": 0,
+    "latency_time": 1,
+    "queue_orderbook": 12,
+    "broker_rules": 0,
+    "calendar_sessions": 0,
+    "data_quality": 4,
+    "agent_rl": 12,
+    "sample_files": {
+      "order_lifecycle": [
+        "abides-markets\\tests\\__init__.py",
+        "abides-markets\\tests\\orderbook\\__init__.py",
+        "abides-markets\\tests\\orderbook\\test_cancel_order.py",
+        "abides-markets\\tests\\orderbook\\test_data_methods.py",
+        "abides-markets\\tests\\orderbook\\test_limit_orders.py",
+        "abides-markets\\tests\\orderbook\\test_market_orders.py",
+        "abides-markets\\tests\\orderbook\\test_modify_order.py",
+        "abides-markets\\tests\\orderbook\\test_orderbook.py"
+      ],
+      "fills": [
+        "abides-markets\\tests\\orderbook\\test_limit_orders.py",
+        "abides-markets\\tests\\orderbook\\test_market_orders.py",
+        "abides-markets\\tests\\orderbook\\test_price_to_comply.py",
+        "abides-markets\\tests\\test_gym_runner.py"
+      ],
+      "limit_market_stop": [
+        "abides-markets\\tests\\orderbook\\__init__.py",
+        "abides-markets\\tests\\orderbook\\test_cancel_order.py",
+        "abides-markets\\tests\\orderbook\\test_limit_orders.py",
+        "abides-markets\\tests\\orderbook\\test_market_orders.py",
+        "abides-markets\\tests\\orderbook\\test_modify_order.py",
+        "abides-markets\\tests\\orderbook\\test_price_level.py",
+        "abides-markets\\tests\\orderbook\\test_price_to_comply.py",
+        "abides-markets\\tests\\orderbook\\test_replace_order.py"
+      ],
+      "latency_time": [
+        "abides-markets\\tests\\test_sim.py"
+      ],
+      "queue_orderbook": [
+        "abides-markets\\tests\\orderbook\\__init__.py",
+        "abides-markets\\tests\\orderbook\\test_cancel_order.py",
+        "abides-markets\\tests\\orderbook\\test_data_methods.py",
+        "abides-markets\\tests\\orderbook\\test_limit_orders.py",
+        "abides-markets\\tests\\orderbook\\test_market_orders.py",
+        "abides-markets\\tests\\orderbook\\test_modify_order.py",
+        "abides-markets\\tests\\orderbook\\test_orderbook.py",
+        "abides-markets\\tests\\orderbook\\test_price_level.py"
+      ],
+      "data_quality": [
+        "abides-markets\\tests\\test_orders.py",
+        "version_testing\\test_config.py",
+        "version_testing\\test_current_vs_pastcommit.py",
+        "version_testing\\test_original_vs_functionalized.py"
+      ],
+      "agent_rl": [
+        "abides-markets\\tests\\orderbook\\__init__.py",
+        "abides-markets\\tests\\orderbook\\test_cancel_order.py",
+        "abides-markets\\tests\\orderbook\\test_data_methods.py",
+        "abides-markets\\tests\\orderbook\\test_limit_orders.py",
+        "abides-markets\\tests\\orderbook\\test_market_orders.py",
+        "abides-markets\\tests\\orderbook\\test_modify_order.py",
+        "abides-markets\\tests\\orderbook\\test_orderbook.py",
+        "abides-markets\\tests\\orderbook\\test_price_to_comply.py"
+      ]
+    },
+    "test_focus_score": 70
+  },
+  {
+    "name": "backtrader",
+    "test_files": 83,
+    "focused_topic_count": 7,
+    "order_lifecycle": 83,
+    "fills": 4,
+    "limit_market_stop": 5,
+    "time_in_force": 0,
+    "slippage_impact": 0,
+    "fees_costs": 8,
+    "latency_time": 4,
+    "queue_orderbook": 0,
+    "broker_rules": 7,
+    "calendar_sessions": 0,
+    "data_quality": 3,
+    "agent_rl": 0,
+    "sample_files": {
+      "order_lifecycle": [
+        "tests\\test_analyzer-sqn.py",
+        "tests\\test_analyzer-timereturn.py",
+        "tests\\test_comminfo.py",
+        "tests\\test_data_multiframe.py",
+        "tests\\test_data_replay.py",
+        "tests\\test_data_resample.py",
+        "tests\\test_ind_accdecosc.py",
+        "tests\\test_ind_aroonoscillator.py"
+      ],
+      "fills": [
+        "tests\\test_analyzer-sqn.py",
+        "tests\\test_analyzer-timereturn.py",
+        "tests\\test_order.py",
+        "tests\\test_strategy_unoptimized.py"
+      ],
+      "limit_market_stop": [
+        "tests\\test_analyzer-sqn.py",
+        "tests\\test_analyzer-timereturn.py",
+        "tests\\test_strategy_optimized.py",
+        "tests\\test_strategy_unoptimized.py",
+        "tests\\testcommon.py"
+      ],
+      "fees_costs": [
+        "tests\\test_analyzer-sqn.py",
+        "tests\\test_analyzer-timereturn.py",
+        "tests\\test_comminfo.py",
+        "tests\\test_order.py",
+        "tests\\test_strategy_optimized.py",
+        "tests\\test_strategy_unoptimized.py",
+        "tests\\test_trade.py",
+        "tests\\testcommon.py"
+      ],
+      "latency_time": [
+        "tests\\test_analyzer-sqn.py",
+        "tests\\test_analyzer-timereturn.py",
+        "tests\\test_strategy_optimized.py",
+        "tests\\test_strategy_unoptimized.py"
+      ],
+      "broker_rules": [
+        "tests\\test_analyzer-sqn.py",
+        "tests\\test_analyzer-timereturn.py",
+        "tests\\test_comminfo.py",
+        "tests\\test_ind_pposhort.py",
+        "tests\\test_order.py",
+        "tests\\test_strategy_optimized.py",
+        "tests\\test_strategy_unoptimized.py"
+      ],
+      "data_quality": [
+        "tests\\test_data_resample.py",
+        "tests\\test_ind_ichimoku.py",
+        "tests\\test_study_fractal.py"
+      ]
+    },
+    "test_focus_score": 62
+  },
+  {
+    "name": "bt",
+    "test_files": 6,
+    "focused_topic_count": 9,
+    "order_lifecycle": 1,
+    "fills": 0,
+    "limit_market_stop": 1,
+    "time_in_force": 0,
+    "slippage_impact": 2,
+    "fees_costs": 3,
+    "latency_time": 1,
+    "queue_orderbook": 2,
+    "broker_rules": 2,
+    "calendar_sessions": 0,
+    "data_quality": 2,
+    "agent_rl": 3,
+    "sample_files": {
+      "order_lifecycle": [
+        "tests\\test_core.py"
+      ],
+      "limit_market_stop": [
+        "tests\\test_algos.py"
+      ],
+      "slippage_impact": [
+        "tests\\test_backtest.py",
+        "tests\\test_core.py"
+      ],
+      "fees_costs": [
+        "tests\\test_algos.py",
+        "tests\\test_backtest.py",
+        "tests\\test_core.py"
+      ],
+      "latency_time": [
+        "tests\\test_algos.py"
+      ],
+      "queue_orderbook": [
+        "tests\\test_backtest.py",
+        "tests\\test_core.py"
+      ],
+      "broker_rules": [
+        "tests\\test_algos.py",
+        "tests\\test_core.py"
+      ],
+      "data_quality": [
+        "tests\\test_algos.py",
+        "tests\\test_core.py"
+      ],
+      "agent_rl": [
+        "tests\\test_algos.py",
+        "tests\\test_backtest.py",
+        "tests\\test_core.py"
+      ]
+    },
+    "test_focus_score": 44
+  },
+  {
+    "name": "FinRL",
+    "test_files": 6,
+    "focused_topic_count": 6,
+    "order_lifecycle": 1,
+    "fills": 0,
+    "limit_market_stop": 0,
+    "time_in_force": 0,
+    "slippage_impact": 0,
+    "fees_costs": 1,
+    "latency_time": 1,
+    "queue_orderbook": 0,
+    "broker_rules": 1,
+    "calendar_sessions": 4,
+    "data_quality": 0,
+    "agent_rl": 1,
+    "sample_files": {
+      "order_lifecycle": [
+        "unit_tests\\preprocessors\\test_yahoodownloader.py"
+      ],
+      "fees_costs": [
+        "unit_tests\\environments\\test_cash_penalty.py"
+      ],
+      "latency_time": [
+        "unit_tests\\downloaders\\test_alpaca_downloader.py"
+      ],
+      "broker_rules": [
+        "unit_tests\\environments\\test_cash_penalty.py"
+      ],
+      "calendar_sessions": [
+        "unit_tests\\downloaders\\test_alpaca_downloader.py",
+        "unit_tests\\downloaders\\test_yahoo_downloader.py",
+        "unit_tests\\environments\\test_cash_penalty.py",
+        "unit_tests\\test_core.py"
+      ],
+      "agent_rl": [
+        "unit_tests\\environments\\test_cash_penalty.py"
+      ]
+    },
+    "test_focus_score": 27
+  },
+  {
+    "name": "hftbacktest",
+    "test_files": 1,
+    "focused_topic_count": 4,
+    "order_lifecycle": 1,
+    "fills": 1,
+    "limit_market_stop": 0,
+    "time_in_force": 0,
+    "slippage_impact": 0,
+    "fees_costs": 0,
+    "latency_time": 1,
+    "queue_orderbook": 1,
+    "broker_rules": 0,
+    "calendar_sessions": 0,
+    "data_quality": 0,
+    "agent_rl": 0,
+    "sample_files": {
+      "order_lifecycle": [
+        "py-hftbacktest\\tests\\test_hftbacktest.py"
+      ],
+      "fills": [
+        "py-hftbacktest\\tests\\test_hftbacktest.py"
+      ],
+      "latency_time": [
+        "py-hftbacktest\\tests\\test_hftbacktest.py"
+      ],
+      "queue_orderbook": [
+        "py-hftbacktest\\tests\\test_hftbacktest.py"
+      ]
+    },
+    "test_focus_score": 16
+  },
+  {
+    "name": "vnpy",
+    "test_files": 4,
+    "focused_topic_count": 4,
+    "order_lifecycle": 0,
+    "fills": 0,
+    "limit_market_stop": 0,
+    "time_in_force": 0,
+    "slippage_impact": 0,
+    "fees_costs": 0,
+    "latency_time": 1,
+    "queue_orderbook": 1,
+    "broker_rules": 1,
+    "calendar_sessions": 0,
+    "data_quality": 1,
+    "agent_rl": 0,
+    "sample_files": {
+      "latency_time": [
+        "tests\\test_alpha101.py"
+      ],
+      "queue_orderbook": [
+        "tests\\test_alpha101.py"
+      ],
+      "broker_rules": [
+        "tests\\test_alpha101.py"
+      ],
+      "data_quality": [
+        "tests\\test_alpha101.py"
+      ]
+    },
+    "test_focus_score": 16
+  },
+  {
+    "name": "abides",
+    "test_files": 0,
+    "focused_topic_count": 0,
+    "order_lifecycle": 0,
+    "fills": 0,
+    "limit_market_stop": 0,
+    "time_in_force": 0,
+    "slippage_impact": 0,
+    "fees_costs": 0,
+    "latency_time": 0,
+    "queue_orderbook": 0,
+    "broker_rules": 0,
+    "calendar_sessions": 0,
+    "data_quality": 0,
+    "agent_rl": 0,
+    "sample_files": {},
+    "test_focus_score": 0
+  },
+  {
+    "name": "gym-anytrading",
+    "test_files": 0,
+    "focused_topic_count": 0,
+    "order_lifecycle": 0,
+    "fills": 0,
+    "limit_market_stop": 0,
+    "time_in_force": 0,
+    "slippage_impact": 0,
+    "fees_costs": 0,
+    "latency_time": 0,
+    "queue_orderbook": 0,
+    "broker_rules": 0,
+    "calendar_sessions": 0,
+    "data_quality": 0,
+    "agent_rl": 0,
+    "sample_files": {},
+    "test_focus_score": 0
+  },
+  {
+    "name": "gym-trading-env",
+    "test_files": 0,
+    "focused_topic_count": 0,
+    "order_lifecycle": 0,
+    "fills": 0,
+    "limit_market_stop": 0,
+    "time_in_force": 0,
+    "slippage_impact": 0,
+    "fees_costs": 0,
+    "latency_time": 0,
+    "queue_orderbook": 0,
+    "broker_rules": 0,
+    "calendar_sessions": 0,
+    "data_quality": 0,
+    "agent_rl": 0,
+    "sample_files": {},
+    "test_focus_score": 0
+  }
+]

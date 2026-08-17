@@ -1,0 +1,705 @@
+[
+  {
+    "run_id": "sim_daily_buy_hold",
+    "adapter": "reference_bar",
+    "strategy": "buy_hold",
+    "dataset": "data\\synthetic\\normal_daily.csv",
+    "symbol": "SIM",
+    "initial_cash": 100000,
+    "final_cash": 90027.0088006,
+    "final_position": 100.0,
+    "final_price": 97.9156,
+    "final_equity": 99818.5688006,
+    "return_pct": -0.18143119940000618,
+    "fill_count": 1,
+    "signal_count": 1,
+    "notes": [],
+    "fills": [
+      {
+        "timestamp": "2024-01-03T00:00:00+00:00",
+        "symbol": "SIM",
+        "side": "buy",
+        "quantity": 100.0,
+        "price": 99.71994,
+        "fee": 0.9971993999999998,
+        "source_signal_timestamp": "2024-01-02T00:00:00+00:00"
+      }
+    ]
+  },
+  {
+    "run_id": "sim_daily_buy_hold",
+    "adapter": "backtrader",
+    "strategy": "buy_hold",
+    "dataset": "data\\synthetic\\normal_daily.csv",
+    "symbol": "SIM",
+    "initial_cash": 100000,
+    "final_cash": 90027.0088006,
+    "final_position": 100.0,
+    "final_price": 97.9156,
+    "final_equity": 99818.5688006,
+    "return_pct": -0.18143119940000618,
+    "fill_count": 1,
+    "signal_count": 1,
+    "notes": [
+      "Backtrader volume filler enabled with FixedSize(size=None)"
+    ],
+    "fills": [
+      {
+        "timestamp": "2024-01-03T00:00:00+00:00",
+        "symbol": "SIM",
+        "side": "buy",
+        "quantity": 100.0,
+        "price": 99.71994,
+        "fee": 0.9971994,
+        "source_signal_timestamp": "2024-01-02T00:00:00+00:00"
+      }
+    ]
+  },
+  {
+    "run_id": "sim_daily_buy_hold",
+    "adapter": "vectorbt",
+    "strategy": "buy_hold",
+    "dataset": "data\\synthetic\\normal_daily.csv",
+    "symbol": "SIM",
+    "initial_cash": 100000,
+    "final_cash": 90027.0088006,
+    "final_position": 100.0,
+    "final_price": 97.9156,
+    "final_equity": 99818.5688006,
+    "return_pct": -0.18143119940000618,
+    "fill_count": 1,
+    "signal_count": 1,
+    "notes": [],
+    "fills": [
+      {
+        "timestamp": "2024-01-03T00:00:00+00:00",
+        "symbol": "SIM",
+        "side": "buy",
+        "quantity": 100.0,
+        "price": 99.71994,
+        "fee": 0.9971994,
+        "source_signal_timestamp": "2024-01-02T00:00:00+00:00"
+      }
+    ]
+  },
+  {
+    "run_id": "sim_daily_buy_hold",
+    "adapter": "pybroker",
+    "strategy": "buy_hold",
+    "dataset": "data\\synthetic\\normal_daily.csv",
+    "symbol": "SIM",
+    "initial_cash": 100000,
+    "final_cash": 90027.0088006,
+    "final_position": 100.0,
+    "final_price": 97.9156,
+    "final_equity": 99818.5688006,
+    "return_pct": -0.18143119940000618,
+    "fill_count": 1,
+    "signal_count": 1,
+    "notes": [],
+    "fills": [
+      {
+        "timestamp": "2024-01-03T00:00:00",
+        "symbol": "SIM",
+        "side": "buy",
+        "quantity": 100.0,
+        "price": 99.71994,
+        "fee": 0.9971994,
+        "source_signal_timestamp": "2024-01-02T00:00:00+00:00"
+      }
+    ]
+  },
+  {
+    "run_id": "sim_daily_buy_hold",
+    "adapter": "lean",
+    "strategy": "buy_hold",
+    "dataset": "data\\synthetic\\normal_daily.csv",
+    "symbol": "SIM",
+    "initial_cash": 100000,
+    "final_cash": 100000,
+    "final_position": 0.0,
+    "final_price": 97.9156,
+    "final_equity": 100000,
+    "return_pct": 0.0,
+    "fill_count": 0,
+    "signal_count": 1,
+    "notes": [
+      "UNAVAILABLE: LEAN adapter slot is present, but v1 has not generated a LEAN algorithm project/config from AdapterContext yet",
+      "LEAN is still a first-wave target because it has the strongest all-around broker/order model surface.",
+      "Next implementation step: generate a minimal C#/Python LEAN algorithm that reads canonical CSV bars and emits normalized fills."
+    ],
+    "fills": []
+  },
+  {
+    "run_id": "sim_daily_sma_cross_3_8",
+    "adapter": "reference_bar",
+    "strategy": "sma_cross",
+    "dataset": "data\\synthetic\\normal_daily.csv",
+    "symbol": "SIM",
+    "initial_cash": 100000,
+    "final_cash": 100000,
+    "final_position": 0.0,
+    "final_price": 97.9156,
+    "final_equity": 100000.0,
+    "return_pct": 0.0,
+    "fill_count": 0,
+    "signal_count": 1,
+    "notes": [],
+    "fills": []
+  },
+  {
+    "run_id": "sim_daily_sma_cross_3_8",
+    "adapter": "backtrader",
+    "strategy": "sma_cross",
+    "dataset": "data\\synthetic\\normal_daily.csv",
+    "symbol": "SIM",
+    "initial_cash": 100000,
+    "final_cash": 100000.0,
+    "final_position": 0.0,
+    "final_price": 97.9156,
+    "final_equity": 100000.0,
+    "return_pct": 0.0,
+    "fill_count": 0,
+    "signal_count": 1,
+    "notes": [
+      "Backtrader volume filler enabled with FixedSize(size=None)"
+    ],
+    "fills": []
+  },
+  {
+    "run_id": "sim_daily_sma_cross_3_8",
+    "adapter": "vectorbt",
+    "strategy": "sma_cross",
+    "dataset": "data\\synthetic\\normal_daily.csv",
+    "symbol": "SIM",
+    "initial_cash": 100000,
+    "final_cash": 100000.0,
+    "final_position": 0.0,
+    "final_price": 97.9156,
+    "final_equity": 100000.0,
+    "return_pct": 0.0,
+    "fill_count": 0,
+    "signal_count": 1,
+    "notes": [],
+    "fills": []
+  },
+  {
+    "run_id": "sim_daily_sma_cross_3_8",
+    "adapter": "pybroker",
+    "strategy": "sma_cross",
+    "dataset": "data\\synthetic\\normal_daily.csv",
+    "symbol": "SIM",
+    "initial_cash": 100000,
+    "final_cash": 100000.0,
+    "final_position": 0.0,
+    "final_price": 97.9156,
+    "final_equity": 100000.0,
+    "return_pct": 0.0,
+    "fill_count": 0,
+    "signal_count": 1,
+    "notes": [],
+    "fills": []
+  },
+  {
+    "run_id": "sim_daily_sma_cross_3_8",
+    "adapter": "lean",
+    "strategy": "sma_cross",
+    "dataset": "data\\synthetic\\normal_daily.csv",
+    "symbol": "SIM",
+    "initial_cash": 100000,
+    "final_cash": 100000,
+    "final_position": 0.0,
+    "final_price": 97.9156,
+    "final_equity": 100000,
+    "return_pct": 0.0,
+    "fill_count": 0,
+    "signal_count": 1,
+    "notes": [
+      "UNAVAILABLE: LEAN adapter slot is present, but v1 has not generated a LEAN algorithm project/config from AdapterContext yet",
+      "LEAN is still a first-wave target because it has the strongest all-around broker/order model surface.",
+      "Next implementation step: generate a minimal C#/Python LEAN algorithm that reads canonical CSV bars and emits normalized fills."
+    ],
+    "fills": []
+  },
+  {
+    "run_id": "sim_daily_breakout_6",
+    "adapter": "reference_bar",
+    "strategy": "breakout_channel",
+    "dataset": "data\\synthetic\\normal_daily.csv",
+    "symbol": "SIM",
+    "initial_cash": 100000,
+    "final_cash": 100000,
+    "final_position": 0.0,
+    "final_price": 97.9156,
+    "final_equity": 100000.0,
+    "return_pct": 0.0,
+    "fill_count": 0,
+    "signal_count": 0,
+    "notes": [],
+    "fills": []
+  },
+  {
+    "run_id": "sim_daily_breakout_6",
+    "adapter": "backtrader",
+    "strategy": "breakout_channel",
+    "dataset": "data\\synthetic\\normal_daily.csv",
+    "symbol": "SIM",
+    "initial_cash": 100000,
+    "final_cash": 100000.0,
+    "final_position": 0.0,
+    "final_price": 97.9156,
+    "final_equity": 100000.0,
+    "return_pct": 0.0,
+    "fill_count": 0,
+    "signal_count": 0,
+    "notes": [
+      "Backtrader volume filler enabled with FixedSize(size=None)"
+    ],
+    "fills": []
+  },
+  {
+    "run_id": "sim_daily_breakout_6",
+    "adapter": "vectorbt",
+    "strategy": "breakout_channel",
+    "dataset": "data\\synthetic\\normal_daily.csv",
+    "symbol": "SIM",
+    "initial_cash": 100000,
+    "final_cash": 100000.0,
+    "final_position": 0.0,
+    "final_price": 97.9156,
+    "final_equity": 100000.0,
+    "return_pct": 0.0,
+    "fill_count": 0,
+    "signal_count": 0,
+    "notes": [],
+    "fills": []
+  },
+  {
+    "run_id": "sim_daily_breakout_6",
+    "adapter": "pybroker",
+    "strategy": "breakout_channel",
+    "dataset": "data\\synthetic\\normal_daily.csv",
+    "symbol": "SIM",
+    "initial_cash": 100000,
+    "final_cash": 100000.0,
+    "final_position": 0.0,
+    "final_price": 97.9156,
+    "final_equity": 100000.0,
+    "return_pct": 0.0,
+    "fill_count": 0,
+    "signal_count": 0,
+    "notes": [],
+    "fills": []
+  },
+  {
+    "run_id": "sim_daily_breakout_6",
+    "adapter": "lean",
+    "strategy": "breakout_channel",
+    "dataset": "data\\synthetic\\normal_daily.csv",
+    "symbol": "SIM",
+    "initial_cash": 100000,
+    "final_cash": 100000,
+    "final_position": 0.0,
+    "final_price": 97.9156,
+    "final_equity": 100000,
+    "return_pct": 0.0,
+    "fill_count": 0,
+    "signal_count": 0,
+    "notes": [
+      "UNAVAILABLE: LEAN adapter slot is present, but v1 has not generated a LEAN algorithm project/config from AdapterContext yet",
+      "LEAN is still a first-wave target because it has the strongest all-around broker/order model surface.",
+      "Next implementation step: generate a minimal C#/Python LEAN algorithm that reads canonical CSV bars and emits normalized fills."
+    ],
+    "fills": []
+  },
+  {
+    "run_id": "sim_edge_buy_hold",
+    "adapter": "reference_bar",
+    "strategy": "buy_hold",
+    "dataset": "data\\synthetic\\edge_case_minute.csv",
+    "symbol": "SIM",
+    "initial_cash": 100000,
+    "final_cash": 89991.9982999,
+    "final_position": 100.0,
+    "final_price": 49.5,
+    "final_equity": 94941.9982999,
+    "return_pct": -5.0580017000999895,
+    "fill_count": 1,
+    "signal_count": 1,
+    "notes": [
+      "zero-volume bar for SIM at 2024-01-03T14:31:00+00:00",
+      "deferred fill on zero-volume bar at 2024-01-03T14:31:00+00:00"
+    ],
+    "fills": [
+      {
+        "timestamp": "2024-01-03T14:32:00+00:00",
+        "symbol": "SIM",
+        "side": "buy",
+        "quantity": 100.0,
+        "price": 100.07001,
+        "fee": 1.0007001,
+        "source_signal_timestamp": "2024-01-03T14:30:00+00:00"
+      }
+    ]
+  },
+  {
+    "run_id": "sim_edge_buy_hold",
+    "adapter": "backtrader",
+    "strategy": "buy_hold",
+    "dataset": "data\\synthetic\\edge_case_minute.csv",
+    "symbol": "SIM",
+    "initial_cash": 100000,
+    "final_cash": 89991.99829989999,
+    "final_position": 100.0,
+    "final_price": 49.5,
+    "final_equity": 94941.99829989999,
+    "return_pct": -5.058001700100013,
+    "fill_count": 1,
+    "signal_count": 1,
+    "notes": [
+      "zero-volume bar for SIM at 2024-01-03T14:31:00+00:00",
+      "Backtrader volume filler enabled with FixedSize(size=None)"
+    ],
+    "fills": [
+      {
+        "timestamp": "2024-01-03T14:32:00+00:00",
+        "symbol": "SIM",
+        "side": "buy",
+        "quantity": 100.0,
+        "price": 100.07001,
+        "fee": 1.0007001,
+        "source_signal_timestamp": "2024-01-03T14:30:00+00:00"
+      }
+    ]
+  },
+  {
+    "run_id": "sim_edge_buy_hold",
+    "adapter": "vectorbt",
+    "strategy": "buy_hold",
+    "dataset": "data\\synthetic\\edge_case_minute.csv",
+    "symbol": "SIM",
+    "initial_cash": 100000,
+    "final_cash": 89991.9982999,
+    "final_position": 100.0,
+    "final_price": 49.5,
+    "final_equity": 94941.9982999,
+    "return_pct": -5.0580017000999895,
+    "fill_count": 1,
+    "signal_count": 1,
+    "notes": [
+      "zero-volume bar for SIM at 2024-01-03T14:31:00+00:00",
+      "deferred fill on zero-volume bar at 2024-01-03T14:31:00+00:00"
+    ],
+    "fills": [
+      {
+        "timestamp": "2024-01-03T14:32:00+00:00",
+        "symbol": "SIM",
+        "side": "buy",
+        "quantity": 100.0,
+        "price": 100.07001,
+        "fee": 1.0007001,
+        "source_signal_timestamp": "2024-01-03T14:30:00+00:00"
+      }
+    ]
+  },
+  {
+    "run_id": "sim_edge_buy_hold",
+    "adapter": "pybroker",
+    "strategy": "buy_hold",
+    "dataset": "data\\synthetic\\edge_case_minute.csv",
+    "symbol": "SIM",
+    "initial_cash": 100000,
+    "final_cash": 89991.9982999,
+    "final_position": 100.0,
+    "final_price": 49.5,
+    "final_equity": 94941.9982999,
+    "return_pct": -5.0580017000999895,
+    "fill_count": 1,
+    "signal_count": 1,
+    "notes": [
+      "zero-volume bar for SIM at 2024-01-03T14:31:00+00:00",
+      "deferred fill on zero-volume bar at 2024-01-03T14:31:00+00:00"
+    ],
+    "fills": [
+      {
+        "timestamp": "2024-01-03T14:32:00",
+        "symbol": "SIM",
+        "side": "buy",
+        "quantity": 100.0,
+        "price": 100.07001,
+        "fee": 1.0007001,
+        "source_signal_timestamp": "2024-01-03T14:30:00+00:00"
+      }
+    ]
+  },
+  {
+    "run_id": "sim_edge_buy_hold",
+    "adapter": "lean",
+    "strategy": "buy_hold",
+    "dataset": "data\\synthetic\\edge_case_minute.csv",
+    "symbol": "SIM",
+    "initial_cash": 100000,
+    "final_cash": 100000,
+    "final_position": 0.0,
+    "final_price": 49.5,
+    "final_equity": 100000,
+    "return_pct": 0.0,
+    "fill_count": 0,
+    "signal_count": 1,
+    "notes": [
+      "zero-volume bar for SIM at 2024-01-03T14:31:00+00:00",
+      "UNAVAILABLE: LEAN adapter slot is present, but v1 has not generated a LEAN algorithm project/config from AdapterContext yet",
+      "LEAN is still a first-wave target because it has the strongest all-around broker/order model surface.",
+      "Next implementation step: generate a minimal C#/Python LEAN algorithm that reads canonical CSV bars and emits normalized fills."
+    ],
+    "fills": []
+  },
+  {
+    "run_id": "alpaca_crypto_btc_sma_cross_4_12",
+    "adapter": "reference_bar",
+    "strategy": "sma_cross",
+    "dataset": "data\\alpaca\\crypto_BTCUSD_ETHUSD_1h_sample.csv",
+    "symbol": "BTC/USD",
+    "initial_cash": 100000,
+    "final_cash": 100025.6152756356,
+    "final_position": 0.0,
+    "final_price": 45161.25,
+    "final_equity": 100025.6152756356,
+    "return_pct": 0.025615275635604284,
+    "fill_count": 4,
+    "signal_count": 2,
+    "notes": [
+      "partial volume-limited fill at 2024-01-01T12:00:00+00:00: requested 0.01000000, filled 0.00042350",
+      "partial volume-limited fill at 2024-01-01T13:00:00+00:00: requested 0.00957650, filled 0.00013733"
+    ],
+    "fills": [
+      {
+        "timestamp": "2024-01-01T12:00:00+00:00",
+        "symbol": "BTC/USD",
+        "side": "buy",
+        "quantity": 0.000423498,
+        "price": 42723.548000999996,
+        "fee": 0.00180933371313275,
+        "source_signal_timestamp": "2024-01-01T11:00:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-01T13:00:00+00:00",
+        "symbol": "BTC/USD",
+        "side": "buy",
+        "quantity": 0.000137328,
+        "price": 42670.367367,
+        "fee": 0.0005859836209775376,
+        "source_signal_timestamp": "2024-01-01T11:00:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-01T14:00:00+00:00",
+        "symbol": "BTC/USD",
+        "side": "buy",
+        "quantity": 0.009439174,
+        "price": 42710.0317983,
+        "fee": 0.04031474216896866,
+        "source_signal_timestamp": "2024-01-01T11:00:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-02T15:00:00+00:00",
+        "symbol": "BTC/USD",
+        "side": "sell",
+        "quantity": 0.01,
+        "price": 45280.3861112,
+        "fee": 0.045280386111200006,
+        "source_signal_timestamp": "2024-01-02T14:00:00+00:00"
+      }
+    ]
+  },
+  {
+    "run_id": "alpaca_crypto_btc_sma_cross_4_12",
+    "adapter": "backtrader",
+    "strategy": "sma_cross",
+    "dataset": "data\\alpaca\\crypto_BTCUSD_ETHUSD_1h_sample.csv",
+    "symbol": "BTC/USD",
+    "initial_cash": 100000,
+    "final_cash": 100025.61527563559,
+    "final_position": 0.0,
+    "final_price": 45161.25,
+    "final_equity": 100025.61527563559,
+    "return_pct": 0.02561527563558208,
+    "fill_count": 4,
+    "signal_count": 2,
+    "notes": [
+      "Backtrader volume filler enabled with FixedSize(size=None)"
+    ],
+    "fills": [
+      {
+        "timestamp": "2024-01-01T12:00:00+00:00",
+        "symbol": "BTC/USD",
+        "side": "buy",
+        "quantity": 0.000423498,
+        "price": 42723.548000999996,
+        "fee": 0.0018093337131327497,
+        "source_signal_timestamp": "2024-01-01T11:00:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-01T13:00:00+00:00",
+        "symbol": "BTC/USD",
+        "side": "buy",
+        "quantity": 0.000137328,
+        "price": 42670.367367,
+        "fee": 0.0005859836209775377,
+        "source_signal_timestamp": "2024-01-01T11:00:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-01T14:00:00+00:00",
+        "symbol": "BTC/USD",
+        "side": "buy",
+        "quantity": 0.009439174,
+        "price": 42710.0317983,
+        "fee": 0.04031474216896866,
+        "source_signal_timestamp": "2024-01-01T11:00:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-02T15:00:00+00:00",
+        "symbol": "BTC/USD",
+        "side": "sell",
+        "quantity": 0.01,
+        "price": 45280.3861112,
+        "fee": 0.045280386111200006,
+        "source_signal_timestamp": "2024-01-02T14:00:00+00:00"
+      }
+    ]
+  },
+  {
+    "run_id": "alpaca_crypto_btc_sma_cross_4_12",
+    "adapter": "vectorbt",
+    "strategy": "sma_cross",
+    "dataset": "data\\alpaca\\crypto_BTCUSD_ETHUSD_1h_sample.csv",
+    "symbol": "BTC/USD",
+    "initial_cash": 100000,
+    "final_cash": 100025.6152756356,
+    "final_position": 0.0,
+    "final_price": 45161.25,
+    "final_equity": 100025.6152756356,
+    "return_pct": 0.025615275635604284,
+    "fill_count": 4,
+    "signal_count": 2,
+    "notes": [
+      "partial volume-limited fill at 2024-01-01T12:00:00+00:00: requested 0.01000000, filled 0.00042350",
+      "partial volume-limited fill at 2024-01-01T13:00:00+00:00: requested 0.00957650, filled 0.00013733"
+    ],
+    "fills": [
+      {
+        "timestamp": "2024-01-01T12:00:00+00:00",
+        "symbol": "BTC/USD",
+        "side": "buy",
+        "quantity": 0.000423498,
+        "price": 42723.548000999996,
+        "fee": 0.00180933371313275,
+        "source_signal_timestamp": "2024-01-01T11:00:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-01T13:00:00+00:00",
+        "symbol": "BTC/USD",
+        "side": "buy",
+        "quantity": 0.000137328,
+        "price": 42670.367367,
+        "fee": 0.0005859836209775376,
+        "source_signal_timestamp": "2024-01-01T11:00:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-01T14:00:00+00:00",
+        "symbol": "BTC/USD",
+        "side": "buy",
+        "quantity": 0.009439174,
+        "price": 42710.0317983,
+        "fee": 0.040314742168968666,
+        "source_signal_timestamp": "2024-01-01T11:00:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-02T15:00:00+00:00",
+        "symbol": "BTC/USD",
+        "side": "sell",
+        "quantity": 0.01,
+        "price": 45280.3861112,
+        "fee": 0.045280386111200006,
+        "source_signal_timestamp": "2024-01-02T14:00:00+00:00"
+      }
+    ]
+  },
+  {
+    "run_id": "alpaca_crypto_btc_sma_cross_4_12",
+    "adapter": "pybroker",
+    "strategy": "sma_cross",
+    "dataset": "data\\alpaca\\crypto_BTCUSD_ETHUSD_1h_sample.csv",
+    "symbol": "BTC/USD",
+    "initial_cash": 100000,
+    "final_cash": 100025.6152756356,
+    "final_position": 0.0,
+    "final_price": 45161.25,
+    "final_equity": 100025.6152756356,
+    "return_pct": 0.025615275635604284,
+    "fill_count": 4,
+    "signal_count": 2,
+    "notes": [
+      "partial volume-limited fill at 2024-01-01T12:00:00+00:00: requested 0.01000000, filled 0.00042350",
+      "partial volume-limited fill at 2024-01-01T13:00:00+00:00: requested 0.00957650, filled 0.00013733"
+    ],
+    "fills": [
+      {
+        "timestamp": "2024-01-01T12:00:00",
+        "symbol": "BTC/USD",
+        "side": "buy",
+        "quantity": 0.000423498,
+        "price": 42723.548000999996,
+        "fee": 0.0018093337131327497,
+        "source_signal_timestamp": "2024-01-01T11:00:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-01T13:00:00",
+        "symbol": "BTC/USD",
+        "side": "buy",
+        "quantity": 0.000137328,
+        "price": 42670.367367,
+        "fee": 0.0005859836209775376,
+        "source_signal_timestamp": "2024-01-01T11:00:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-01T14:00:00",
+        "symbol": "BTC/USD",
+        "side": "buy",
+        "quantity": 0.009439174,
+        "price": 42710.0317983,
+        "fee": 0.04031474216896866,
+        "source_signal_timestamp": "2024-01-01T11:00:00+00:00"
+      },
+      {
+        "timestamp": "2024-01-02T15:00:00",
+        "symbol": "BTC/USD",
+        "side": "sell",
+        "quantity": 0.01,
+        "price": 45280.3861112,
+        "fee": 0.0452803861112,
+        "source_signal_timestamp": "2024-01-02T14:00:00+00:00"
+      }
+    ]
+  },
+  {
+    "run_id": "alpaca_crypto_btc_sma_cross_4_12",
+    "adapter": "lean",
+    "strategy": "sma_cross",
+    "dataset": "data\\alpaca\\crypto_BTCUSD_ETHUSD_1h_sample.csv",
+    "symbol": "BTC/USD",
+    "initial_cash": 100000,
+    "final_cash": 100000,
+    "final_position": 0.0,
+    "final_price": 45161.25,
+    "final_equity": 100000,
+    "return_pct": 0.0,
+    "fill_count": 0,
+    "signal_count": 2,
+    "notes": [
+      "UNAVAILABLE: LEAN adapter slot is present, but v1 has not generated a LEAN algorithm project/config from AdapterContext yet",
+      "LEAN is still a first-wave target because it has the strongest all-around broker/order model surface.",
+      "Next implementation step: generate a minimal C#/Python LEAN algorithm that reads canonical CSV bars and emits normalized fills."
+    ],
+    "fills": []
+  }
+]
